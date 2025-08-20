@@ -1,7 +1,8 @@
 ---
 title: "Readings"
 ---
-This is a list of readings and some comments about them. I've at least partially read these, or I have had them recommended to me. 
+The following are lists of books, papers, and other readings.
+I've at least partially read everyone on this list, or I have had the resource recommended to me.
 
 ## Books
 #### [Analysis:]{.underline}
@@ -59,9 +60,13 @@ Considered classic introduction to ML with a statistical view. It's kind of a we
 ***Statistical Learning with Sparsity (Hastie, et al.) ***\
 I have a copy of this book and it looks like a good exposition of the LASSO (considering Robert Tibshirani is an author), as well as other methods with a focus on sparsity for high dimensions. 
 
+#### [Optimization:]{.underline}
+***Numerical Optimization (Jorge Nocedal, Stephen J. Wright):***\
+
+***Convex Optimization (Lieven Vandenberghe, Stephen Boyd):***\
 
 
-#### [Topology/Manifolds:]{.underline}
+#### [Differential Geometry:]{.underline}
 ***An Introduction to Manifolds (Loring Tu):*** \
 A great introduction to smooth manifolds. The appendix on point-set topology is excellent. 
 
@@ -74,6 +79,20 @@ Another great introduction to smooth manifolds. This book is much slower than Tu
 
 
 ## Papers
+I've tried to organize these by subjects listed on arxiv or elsewhere.
+
+#### [Statistics Theory:]{.underline}
+[DNNs for nonparametric interaction models with diverging dimension (Bhattacharya, et al.)](https://arxiv.org/pdf/2302.05851)
+
+#### [Machine Learning:]{.underline}
+[LLMs are Bayesian, in expectation, not in realization (Chlon, et al.)](https://arxiv.org/pdf/2507.11768)
+
+#### [Computation and Language:]{.underline}
+[Attention is all you need (Vaswani, et al.)](https://arxiv.org/pdf/1706.03762)
+
+[Efficient estimation of word representations in vector space (Mikolov, et al.)](https://arxiv.org/pdf/1301.3781)
+
+[BERT: Pre-training of deep bidirectional transformers for language understanding (Devlin, et al.)](https://arxiv.org/pdf/1810.04805)
 
 
 
