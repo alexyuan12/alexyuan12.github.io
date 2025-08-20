@@ -1,4 +1,4 @@
 ---
-title: "writing"
+title: "Blog"
 editor: visual
 ---

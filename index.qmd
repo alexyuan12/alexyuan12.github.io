@@ -3,6 +3,13 @@ title: "Alex Yuan"
 image: pfpWeb.jpeg
 about: 
   template: trestles 
+link:
+  - text: Email
+    icon: envelope
+    href: mailto:ayuan07@calpoly.edu.zz
+  - text: Github
+    icon: github
+    href: https://github.com/alexyuan12
 ---
 
 Hello! My name is Alex. 
