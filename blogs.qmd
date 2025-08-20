@@ -2,4 +2,4 @@
 title: "Blog"
 editor: visual
 ---
-I h
+All views expressed are my own.
