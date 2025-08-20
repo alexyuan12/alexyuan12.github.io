@@ -3,7 +3,7 @@ title: "Alex Yuan"
 image: pfpWeb.jpeg
 about: 
   template: trestles 
-  link:
+  links:
     - text: Email
       icon: envelope
       href: mailto:ayuan07@calpoly.edu.zz
