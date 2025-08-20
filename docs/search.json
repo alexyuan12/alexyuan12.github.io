@@ -26,5 +26,40 @@
     "title": "Blog",
     "section": "",
     "text": "I h"
+  },
+  {
+    "objectID": "readings.html",
+    "href": "readings.html",
+    "title": "Readings",
+    "section": "",
+    "text": "I’ve put together a list of personal list/recommendation/guide of readings."
+  },
+  {
+    "objectID": "readings.html#books",
+    "href": "readings.html#books",
+    "title": "Readings",
+    "section": "Books",
+    "text": "Books\n\nAnalysis:\nPrinciples of Mathematical Analysis (Walter Rudin):\nThis is a notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential.\nAn Introduction to Hilbert Space (Nicholas Young):\nThis is an introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It’s very concise and readable without getting into the more abstract measure theoretical issues.\nAnalysis (Elliot Lieb, Michael Loss):\nThis is a good introduction to analysis at the graduate level. The focus is more on ‘applied’ analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations.\nReal Analysis: Modern Techniques and Their Applications (Gerald Folland):\nThis is a standard analysis textbook at the graduate level. It covers measure theory, point-set topology, functional analysis, and some other relevant topics. The analysis done in this book is very general, however it is very well written albeit terse at times.\nFunctional Analysis, Sobolev Spaces and Partial Differential Equations (Haim Brezis):\nThis is a standard textbook for functional analysis (with a view of PDEs) at the graduate level. I have not read this yet, but supposedly it is a must read for those interested in partial differential equations.\n\n\nProbability Theory:\nProbability Theory and Examples (Rick Durrett):\nThis is a standard graduate text on probability. It is terse and has some annoying/unstandard notation. I think this book is unreadable if you do not have an instructor handy or previous background in measure theory. I would recommend skipping the measure theory intro if you already know it. Despite these issues, the coverage of topics and examples is great.\nProbability and Measure (Patrick Billingsley):\nThis is supposedly the book on probability theory. I have skimmed parts of it, and it is very terse. I have been told that if you want to pursue a research career in probability theory, Billingsley is a must read.\nMeasure Theory and Probability Theory (Krishna Athreya, Soumendra Lahiri):\nThis is a book that was just brought to my attention at the time of writing (August 2025). It seems to be sort of similar in spirit to Billingsley, and it takes a general approach from the beginning. Skimming through, it seems to try to offer a lot of intuition on the measure theoretic details.\n\n\nStatistics:\nStatistical Inference (George Casella, Roger Berger):\n\nMathematical Statistics (Jun Shao):\n\n\n\nML/AI:\n\n\nTopology/Manifolds:"
+  },
+  {
+    "objectID": "readings.html#papers",
+    "href": "readings.html#papers",
+    "title": "Readings",
+    "section": "Papers",
+    "text": "Papers"
+  },
+  {
+    "objectID": "readings.html#other",
+    "href": "readings.html#other",
+    "title": "Readings",
+    "section": "Other",
+    "text": "Other"
+  },
+  {
+    "objectID": "readings.html#probability-theory",
+    "href": "readings.html#probability-theory",
+    "title": "Readings",
+    "section": "Probability Theory",
+    "text": "Probability Theory"
   }
 ]
