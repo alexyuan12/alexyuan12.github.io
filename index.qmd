@@ -3,8 +3,6 @@ title: "Alex Yuan"
 image: pfpWeb.jpeg
 about: 
   template: trestles 
-  image-shape: rectangle
-  image-width: 15em
 ---
 
 Hello! My name is Alex. 
