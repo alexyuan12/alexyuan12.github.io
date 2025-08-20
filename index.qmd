@@ -2,7 +2,7 @@
 title: "Alex Yuan"
 image: pfpWeb.jpeg
 about: 
-  template: trestles 
+  template: trestles
   links:
     - text: Email
       icon: envelope
