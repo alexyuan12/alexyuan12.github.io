@@ -1,48 +1,82 @@
 ---
 title: "Readings"
 ---
-I've put together a list of personal list/recommendation/guide of readings.
+This is a list of readings and some comments about them. I've at least partially read these, or I have had them recommended to me. 
 
 ## Books
 #### [Analysis:]{.underline}
 ***Principles of Mathematical Analysis (Walter Rudin):*** \
-This is a notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential.
+A notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential. I don't think this is a good book to learn from unless you have other resources or an instructor. The exercises are pretty difficult. 
 
 ***An Introduction to Hilbert Space (Nicholas Young):*** \
-This is an introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It's very concise and readable without getting into the more abstract measure theoretical issues. 
+An introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It's very concise and readable without getting into the more abstract measure theoretical issues. I think this book reads well and has nice exercises built into the body of the text. 
 
 ***Analysis (Elliot Lieb, Michael Loss):***\
-This is a good introduction to analysis at the graduate level. The focus is more on 'applied' analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations.
+Supposedly a good introduction to analysis at the graduate level. The focus is more on 'applied' analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations. I've been told that the exercises are good qualifying exam practice.
 
 ***Real Analysis: Modern Techniques and Their Applications (Gerald Folland):***\
-This is a standard analysis textbook at the graduate level. It covers measure theory, point-set topology, functional analysis, and some other relevant topics. The analysis done in this book is very general, however it is very well written albeit terse at times. 
+It is a standard analysis textbook at the graduate level along with the other books by Rudin, Royden, etc. It covers measure theory, point-set topology, functional analysis, and some other relevant topics. The analysis done in this book is very general, however it is very well written albeit terse at times. 
+
+*(Currently going through this.)*
 
 ***Functional Analysis, Sobolev Spaces and Partial Differential Equations (Haim Brezis):***\
-This is a standard textbook for functional analysis (with a view of PDEs) at the graduate level. I have not read this yet, but supposedly it is a must read for those interested in partial differential equations.
+This is a standard textbook for functional analysis (with a view of PDEs) at the graduate level. I have only read a couple pages about Hanh-Banach, but supposedly it is a must read for those interested in partial differential equations.
 
 
-#### [Probability Theory:]{.underline}
+#### [Probability:]{.underline}
 ***Probability Theory and Examples (Rick Durrett):*** \
 This is a standard graduate text on probability. It is terse and has some annoying/unstandard notation. I think this book is unreadable if you do not have an instructor handy or previous background in measure theory. I would recommend skipping the measure theory intro if you already know it. Despite these issues, the coverage of topics and examples is great.
 
+*(Currently going through this.)*
+
 ***Probability and Measure (Patrick Billingsley):***\
-This is supposedly the book on probability theory. I have skimmed parts of it, and it is very terse. I have been told that if you want to pursue a research career in probability theory, Billingsley is a must read. 
+This is supposedly the reference on probability theory. I have skimmed parts of it, and it is very terse. I have been told that if you want to pursue a research career in probability theory, Billingsley is a must read. 
 
 ***Measure Theory and Probability Theory (Krishna Athreya, Soumendra Lahiri):***\
 This is a book that was just brought to my attention at the time of writing (August 2025). It seems to be sort of similar in spirit to Billingsley, and it takes a general approach from the beginning. Skimming through, it seems to try to offer a lot of intuition on the measure theoretic details.
 
+***High-Dimensional Probability (Roman Vershynin):***\
+A book on probability in high dimensions. It is pedagogically sound and is a pretty different flavor compared to other probability texts. No measure theory is requried. The exercises are great, and I think there is a lot of motivation in data science for the results in the book. 
 
+*(Currently going through this.)*
 
 #### [Statistics:]{.underline}
 ***Statistical Inference (George Casella, Roger Berger):*** \
+This is the definitive 'mathematical statistics' book at the masters level. I think many schools also draw their qualifying exam material/questions out of this book. I think it can be a little unmotivated at times and even a bit hand-wavy, but most people think it is the best book around this level. Some people suggest supplementing this book with *Mathematical Statistics with Applications* by Wackerly, et al. as the book is slower and does a better job with motivating the material. 
 
 ***Mathematical Statistics (Jun Shao):*** \
+A 'mathematical statistics' book at the PhD level. It pretty much expects you to have had a graduate probability course or equivalent from the get-go. It is supposed to prepare you for PhD statistics qualifiers and is a good resource for exercises as there is an associated solutions manual. I am currently going through this.
+
+*(Currently going through this.)*
+
+***High-Dimensional Statistics: A Non-Asymptotic Viewpoint (Martin Wainwright):*** \
+
 
 #### [ML/AI:]{.underline}
+***Elements of Statistical Learning (Hastie, et al.) ***\
+Considered classic introduction to ML with a statistical view. It's kind of a weird blend of some theory and application. I think the authors underestimate the pre-requisites they state in the beginning. In my opinion, if you don't have a decent linear models/linear algebra background, the book is nearly unreadable.
+
+***Statistical Learning with Sparsity (Hastie, et al.) ***\
+I have a copy of this book and it looks like a good exposition of the LASSO (considering Robert Tibshirani is an author), as well as other methods with a focus on sparsity for high dimensions. 
+
+
 
 #### [Topology/Manifolds:]{.underline}
+***An Introduction to Manifolds (Loring Tu):*** \
+A great introduction to smooth manifolds. The appendix on point-set topology is excellent. 
 
-# Papers
+*(Currently going through this.)*
+
+***Introduction to  Smooth Manifolds (John M. Lee):*** \
+Another great introduction to smooth manifolds. This book is much slower than Tu and covers a lot more content. 
+
+*(Currently going through this.)*
 
 
-# Other
+## Papers
+
+
+
+## Other
+
+

@@ -8,8 +8,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - readings.qmd
       - writing.qmd
+      - readings.qmd
+  
 
 format:
   html:
