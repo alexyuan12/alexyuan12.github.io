@@ -2,4 +2,7 @@
 title: "Alex Yuan"
 ---
 
-Hello! My name is Alex. Why isnt this changing?
+Hello! My name is Alex. 
+
+
+I am currently finishing up a masters in Statistics at California Polytechnic State University.
