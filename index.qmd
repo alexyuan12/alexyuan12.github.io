@@ -1,6 +1,6 @@
 ---
 title: "Alex Yuan"
-image: pfpWeb.png
+image: pfpWeb.jpeg
 about: 
   template: trestles 
   image-shape: rectangle
