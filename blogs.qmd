@@ -1,5 +1,0 @@
----
-title: "Blog"
-editor: visual
----
-All views expressed are my own. Why is this not changing
