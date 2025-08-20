@@ -4,11 +4,18 @@
     "href": "index.html",
     "title": "Alex Yuan",
     "section": "",
-    "text": "Hello! My name is Alex.\nI am currently doing a MS Statistics at California Polytechnic State University."
+    "text": "Hello! My name is Alex.\nI am currently finishing up a masters in Statistics at California Polytechnic State University."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "Blog.html",
+    "href": "Blog.html",
     "title": "About",
     "section": "",
     "text": "About this site"

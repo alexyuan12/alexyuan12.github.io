@@ -1,5 +1,4 @@
 ---
-title: "About"
+title: "blog"
+editor: visual
 ---
-
-About this site
