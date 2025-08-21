@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alex Yuan">
+<meta name="description" content="In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’">
 
-<title>Blog – Alex Yuan</title>
+<title>Mathematical Tips and Tricks – Alex Yuan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,7 +99,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +109,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Alex Yuan</span>
     </a>
   </div>
@@ -149,19 +120,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./writing.html"> 
+    <a class="nav-link" href="../../writing.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./readings.html"> 
+    <a class="nav-link" href="../../readings.html"> 
 <span class="menu-text">Readings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -176,20 +147,49 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Analysis">Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Information Theory">Information Theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linear Algebra">Linear Algebra <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#linear-algebra" id="toc-linear-algebra" class="nav-link active" data-scroll-target="#linear-algebra">Linear Algebra:</a>
+  <ul class="collapse">
+  <li><a href="#quadratic-forms" id="toc-quadratic-forms" class="nav-link" data-scroll-target="#quadratic-forms">Quadratic Forms</a></li>
+  <li><a href="#cyclic-permutation-property" id="toc-cyclic-permutation-property" class="nav-link" data-scroll-target="#cyclic-permutation-property">Cyclic Permutation Property</a></li>
+  <li><a href="#trace-trick" id="toc-trace-trick" class="nav-link" data-scroll-target="#trace-trick">Trace Trick</a></li>
+  <li><a href="#einstein-summation" id="toc-einstein-summation" class="nav-link" data-scroll-target="#einstein-summation">Einstein Summation</a></li>
+  <li><a href="#schur-complements" id="toc-schur-complements" class="nav-link" data-scroll-target="#schur-complements">Schur Complements</a></li>
+  </ul></li>
+  <li><a href="#probability-theory" id="toc-probability-theory" class="nav-link" data-scroll-target="#probability-theory">Probability Theory:</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Mathematical Tips and Tricks</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Probability</div>
+    <div class="quarto-category">Linear Algebra</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alex Yuan </p>
+          </div>
+  </div>
     
   
     
@@ -200,76 +200,80 @@ window.Quarto = {
 </header>
 
 
+<section id="linear-algebra" class="level2">
+<h2 class="anchored" data-anchor-id="linear-algebra">Linear Algebra:</h2>
+<section id="quadratic-forms" class="level3">
+<h3 class="anchored" data-anchor-id="quadratic-forms">Quadratic Forms</h3>
+<p>Given a square matrix <span class="math inline">\(A \in \mathbb{R}^{n \times n}\)</span> and a vector <span class="math inline">\(x \in \mathbb{R}^n\)</span>, the scalar <span class="math inline">\(x^T A x\)</span> is called a quadratic form:</p>
+<p><span class="math display">\[
+x^T A x = \sum_{i=1}^n \sum_{j=1}^n A_{i,j} x_i x_j
+\]</span></p>
+</section>
+<section id="cyclic-permutation-property" class="level3">
+<h3 class="anchored" data-anchor-id="cyclic-permutation-property">Cyclic Permutation Property</h3>
+<p>For matrices <span class="math inline">\(A, B, C\)</span> such that <span class="math inline">\(ABC\)</span> is <em>square</em>, we have:</p>
+<p><span class="math display">\[
+\text{tr}(ABC) = \text{tr}(BCA) = \text{tr}(CAB)
+\]</span></p>
+</section>
+<section id="trace-trick" class="level3">
+<h3 class="anchored" data-anchor-id="trace-trick">Trace Trick</h3>
+<p>Using the <em>cyclic permutation property</em> we can derive the <em>trace trick</em>, which allows us to rewrite the scalar inner product <span class="math inline">\(x^T A x\)</span> as follows:</p>
+<p><span class="math display">\[
+x^T A x = \text{tr}(x^T A x) = \text{tr}(x x^T A)
+\]</span></p>
+</section>
+<section id="einstein-summation" class="level3">
+<h3 class="anchored" data-anchor-id="einstein-summation">Einstein Summation</h3>
+<p>This is a nice notational convention for simplifying expressions with tensors. The three rules are namely:</p>
+<ol type="1">
+<li>Repeated indices are implicitly summed over</li>
+<li>Each index can appear at most twice in any term</li>
+<li>Each term must contain identical non-repeated indices.</li>
+</ol>
+<p>As a slightly complex example, suppose we have a tensor <span class="math inline">\(S_{ntk}\)</span> where n indexes examples in a batch, t indexes locations in the sequence, and k indexes words in a one-hot representation. Let <span class="math inline">\(W_{kd}\)</span> be an embedding matrix that maps sparse one-hot vectors in <span class="math inline">\(R^k\)</span> to dense vectors in <span class="math inline">\(R^d\)</span>. We can convert the batch of sequences of one-hots to a batch of sequences of embeddings as follows: <span class="math display">\[
+E_{ntd} = \sum_kS_{ntk}W_{kd}
+\]</span> We can compute the sum of the embedding vectors of each sequence (to get a bag of words) as follows:</p>
+<p><span class="math display">\[
+E_{nd} = \sum_k \sum_t S_{ntk}W_{kd}
+\]</span> Finally, we can pass each sequence’s vector representation through another linear transformation <span class="math inline">\(V_{dc}\)</span> to map to the logits over a classifier with c labels:</p>
+<p><span class="math display">\[
+L_{nc} = \sum_dE_{nd}V_{dc}=\sum_d \sum_k \sum_tS_{ntk}W_{kd}V_{dc}
+\]</span> In Einstein notation, we write <span class="math inline">\(L_{nc}=S_{ntk}W_{kd}V_{dc}\)</span>. Note that k and d are summed over because those indices appear twice on the right hand side, while we sum over t because that index does not occur on the left hand side.</p>
+</section>
+<section id="schur-complements" class="level3">
+<h3 class="anchored" data-anchor-id="schur-complements">Schur Complements</h3>
+<p>Consider a general partitioned matrix <span class="math display">\[
+M = \begin{pmatrix}
+E &amp; F \\
+G &amp; H
+\end{pmatrix}
+\]</span> where we assume <span class="math inline">\(E\)</span> and <span class="math inline">\(H\)</span> are invertible. We have <span class="math display">\[
+M^{-1} =
+\begin{pmatrix}
+(M/H)^{-1} &amp; -(M/H)^{-1} F H^{-1} \\
+- H^{-1} G (M/H)^{-1} &amp; H^{-1} + H^{-1} G (M/H)^{-1} F H^{-1}
+\end{pmatrix}
+\]</span> <span class="math display">\[
+= \begin{pmatrix}
+E^{-1} + E^{-1} F (M/E)^{-1} G E^{-1} &amp; - E^{-1} F (M/E)^{-1} \\
+-(M/E)^{-1} G E^{-1} &amp; (M/E)^{-1}
+\end{pmatrix}
+\]</span> where <span class="math display">\[
+M/H := E - F H^{-1} G
+\]</span> <span class="math display">\[
+M/E := H - G E^{-1} F
+\]</span> We say that <span class="math inline">\(M/H\)</span> is the <strong><em>schur complement</em></strong> of <span class="math inline">\(M\)</span> with respect to <span class="math inline">\(H\)</span>, while <span class="math inline">\(M/E\)</span> is the <strong><em>schur complement</em></strong> of <span class="math inline">\(M\)</span> with respect to <span class="math inline">\(E\)</span>.</p>
+<p>The proof can be found in <em>Probabilistic Machine Learning: An Introduction</em> by Kevin Murphy.</p>
+</section>
+</section>
+<section id="probability-theory" class="level2">
+<h2 class="anchored" data-anchor-id="probability-theory">Probability Theory:</h2>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Probability,Linear Algebra" data-listing-file-modified-sort="1755755491686" data-listing-reading-time-sort="2" data-listing-word-count-sort="399">
-<a href="./posts/2nd-post/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mathematical Tips and Tricks
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Linear Algebra'); return false;">
-Linear Algebra
-</div>
-</div>
-<div class="card-text listing-description">
-In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Alex Yuan
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Analysis,Probability,Information Theory" data-listing-file-modified-sort="1755752238100" data-listing-reading-time-sort="3" data-listing-word-count-sort="524">
-<a href="./posts/1st-post/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Sigma-Algebras as Information
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Analysis'); return false;">
-Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Information Theory'); return false;">
-Information Theory
-</div>
-</div>
-<div class="card-text listing-description">
-This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Alex Yuan
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

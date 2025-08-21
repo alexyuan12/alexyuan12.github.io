@@ -10,13 +10,12 @@ website:
         text: Home
       - writing.qmd
       - readings.qmd
+      - posts.qmd
   
-
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-
 
 

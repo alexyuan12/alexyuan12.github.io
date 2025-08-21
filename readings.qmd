@@ -10,7 +10,7 @@ I've at least partially read everyone on this list, or I have had the resource r
 A notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential. I don't think this is a good book to learn from unless you have other resources or an instructor. The exercises are pretty difficult. 
 
 ***An Introduction to Hilbert Space (Nicholas Young):*** \
-An introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It's very concise and readable without getting into the more abstract measure theoretical issues. I think this book reads well and has nice exercises built into the body of the text. 
+An introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It's very concise and readable without getting into the more abstract measure theoretical issues. I think this book also has nice exercises built into the body of the text. 
 
 ***Analysis (Elliot Lieb, Michael Loss):***\
 Supposedly a good introduction to analysis at the graduate level. The focus is more on 'applied' analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations. I've been told that the exercises are good qualifying exam practice.

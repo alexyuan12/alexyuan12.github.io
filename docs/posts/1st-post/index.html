@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alex Yuan">
-<meta name="description" content="This post is heavily inspired by Marcus Pivato’s notes on measure and probability.">
+<meta name="description" content="This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.">
 
 <title>Sigma-Algebras as Information – Alex Yuan</title>
 <style>
@@ -142,8 +142,14 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#example" id="toc-example" class="nav-link active" data-scroll-target="#example">Example:</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -160,7 +166,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    This post is heavily inspired by Marcus Pivato’s notes on measure and probability.
+    This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.
   </div>
 </div>
 
@@ -207,9 +213,12 @@ s &lt; t \;\Longrightarrow\; \mathcal{F}_s \subseteq \mathcal{F}_t .
 \]</span></p>
 <p>Let <span class="math inline">\(\mathcal{Y}_1, \mathcal{Y}_2 \subset \mathcal{X}\)</span> be two <span class="math inline">\(\sigma\)</span>-subalgebras. We say <span class="math inline">\(\mathcal{Y}_1\)</span> and <span class="math inline">\(\mathcal{Y}_2\)</span> are <strong><em>independent</em></strong> <span class="math inline">\(\sigma\)</span>-algebras if every element of <span class="math inline">\(\mathcal{Y}_1\)</span> is independent of every element of <span class="math inline">\(\mathcal{Y}_2\)</span> with respect to the measure <span class="math inline">\(\mu\)</span>. In other words, for all <span class="math inline">\(U_1 \in \mathcal{Y}_1\)</span> and <span class="math inline">\(U_2 \in \mathcal{Y}_2\)</span>, we have <span class="math display">\[
 \mu(U_1 \cap U_2) \;=\; \mu(U_1)\,\mu(U_2)
-\]</span> i think take this out ### Example: Let <span class="math inline">\((\Omega,\mathcal{F})\)</span> be a measurable space and define the function <span class="math inline">\(X:\Omega\to\{1,2,3,4\}\)</span>. We can partition the points in <span class="math inline">\(\Omega\)</span> into four distinct subsets say <span class="math inline">\(A_i:=X^{-1}(i)\)</span> for <span class="math inline">\(i=1,2,3,4\)</span>. Given the value of <span class="math inline">\(X\)</span> at some <span class="math inline">\(\omega\)</span>, we then know which <span class="math inline">\(A_i\)</span> contains <span class="math inline">\(\omega\)</span> so we can tell whether or not each of the <span class="math inline">\(A_i\)</span>’s happened. Furthermore, <span class="math inline">\(\sigma(X)\)</span> must contain at least these four events.</p>
+\]</span></p>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example:</h3>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

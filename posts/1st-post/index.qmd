@@ -1,6 +1,6 @@
 ---
 title: "Sigma-Algebras as Information"
-description: "This post is heavily inspired by Marcus Pivato's notes on measure and probability."
+description: "This post is heavily inspired by Marcus Pivato's notes on measure and probability. This post is still in progress."
 author:
   - name: "Alex Yuan"
 categories: [Analysis, Probability, Information Theory]
@@ -54,9 +54,9 @@ with respect to the measure $\mu$. In other words, for all $U_1 \in \mathcal{Y}_
 $$
 \mu(U_1 \cap U_2) \;=\; \mu(U_1)\,\mu(U_2)
 $$
-i think take this out
+
 ### Example:
-Let $(\Omega,\mathcal{F})$ be a measurable space and define the function $X:\Omega\to\{1,2,3,4\}$. We can partition the points in $\Omega$ into four distinct subsets say $A_i:=X^{-1}(i)$ for $i=1,2,3,4$. Given the value of $X$ at some $\omega$, we then know which $A_i$ contains $\omega$ so we can tell whether or not each of the $A_i$'s happened. Furthermore, $\sigma(X)$ must contain at least these four events. 
+
 
 
 

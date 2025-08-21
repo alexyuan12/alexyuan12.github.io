@@ -2,12 +2,14 @@
   {
     "listing": "/writing.html",
     "items": [
+      "/posts/2nd-post/index.html",
       "/posts/1st-post/index.html"
     ]
   },
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2nd-post/index.html",
       "/posts/1st-post/index.html"
     ]
   }
