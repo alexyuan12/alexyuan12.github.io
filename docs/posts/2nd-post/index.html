@@ -105,7 +105,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -143,7 +143,38 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Mathematical Tips and Tricks</h1>
+                  <div>
+        <div class="description">
+          In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Probability</div>
+                <div class="quarto-category">Linear Algebra</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alex Yuan </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -159,45 +190,18 @@ window.Quarto = {
   <li><a href="#einstein-summation" id="toc-einstein-summation" class="nav-link" data-scroll-target="#einstein-summation">Einstein Summation</a></li>
   <li><a href="#schur-complements" id="toc-schur-complements" class="nav-link" data-scroll-target="#schur-complements">Schur Complements</a></li>
   </ul></li>
-  <li><a href="#probability-theory" id="toc-probability-theory" class="nav-link" data-scroll-target="#probability-theory">Probability Theory:</a></li>
+  <li><a href="#probability-theory" id="toc-probability-theory" class="nav-link" data-scroll-target="#probability-theory">Probability Theory:</a>
+  <ul class="collapse">
+  <li><a href="#invertible-transformations" id="toc-invertible-transformations" class="nav-link" data-scroll-target="#invertible-transformations">Invertible Transformations</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Mathematical Tips and Tricks</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Probability</div>
-    <div class="quarto-category">Linear Algebra</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’
-  </div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Alex Yuan </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <section id="linear-algebra" class="level2">
@@ -269,8 +273,15 @@ M/E := H - G E^{-1} F
 </section>
 <section id="probability-theory" class="level2">
 <h2 class="anchored" data-anchor-id="probability-theory">Probability Theory:</h2>
+<section id="invertible-transformations" class="level3">
+<h3 class="anchored" data-anchor-id="invertible-transformations">Invertible Transformations</h3>
+<p>Suppose <span class="math inline">\(g:\mathbb{R}^n \to \mathbb{R}^n\)</span> is a bijection (equivalently strictly monotonic) and <span class="math inline">\(X\)</span> is a random variable. If we are interested in calcuating the probability density function <span class="math inline">\(f_Y(y)\)</span> of some deterministic transformation <span class="math inline">\(Y=g(X)\)</span>, the <strong><em>change of variable</em></strong> formula tells us that</p>
+<p><span class="math display">\[
+f_Y(y) = f_X(g^{-1}(y))|\text{det}(J_{g^{-1}}(y))|
+\]</span> where <span class="math inline">\(J_{g^{-1}}(y)\)</span> is the Jacobian matrix of <span class="math inline">\(g^{-1}\)</span>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

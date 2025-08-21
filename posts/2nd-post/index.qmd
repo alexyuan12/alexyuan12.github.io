@@ -89,3 +89,12 @@ The proof can be found in *Probabilistic Machine Learning: An Introduction* by K
 
 ## Probability Theory:
 
+### Invertible Transformations
+Suppose $g:\mathbb{R}^n \to \mathbb{R}^n$ is a bijection (equivalently strictly monotonic) and $X$ is a random variable. If we are interested in calcuating the probability density function $f_Y(y)$ of some deterministic transformation $Y=g(X)$, the ***change of variable*** formula tells us that 
+
+$$
+f_Y(y) = f_X(g^{-1}(y))|\text{det}(J_{g^{-1}}(y))|
+$$
+where $J_{g^{-1}}(y)$ is the Jacobian matrix of $g^{-1}$.
+
+

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Alex(ander) Yuan",
     "section": "",
-    "text": "Email\n  \n  \n    \n     Github\n  \n\n  \n  \nHowdy! I am currently finishing up a master’s degree in Statistics at California Polytechnic State University, San Luis Obispo (Cal Poly SLO for short). I’m originally from Austin, TX, but I have been enjoying my time out here in the central coast.\nI am currently interested in a variety of things including probability, statistics, and ML/AI. Particularly, Optimal Transport and Mechanistic Intepretability are some subjects that I am working towards."
+    "text": "Email\n  \n  \n    \n     Github\n  \n\n  \n  \nHowdy! I am currently finishing up a master’s degree in Statistics at California Polytechnic State University, San Luis Obispo (Cal Poly SLO for short). I’m originally from Austin, TX, but I have been enjoying my time out here in the central coast.\nI am currently interested in a variety of things including probability, statistics, and ML/AI. In particular, Optimal Transport and Mechanistic Intepretability are some subjects that I am working towards."
   },
   {
     "objectID": "about.html",
@@ -116,7 +116,7 @@
     "href": "posts/2nd-post/index.html#probability-theory",
     "title": "Mathematical Tips and Tricks",
     "section": "Probability Theory:",
-    "text": "Probability Theory:"
+    "text": "Probability Theory:\n\nInvertible Transformations\nSuppose \\(g:\\mathbb{R}^n \\to \\mathbb{R}^n\\) is a bijection (equivalently strictly monotonic) and \\(X\\) is a random variable. If we are interested in calcuating the probability density function \\(f_Y(y)\\) of some deterministic transformation \\(Y=g(X)\\), the change of variable formula tells us that\n\\[\nf_Y(y) = f_X(g^{-1}(y))|\\text{det}(J_{g^{-1}}(y))|\n\\] where \\(J_{g^{-1}}(y)\\) is the Jacobian matrix of \\(g^{-1}\\)."
   },
   {
     "objectID": "posts/2nd-post/index.html#linear-algebra",
