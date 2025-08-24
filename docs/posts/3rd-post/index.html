@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="I plan to document some probability questions and solutions here.">
 
-<title>Blog – Alex Yuan</title>
+<title>Probability Questions – Alex Yuan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,7 +99,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +109,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Alex Yuan</span>
     </a>
   </div>
@@ -149,15 +120,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./writing.html" aria-current="page"> 
+    <a class="nav-link" href="../../writing.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./readings.html"> 
+    <a class="nav-link" href="../../readings.html"> 
 <span class="menu-text">Readings</span></a>
   </li>  
 </ul>
@@ -170,13 +141,22 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Probability Questions</h1>
+                  <div>
+        <div class="description">
+          I plan to document some probability questions and solutions here.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Probability</div>
+                <div class="quarto-category">Interview Prep</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
       
     
@@ -184,135 +164,116 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Analysis">Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Information Theory">Information Theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Interview Prep">Interview Prep <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linear Algebra">Linear Algebra <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(3)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#brainteasers" id="toc-brainteasers" class="nav-link active" data-scroll-target="#brainteasers"><span class="header-section-number">1</span> Brainteasers</a>
+  <ul class="collapse">
+  <li><a href="#airplane" id="toc-airplane" class="nav-link" data-scroll-target="#airplane"><span class="header-section-number">1.1</span> Drunk Airplane</a></li>
+  </ul></li>
+  <li><a href="#expected-value" id="toc-expected-value" class="nav-link" data-scroll-target="#expected-value"><span class="header-section-number">2</span> Expected Value</a>
+  <ul class="collapse">
+  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem"><span class="header-section-number">2.1</span> 4head I</a></li>
+  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem"><span class="header-section-number">2.2</span> 4head II</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<style>
+.problem { border-left: 4px solid #e5e7eb; padding-left:.85rem; margin:.25rem 0 1.1rem; }
+hr.problem-sep { border: none; border-top:1px solid #eee; margin:1.1rem 0; }
+</style>
+<section id="brainteasers" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="brainteasers"><span class="header-section-number">1</span> Brainteasers</h2>
+<section id="airplane" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="airplane"><span class="header-section-number">1.1</span> Drunk Airplane</h3>
+<div class="problem">
+<p>100 people are line up to board an airplane. For convenience, we can assume that the nth person is assigned the nth seat. However, the first person is drunk and unfortunately takes a random seat. The boarding process commences and if a person isn’t able to sit in their assigned seats they will randomly take an available one. This continues on until the plane has boarded. What is the probability that passenger number 100 ends up in seat 100?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Probability,Linear Algebra" data-listing-file-modified-sort="1755758062963" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./posts/2nd-post/index.html" class="no-external"></a></p><a href="./posts/2nd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/2nd-post/index.html" class="no-external"></a></p>
+<div class="callout-title-container flex-fill">
+Solution
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2nd-post/index.html" class="no-external">Mathematical Tips and Tricks</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2nd-post/index.html" class="no-external"></a>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Linear Algebra'); return false;">
-Linear Algebra
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2nd-post/index.html" class="no-external">In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2nd-post/index.html" class="no-external"></a></p><a href="./posts/2nd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Analysis,Probability,Information Theory" data-listing-file-modified-sort="1755752238100" data-listing-reading-time-sort="3" data-listing-word-count-sort="524">
-<div class="thumbnail">
-<p><a href="./posts/1st-post/index.html" class="no-external"></a></p><a href="./posts/1st-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/1st-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/1st-post/index.html" class="no-external">Sigma-Algebras as Information</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/1st-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Analysis'); return false;">
-Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Information Theory'); return false;">
-Information Theory
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/1st-post/index.html" class="no-external">This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/1st-post/index.html" class="no-external"></a></p><a href="./posts/1st-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Probability,Interview Prep" data-listing-file-modified-sort="1755983640340" data-listing-reading-time-sort="3" data-listing-word-count-sort="404">
-<div class="thumbnail">
-<p><a href="./posts/3rd-post/index.html" class="no-external"></a></p><a href="./posts/3rd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/3rd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/3rd-post/index.html" class="no-external">Probability Questions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/3rd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Interview Prep'); return false;">
-Interview Prep
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/3rd-post/index.html" class="no-external">I plan to document some probability questions and solutions here.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/3rd-post/index.html" class="no-external"></a></p><a href="./posts/3rd-post/index.html" class="no-external">
-</a>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>We can think about this symmetrically. The only two events of interest are 1) the event that seat 1 is filled before seat 100 and 2) the event that seat 100 is filled before seat 1. If 1) occurs then the 100th person gets to sit in their assigned seat. If 2) occurs then surely passenger number 100 is in the wrong seat. By symmetry the probability is <span class="math inline">\(\frac{1}{2}\)</span>.</p>
 </div>
 </div>
 </div>
-<div class="listing-no-matching d-none">
-No matching items
 </div>
-</div></main> <!-- /main -->
+<hr class="problem-sep">
+</section>
+</section>
+<section id="expected-value" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="expected-value"><span class="header-section-number">2</span> Expected Value</h2>
+<section id="problem" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="problem"><span class="header-section-number">2.1</span> 4head I</h3>
+<div class="problem">
+<p>Varun has 4 fair coins. He flips all 4 at once and checks the parity of each. Varun is now allowed to <strong><em>turn over</em></strong> any pair of coins. In other words, he is only allowed to turn over a coin if he turns over another. He may iterate this process as many times as he would like to maximize his expected number of heads. What is his expected number of heads?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>If Varun flips either <span class="math inline">\(2\)</span> or <span class="math inline">\(4\)</span> heads, he is guaranteed <span class="math inline">\(4\)</span> coins. On the contrary, if Varun flips either <span class="math inline">\(1\)</span> or <span class="math inline">\(3\)</span> heads, he is guaranteed <span class="math inline">\(3\)</span> coins. Thus, the expected value is <span class="math inline">\(\frac{1}{2}(3)+ \frac{1}{2}(4)=3.5\)</span> heads</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="problem-sep">
+</section>
+<section id="problem" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="problem"><span class="header-section-number">2.2</span> 4head II</h3>
+<div class="problem">
+<p>Varun has 4 fair coins. He flips all 4 at once and checks the parity of each. Varun is now allowed to <strong><em>flip</em></strong> any pair of coins. In other words, he is only allowed to flip a coin if he flips another. He may iterate this process as many times as he would like to maximize his expected number of heads. What is his expected number of heads?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Varun’s optimal strategy is to keep flipping pairs until he has all 4 heads as there is no cost to do so. We can think of this as a Markov chain that will hit an all-heads state with probability 1. Hence, our expected value is 4 heads.</p>
+</div>
+</div>
+</div>
+</div>
+<hr class="problem-sep">
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -738,4 +699,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
