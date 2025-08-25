@@ -1,12 +1,14 @@
 ---
 title: "Exercises and questions"
 description: "I plan to document some probability-ish questions and solutions here."
+author:
+  - name: "Alex Yuan"
 format:
   html:
     toc: true
     number-sections: true
     smooth-scroll: true
-categories: [Probability, Interview Prep]
+categories: [Probability, Combinatorics, Problem Solving, Interview Prep]
 theorems: true
 number-sections: false
 ---

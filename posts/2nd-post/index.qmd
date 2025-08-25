@@ -3,7 +3,7 @@ title: "Mathematical Tips and Tricks"
 description: "In mathematics and statistics, there are often useful 'tips and tricks' to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new 'tips and tricks.'"
 author:
   - name: "Alex Yuan"
-categories: [Probability, Linear Algebra]
+categories: [Probability, Linear Algebra, Problem Solving]
 draft: false
 ---
 ## Linear Algebra:
