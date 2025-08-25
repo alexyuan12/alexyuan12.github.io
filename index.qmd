@@ -15,5 +15,4 @@ about:
 :::{#ppc}
 Howdy! I am currently finishing up a master’s degree in Statistics at *California Polytechnic State University, San Luis Obispo* (*Cal Poly SLO* for short). I'm originally from Austin, TX, but I have been enjoying my time out here in the central coast.
 
-I am currently interested in a variety of things including probability, statistics, and ML/AI. In particular, Optimal Transport and Mechanistic Intepretability are some subjects that I am working towards.
 :::

@@ -51,7 +51,13 @@ A 'mathematical statistics' book at the PhD level. It pretty much expects you to
 
 *(Currently going through this.)*
 
+***All of Statistics (Larry Wasserman):***\
+
 ***Mathematical Statistics: Basic Ideas and Selected Topics (Peter Bickel, Kjell Doksum):*** \
+
+***Asymptotic Theory of Statistics and Probability (Anirban DasGupta):***\
+
+***Theory of Point Estimation (Erich Lehmann, George Casella): ***\
 
 
 ***High-Dimensional Statistics: A Non-Asymptotic Viewpoint (Martin Wainwright):*** \
@@ -96,6 +102,16 @@ Another great introduction to smooth manifolds. This book is much slower than Tu
 ***Optimal Transport for Applied Mathematicians: Calculus of Variations, PDEs, and Modeling (Filippo Santambrogio):*** \
 
 ***Statistical Optimal Transport  (Jonathan Niles-Weed, et al.):*** \
+
+#### [Problem Books:]{.underline}
+
+***50 Challenging Problems in Probability (Frederick Mosteller):***\
+
+***A Practical Guide to Quantitative Finance Interviews (Xinfeng Zhou):***\
+
+***Heard on the Street: Quantitative Questions from Wall Street Job Interviews (Timothy Crack):***\
+
+***Intermediate Counting & Probability (David Patrick):***\
 
 ## Papers
 I've tried to organize these by subjects listed on arxiv or elsewhere.

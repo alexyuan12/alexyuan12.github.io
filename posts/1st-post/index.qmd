@@ -7,6 +7,9 @@ categories: [Analysis, Probability, Information Theory]
 draft: false
 ---
 While one learns all about $\sigma$-algebras and other types of closure structures in measure theory, often it is just for the sake of defining the domain of a measure. We can however develop some decent intution regarding these structures through a information-theoretic lense.
+```{r}
+
+```
 
 Consider the statements:\
 1) "In retrospect it was a bad idea to buy tech stocks."\
