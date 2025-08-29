@@ -122,12 +122,17 @@ I've tried to organize these by subjects listed on arxiv or elsewhere.
 #### [Machine Learning:]{.underline}
 [LLMs are Bayesian, in expectation, not in realization (Chlon, et al.)](https://arxiv.org/pdf/2507.11768)
 
+[An Overview of Large Language Models for Statisticians
+(Wenlong Ji, et al.)](https://arxiv.org/pdf/2502.17814)
+
 #### [Computation and Language:]{.underline}
 [Attention is all you need (Vaswani, et al.)](https://arxiv.org/pdf/1706.03762)
 
 [Efficient estimation of word representations in vector space (Mikolov, et al.)](https://arxiv.org/pdf/1301.3781)
 
 [BERT: Pre-training of deep bidirectional transformers for language understanding (Devlin, et al.)](https://arxiv.org/pdf/1810.04805)
+
+[Are LLMs Capable of Data-based Statistical and Causal Reasoning? Benchmarking Advanced Quantitative Reasoning with Data (Xiao Liu, et al.)](https://arxiv.org/pdf/2402.17644)
 
 #### [Symbolic Computation:]{.underline}
 

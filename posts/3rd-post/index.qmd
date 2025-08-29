@@ -1,6 +1,8 @@
 ---
 title: "Exercises and questions"
-description: "I plan to document some probability-ish questions and solutions here."
+description: "I plan to document some probability-ish questions and solutions here. Some problems are significantly more difficult than others, however there can be multiple ways to approach the more difficult problems."
+
+some problems are significantly more difficult than others"
 author:
   - name: "Alex Yuan"
 format:
@@ -28,7 +30,7 @@ How many functions $f:\{1,\ldots,n\}\to \{1,\ldots,n\}$ are not one-to-one?
 
 
 ::: {.callout-tip title="Solution" collapse="true"}
-
+There are $n^n$ total functions and $n!$ one-to-one functions. Hence, the number of functions that are not one-to-one is $n^n-n!$
 :::
 
 </div>
@@ -36,7 +38,40 @@ How many functions $f:\{1,\ldots,n\}\to \{1,\ldots,n\}$ are not one-to-one?
 <hr class="problem-sep"/>
 
 
+### Odd number elements
+
+<div class="problem">
+Prove that the number of subsets of $\{1,\ldots,n\}$ that have an odd number of
+elements is $2^{n−1}$.
+
+
+
+::: {.callout-tip title="Solution" collapse="true"}
+The total number of subsets of n is $2^n$.
+:::
+
+</div>
+
+<hr class="problem-sep"/>
+
+
+
 ## Brainteasers/Puzzles/Paradoxes
+
+### To begin or not?{#problem}
+
+<div class="problem">
+An urn contains k black balls and a single red ball. You and a clone draw without replacement, alternating after each draw until the red ball is drawn at which point the person who drew the red ball wins. The clone has graciously offered you the the choice of whether to draw first or not. How should you decide in order to maximize your probability of winning?
+
+
+::: {.callout-tip title="Solution" collapse="true"}
+
+:::
+
+</div>
+
+<hr class="problem-sep"/>
+
 
 ### Drunk Airplane {#airplane}
 
@@ -62,7 +97,7 @@ seat. By symmetry the probability is $\frac{1}{2}$.
 
 <hr class="problem-sep"/>
 
-### Bertrand's Paradox {#airplane}
+### Bertrand's Paradox
 
 <div class="problem">
 
@@ -79,6 +114,32 @@ of radius 1 inch? (What are the different solutions?)
 
 <hr class="problem-sep"/>
 
+### Unknown Correlation
+
+<div class="problem">
+Suppose we have three random variables X, Y , Z, and we know two of the three pairwise correlations. We know X, Y have a correlation of 0.9, and Y, Z have a correlation of 0.8, but we don’t know the correlation of X, Z exactly. What are the best bounds that we can find for the correlation of X, Z?
+
+
+::: {.callout-tip title="Solution" collapse="true"}
+Define the correlation matrix
+$$
+\rho =
+\begin{bmatrix}
+1 & 0.9 & r\\
+0.9 & 1 & 0.8\\
+r & 0.8 & 1
+\end{bmatrix}
+$$
+
+and note that this must be *positive semidefinite*. Now note $\det\rho\ge 0$ which leads us to $-r^2+1.44r-0.45 \geq 0$ giving us the bound 
+$$
+|r-0.72| \le \sqrt{0.0684}.
+$$
+:::
+
+</div>
+
+<hr class="problem-sep"/>
 
 
 ## Expected Value
@@ -196,6 +257,35 @@ $$
 
 
 
+
+:::
+
+</div>
+
+<hr class="problem-sep"/>
+
+### The Dice Game
+
+<div class="problem">
+Consider “The Dice Game” consisting of the following steps: 1) Roll a 4-sided die (d4). If you roll a 4, go on; otherwise, start over. 2) Roll a 6-sided die (d6). If you roll a 6, go on; otherwise, start over from the 4-sided die. 3) Repeat the process for a d8, d10, d12, and d20, starting over from the d4 if you do not attain the maximum value of the die you are rolling.
+If you manage to roll a 20 on the d20, you “win” the game. What is the expected number of rolls required to "win" the game?
+
+::: {.callout-tip title="Solution" collapse="true"}
+
+
+:::
+
+</div>
+
+<hr class="problem-sep"/>
+
+
+### Same Parity Stop
+
+<div class="problem">
+Suppose we have an unfair coin with success probability 0.7. We continually flip until we have the same number of heads and tails which is when the game finishes. What is the expected number of flips that it will take for the game to end, given that your first flip is a Tails?
+
+::: {.callout-tip title="Solution" collapse="true"}
 
 :::
 
