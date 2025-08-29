@@ -20,5 +20,21 @@
       "/alexyuan12.github.io/posts/1st-post/index.html",
       "/alexyuan12.github.io/posts/3rd-post/index.html"
     ]
+  },
+  {
+    "listing": "/alexyuan12.github.io/posts.html",
+    "items": [
+      "/alexyuan12.github.io/posts/2nd-post/index.html",
+      "/alexyuan12.github.io/posts/1st-post/index.html",
+      "/alexyuan12.github.io/posts/3rd-post/index.html"
+    ]
+  },
+  {
+    "listing": "/alexyuan12.github.io/writing.html",
+    "items": [
+      "/alexyuan12.github.io/posts/2nd-post/index.html",
+      "/alexyuan12.github.io/posts/1st-post/index.html",
+      "/alexyuan12.github.io/posts/3rd-post/index.html"
+    ]
   }
 ]

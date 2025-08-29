@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Alex Yuan</title>
+<title>Readings – Alex Yuan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +66,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Alex Yuan</span>
     </a>
   </div>
@@ -149,15 +89,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./writing.html" aria-current="page"> 
+    <a class="nav-link" href="../writing.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./readings.html"> 
+    <a class="nav-link" href="../readings.html"> 
 <span class="menu-text">Readings</span></a>
   </li>  
 </ul>
@@ -168,274 +108,173 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Analysis">Analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Combinatorics">Combinatorics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Information Theory">Information Theory <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Interview Prep">Interview Prep <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Linear Algebra">Linear Algebra <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Problem Solving">Problem Solving <span class="quarto-category-count">(4)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#books" id="toc-books" class="nav-link active" data-scroll-target="#books">Books</a></li>
+  <li><a href="#papers" id="toc-papers" class="nav-link" data-scroll-target="#papers">Papers</a></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a></li>
+  </ul>
+</nav>
     </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Probability,Linear Algebra,Problem Solving" data-listing-file-modified-sort="1756111644947" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./posts/2nd-post/index.html" class="no-external"></a></p><a href="./posts/2nd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/2nd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2nd-post/index.html" class="no-external">Mathematical Tips and Tricks</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2nd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Linear Algebra'); return false;">
-Linear Algebra
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2nd-post/index.html" class="no-external">In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2nd-post/index.html" class="no-external"></a></p><a href="./posts/2nd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Analysis,Probability,Information Theory" data-listing-file-modified-sort="1756111324506" data-listing-reading-time-sort="3" data-listing-word-count-sort="524">
-<div class="thumbnail">
-<p><a href="./posts/1st-post/index.html" class="no-external"></a></p><a href="./posts/1st-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/1st-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/1st-post/index.html" class="no-external">Sigma-Algebras as Information</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/1st-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Analysis'); return false;">
-Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Information Theory'); return false;">
-Information Theory
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/1st-post/index.html" class="no-external">This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/1st-post/index.html" class="no-external"></a></p><a href="./posts/1st-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Probability,Combinatorics,Problem Solving,Interview Prep" data-listing-file-modified-sort="1756448932503" data-listing-reading-time-sort="8" data-listing-word-count-sort="1476">
-<div class="thumbnail">
-<p><a href="./posts/3rd-post/index.html" class="no-external"></a></p><a href="./posts/3rd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/3rd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/3rd-post/index.html" class="no-external">Exercises and questions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/3rd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Combinatorics'); return false;">
-Combinatorics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Interview Prep'); return false;">
-Interview Prep
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/3rd-post/index.html" class="no-external">I plan to document some probability-ish questions and solutions here. Some problems are significantly more difficult than others, however there can be multiple ways to approach the more difficult problems.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/3rd-post/index.html" class="no-external"></a></p><a href="./posts/3rd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Probability,Linear Algebra,Problem Solving" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">Mathematical Tips and Tricks</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Linear Algebra'); return false;">
-Linear Algebra
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Analysis,Probability,Information Theory" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="3" data-listing-word-count-sort="524">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">Sigma-Algebras as Information</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Analysis'); return false;">
-Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Information Theory'); return false;">
-Information Theory
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Probability,Combinatorics,Problem Solving,Interview Prep" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">Exercises and questions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Combinatorics'); return false;">
-Combinatorics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Interview Prep'); return false;">
-Interview Prep
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">I plan to document some probability-ish questions and solutions here.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Readings</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The following are lists of books, papers, and other readings. I have either read these personally (at least partially), or I have had them recommended to me.</p>
+<section id="books" class="level2">
+<h2 class="anchored" data-anchor-id="books">Books</h2>
+<section id="analysis" class="level4">
+<h4 class="anchored" data-anchor-id="analysis"><u>Analysis:</u></h4>
+<p><strong><em>Principles of Mathematical Analysis (Walter Rudin):</em></strong><br>
+A notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential. I don’t think this is a good book to learn from unless you have other resources or an instructor. The exercises are pretty difficult.</p>
+<p><strong><em>An Introduction to Hilbert Space (Nicholas Young):</em></strong><br>
+An introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It’s very concise and readable without getting into the more abstract measure theoretical issues. I think this book also has nice exercises built into the body of the text.</p>
+<p><strong><em>Analysis (Elliot Lieb, Michael Loss):</em></strong><br>
+Supposedly a good introduction to analysis at the graduate level. The focus is more on ‘applied’ analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations. I’ve been told that the exercises are good qualifying exam practice.</p>
+<p><strong><em>Real Analysis: Modern Techniques and Their Applications (Gerald Folland):</em></strong><br>
+It is a standard analysis textbook at the graduate level along with the other books by Rudin, Royden, etc. It covers measure theory, point-set topology, functional analysis, and some other relevant topics. The analysis done in this book is very general, however it is very well written albeit terse at times.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>Functional Analysis, Sobolev Spaces and Partial Differential Equations (Haim Brezis):</em></strong><br>
+This is a standard textbook for functional analysis (with a view of PDEs) at the graduate level. I have only read a couple pages about Hanh-Banach, but supposedly it is a must read for those interested in partial differential equations.</p>
+</section>
+<section id="probability" class="level4">
+<h4 class="anchored" data-anchor-id="probability"><u>Probability:</u></h4>
+<p><strong><em>Probability Theory and Examples (Rick Durrett):</em></strong><br>
+This is a standard graduate text on probability. It is terse and has some annoying/unstandard notation. I think this book is unreadable if you do not have an instructor handy or previous background in measure theory. I would recommend skipping the measure theory intro if you already know it. Despite these issues, the coverage of topics and examples is great.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>Probability and Measure (Patrick Billingsley):</em></strong><br>
+This is supposedly the reference on probability theory. I have skimmed parts of it, and it is very terse. I have been told that if you want to pursue a research career in probability theory, Billingsley is a must read.</p>
+<p><strong><em>Measure Theory and Probability Theory (Krishna Athreya, Soumendra Lahiri):</em></strong><br>
+This is a book that was just brought to my attention at the time of writing (August 2025). It seems to be sort of similar in spirit to Billingsley, and it takes a general approach from the beginning. Skimming through, it seems to try to offer a lot of intuition on the measure theoretic details.</p>
+<p><strong><em>High-Dimensional Probability (Roman Vershynin):</em></strong><br>
+A book on probability in high dimensions. It is pedagogically sound and is a pretty different flavor compared to other probability texts. No measure theory is requried. The exercises are great, and I think there is a lot of motivation in data science for the results in the book.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>Stochastic Calculus and Financial Applications (J. Michael Steele):</em></strong><br>
+</p>
+</section>
+<section id="statistics" class="level4">
+<h4 class="anchored" data-anchor-id="statistics"><u>Statistics:</u></h4>
+<p><strong><em>Statistical Inference (George Casella, Roger Berger):</em></strong><br>
+This is the definitive ‘mathematical statistics’ book at the masters level. I believe many schools also draw their qualifying exam material/questions out of this book. I think it can be a little unmotivated at times and even a bit hand-wavy, but most people think it is the best book around this level. Some people suggest supplementing this book with <em>Mathematical Statistics with Applications</em> by Wackerly, et al.&nbsp;as the book is slower and does a better job with motivating the material.</p>
+<p><strong><em>Mathematical Statistics (Jun Shao):</em></strong><br>
+A ‘mathematical statistics’ book at the PhD level. It pretty much expects you to have had a graduate probability course or equivalent from the get-go. It is supposed to prepare you for PhD statistics qualifiers and is a good resource for exercises as there is an associated solutions manual. I am currently going through this.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>All of Statistics (Larry Wasserman):</em></strong><br>
+</p>
+<p><strong><em>Mathematical Statistics: Basic Ideas and Selected Topics (Peter Bickel, Kjell Doksum):</em></strong><br>
+</p>
+<p><strong><em>Asymptotic Theory of Statistics and Probability (Anirban DasGupta):</em></strong><br>
+</p>
+<p><strong><em>Theory of Point Estimation (Erich Lehmann, George Casella): </em></strong><br>
+</p>
+<p><strong><em>High-Dimensional Statistics: A Non-Asymptotic Viewpoint (Martin Wainwright):</em></strong><br>
+</p>
+</section>
+<section id="mlai" class="level4">
+<h4 class="anchored" data-anchor-id="mlai"><u>ML/AI:</u></h4>
+<p><strong><em>Elements of Statistical Learning (Trevor Hastie, et al.): </em></strong><br>
+Considered classic introduction to ML with a statistical view. It’s kind of a weird blend of some theory and application. I think the authors underestimate the pre-requisites they state in the beginning. In my opinion, if you don’t have a decent linear models/linear algebra background, the book is nearly unreadable.</p>
+<p><strong><em>Statistical Learning with Sparsity (Trevor Hastie, et al.): </em></strong><br>
+I have a copy of this book and it looks like a good exposition of the LASSO (considering Robert Tibshirani is an author), as well as other methods with a focus on sparsity for high dimensions.</p>
+<p><strong><em>Probabilistic Machine Learning: An Introduction (Kevin Murphy): </em></strong><br>
+</p>
+<p><strong><em>Probabilistic Machine Learning: Advanced Topics (Kevin Murphy): </em></strong><br>
+</p>
+<p><strong><em>Deep Learning (Goodfellow, et al.): </em></strong><br>
+</p>
+<p><strong><em>Pattern Recognition and Machine Learning (Christopher Bishop): </em></strong><br>
+</p>
+<p><strong><em>Large Language Models: A Deep Dive (Uday Kamath, et al.): </em></strong><br>
+</p>
+</section>
+<section id="optimization" class="level4">
+<h4 class="anchored" data-anchor-id="optimization"><u>Optimization:</u></h4>
+<p><strong><em>Numerical Optimization (Jorge Nocedal, Stephen J. Wright):</em></strong><br>
+</p>
+<p><strong><em>Convex Optimization (Lieven Vandenberghe, Stephen Boyd): </em></strong><br>
+</p>
+</section>
+<section id="differential-geometry" class="level4">
+<h4 class="anchored" data-anchor-id="differential-geometry"><u>Differential Geometry:</u></h4>
+<p><strong><em>An Introduction to Manifolds (Loring Tu):</em></strong><br>
+A great introduction to smooth manifolds. The appendix on point-set topology is excellent.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>Introduction to Smooth Manifolds (John M. Lee):</em></strong><br>
+Another great introduction to smooth manifolds. This book is much slower than Tu and covers a lot more content.</p>
+<p><em>(Currently going through this.)</em></p>
+</section>
+<section id="optimal-transport" class="level4">
+<h4 class="anchored" data-anchor-id="optimal-transport"><u>Optimal Transport:</u></h4>
+<p><strong><em>Optimal Transport for Applied Mathematicians: Calculus of Variations, PDEs, and Modeling (Filippo Santambrogio):</em></strong><br>
+</p>
+<p><strong><em>Statistical Optimal Transport (Jonathan Niles-Weed, et al.):</em></strong><br>
+</p>
+</section>
+<section id="problem-books" class="level4">
+<h4 class="anchored" data-anchor-id="problem-books"><u>Problem Books:</u></h4>
+<p><strong><em>50 Challenging Problems in Probability (Frederick Mosteller):</em></strong><br>
+</p>
+<p><strong><em>A Practical Guide to Quantitative Finance Interviews (Xinfeng Zhou):</em></strong><br>
+</p>
+<p><strong><em>Heard on the Street: Quantitative Questions from Wall Street Job Interviews (Timothy Crack):</em></strong><br>
+</p>
+<p><strong><em>Intermediate Counting &amp; Probability (David Patrick):</em></strong><br>
+</p>
+</section>
+</section>
+<section id="papers" class="level2">
+<h2 class="anchored" data-anchor-id="papers">Papers</h2>
+<p>I’ve tried to organize these by subjects listed on arxiv or elsewhere.</p>
+<section id="statistics-theory" class="level4">
+<h4 class="anchored" data-anchor-id="statistics-theory"><u>Statistics Theory:</u></h4>
+<p><a href="https://arxiv.org/pdf/2302.05851">DNNs for nonparametric interaction models with diverging dimension (Bhattacharya, et al.)</a></p>
+</section>
+<section id="machine-learning" class="level4">
+<h4 class="anchored" data-anchor-id="machine-learning"><u>Machine Learning:</u></h4>
+<p><a href="https://arxiv.org/pdf/2507.11768">LLMs are Bayesian, in expectation, not in realization (Chlon, et al.)</a></p>
+</section>
+<section id="computation-and-language" class="level4">
+<h4 class="anchored" data-anchor-id="computation-and-language"><u>Computation and Language:</u></h4>
+<p><a href="https://arxiv.org/pdf/1706.03762">Attention is all you need (Vaswani, et al.)</a></p>
+<p><a href="https://arxiv.org/pdf/1301.3781">Efficient estimation of word representations in vector space (Mikolov, et al.)</a></p>
+<p><a href="https://arxiv.org/pdf/1810.04805">BERT: Pre-training of deep bidirectional transformers for language understanding (Devlin, et al.)</a></p>
+</section>
+<section id="symbolic-computation" class="level4">
+<h4 class="anchored" data-anchor-id="symbolic-computation"><u>Symbolic Computation:</u></h4>
+<p><a href="https://arxiv.org/pdf/1502.05767">Automatic differentiation in machine learning: a survey</a></p>
+</section>
+</section>
+<section id="other" class="level2">
+<h2 class="anchored" data-anchor-id="other">Other</h2>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

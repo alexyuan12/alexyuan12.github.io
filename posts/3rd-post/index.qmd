@@ -1,8 +1,6 @@
 ---
 title: "Exercises and questions"
 description: "I plan to document some probability-ish questions and solutions here. Some problems are significantly more difficult than others, however there can be multiple ways to approach the more difficult problems."
-
-some problems are significantly more difficult than others"
 author:
   - name: "Alex Yuan"
 format:

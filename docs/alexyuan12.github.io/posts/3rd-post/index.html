@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alex Yuan">
-<meta name="description" content="I plan to document some probability-ish questions and solutions here. Some problems are significantly more difficult than others, however there can be multiple ways to approach the more difficult problems.">
+<meta name="description" content="I plan to document some probability-ish questions and solutions here.">
 
 <title>Exercises and questions – Alex Yuan</title>
 <style>
@@ -25,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -100,7 +100,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -110,7 +110,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Alex Yuan</span>
     </a>
   </div>
@@ -121,15 +121,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../writing.html"> 
+    <a class="nav-link" href="../../../writing.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../readings.html"> 
+    <a class="nav-link" href="../../../readings.html"> 
 <span class="menu-text">Readings</span></a>
   </li>  
 </ul>
@@ -146,7 +146,7 @@ window.Quarto = {
       <h1 class="title">Exercises and questions</h1>
                   <div>
         <div class="description">
-          I plan to document some probability-ish questions and solutions here. Some problems are significantly more difficult than others, however there can be multiple ways to approach the more difficult problems.
+          I plan to document some probability-ish questions and solutions here.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -184,14 +184,11 @@ window.Quarto = {
   <li><a href="#combinatorics" id="toc-combinatorics" class="nav-link active" data-scroll-target="#combinatorics"><span class="header-section-number">1</span> Combinatorics</a>
   <ul class="collapse">
   <li><a href="#not-one-to-one" id="toc-not-one-to-one" class="nav-link" data-scroll-target="#not-one-to-one"><span class="header-section-number">1.1</span> Not one-to-one</a></li>
-  <li><a href="#odd-number-elements" id="toc-odd-number-elements" class="nav-link" data-scroll-target="#odd-number-elements"><span class="header-section-number">1.2</span> Odd number elements</a></li>
   </ul></li>
   <li><a href="#brainteaserspuzzlesparadoxes" id="toc-brainteaserspuzzlesparadoxes" class="nav-link" data-scroll-target="#brainteaserspuzzlesparadoxes"><span class="header-section-number">2</span> Brainteasers/Puzzles/Paradoxes</a>
   <ul class="collapse">
-  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem"><span class="header-section-number">2.1</span> To begin or not?</a></li>
-  <li><a href="#airplane" id="toc-airplane" class="nav-link" data-scroll-target="#airplane"><span class="header-section-number">2.2</span> Drunk Airplane</a></li>
-  <li><a href="#bertrands-paradox" id="toc-bertrands-paradox" class="nav-link" data-scroll-target="#bertrands-paradox"><span class="header-section-number">2.3</span> Bertrand’s Paradox</a></li>
-  <li><a href="#unknown-correlation" id="toc-unknown-correlation" class="nav-link" data-scroll-target="#unknown-correlation"><span class="header-section-number">2.4</span> Unknown Correlation</a></li>
+  <li><a href="#airplane" id="toc-airplane" class="nav-link" data-scroll-target="#airplane"><span class="header-section-number">2.1</span> Drunk Airplane</a></li>
+  <li><a href="#airplane" id="toc-airplane" class="nav-link" data-scroll-target="#airplane"><span class="header-section-number">2.2</span> Bertrand’s Paradox</a></li>
   </ul></li>
   <li><a href="#expected-value" id="toc-expected-value" class="nav-link" data-scroll-target="#expected-value"><span class="header-section-number">3</span> Expected Value</a>
   <ul class="collapse">
@@ -201,8 +198,6 @@ window.Quarto = {
   <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem"><span class="header-section-number">3.4</span> 4head I</a></li>
   <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem"><span class="header-section-number">3.5</span> 4head II</a></li>
   <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem"><span class="header-section-number">3.6</span> 4head III</a></li>
-  <li><a href="#the-dice-game" id="toc-the-dice-game" class="nav-link" data-scroll-target="#the-dice-game"><span class="header-section-number">3.7</span> The Dice Game</a></li>
-  <li><a href="#same-parity-stop" id="toc-same-parity-stop" class="nav-link" data-scroll-target="#same-parity-stop"><span class="header-section-number">3.8</span> Same Parity Stop</a></li>
   </ul></li>
   <li><a href="#general" id="toc-general" class="nav-link" data-scroll-target="#general"><span class="header-section-number">4</span> General</a>
   <ul class="collapse">
@@ -240,17 +235,20 @@ Solution
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>There are <span class="math inline">\(n^n\)</span> total functions and <span class="math inline">\(n!\)</span> one-to-one functions. Hence, the number of functions that are not one-to-one is <span class="math inline">\(n^n-n!\)</span></p>
+
 </div>
 </div>
 </div>
 </div>
 <hr class="problem-sep">
 </section>
-<section id="odd-number-elements" class="level3" data-number="1.2">
-<h3 data-number="1.2" class="anchored" data-anchor-id="odd-number-elements"><span class="header-section-number">1.2</span> Odd number elements</h3>
+</section>
+<section id="brainteaserspuzzlesparadoxes" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="brainteaserspuzzlesparadoxes"><span class="header-section-number">2</span> Brainteasers/Puzzles/Paradoxes</h2>
+<section id="airplane" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="airplane"><span class="header-section-number">2.1</span> Drunk Airplane</h3>
 <div class="problem">
-<p>Prove that the number of subsets of <span class="math inline">\(\{1,\ldots,n\}\)</span> that have an odd number of elements is <span class="math inline">\(2^{n−1}\)</span>.</p>
+<p>100 people are line up to board an airplane. For convenience, we can assume that the nth person is assigned the nth seat. However, the first person is drunk and unfortunately takes a random seat. The boarding process commences and if a person isn’t able to sit in their assigned seats they will randomly take an available one. This continues on until the plane has boarded. What is the probability that passenger number 100 ends up in seat 100?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -263,20 +261,17 @@ Solution
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The total number of subsets of n is <span class="math inline">\(2^n\)</span>.</p>
+<p>We can think about this symmetrically. The only two events of interest are 1) the event that seat 1 is filled before seat 100 and 2) the event that seat 100 is filled before seat 1. If 1) occurs then the 100th person gets to sit in their assigned seat. If 2) occurs then surely passenger number 100 is in the wrong seat. By symmetry the probability is <span class="math inline">\(\frac{1}{2}\)</span>.</p>
 </div>
 </div>
 </div>
 </div>
 <hr class="problem-sep">
 </section>
-</section>
-<section id="brainteaserspuzzlesparadoxes" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="brainteaserspuzzlesparadoxes"><span class="header-section-number">2</span> Brainteasers/Puzzles/Paradoxes</h2>
-<section id="problem" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="problem"><span class="header-section-number">2.1</span> To begin or not?</h3>
+<section id="airplane" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="airplane"><span class="header-section-number">2.2</span> Bertrand’s Paradox</h3>
 <div class="problem">
-<p>An urn contains k black balls and a single red ball. You and a clone draw without replacement, alternating after each draw until the red ball is drawn at which point the person who drew the red ball wins. The clone has graciously offered you the the choice of whether to draw first or not. How should you decide in order to maximize your probability of winning?</p>
+<p>Take a circle of radius 2 inches in the plane and choose a chord of this circle at random. What is the probability this chord intersects the concentric circle of radius 1 inch? (What are the different solutions?)</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -296,10 +291,13 @@ Solution
 </div>
 <hr class="problem-sep">
 </section>
-<section id="airplane" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="airplane"><span class="header-section-number">2.2</span> Drunk Airplane</h3>
+</section>
+<section id="expected-value" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="expected-value"><span class="header-section-number">3</span> Expected Value</h2>
+<section id="problem" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="problem"><span class="header-section-number">3.1</span> Roll Again I</h3>
 <div class="problem">
-<p>100 people are line up to board an airplane. For convenience, we can assume that the nth person is assigned the nth seat. However, the first person is drunk and unfortunately takes a random seat. The boarding process commences and if a person isn’t able to sit in their assigned seats they will randomly take an available one. This continues on until the plane has boarded. What is the probability that passenger number 100 ends up in seat 100?</p>
+<p>Kelly rolls a fair standard die. She observes the value on the face. Afterwards, she is given the option to either receive the number on the face as a payout or to roll again. If she rolls again, she receives the number on the face as a payout, regardless of what she rolled in the first turn. If Kelly plays optimally, what is her expected pay out?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -311,88 +309,6 @@ Solution
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>We can think about this symmetrically. The only two events of interest are 1) the event that seat 1 is filled before seat 100 and 2) the event that seat 100 is filled before seat 1. If 1) occurs then the 100th person gets to sit in their assigned seat. If 2) occurs then surely passenger number 100 is in the wrong seat. By symmetry the probability is <span class="math inline">\(\frac{1}{2}\)</span>.</p>
-</div>
-</div>
-</div>
-</div>
-<hr class="problem-sep">
-</section>
-<section id="bertrands-paradox" class="level3" data-number="2.3">
-<h3 data-number="2.3" class="anchored" data-anchor-id="bertrands-paradox"><span class="header-section-number">2.3</span> Bertrand’s Paradox</h3>
-<div class="problem">
-<p>Take a circle of radius 2 inches in the plane and choose a chord of this circle at random. What is the probability this chord intersects the concentric circle of radius 1 inch? (What are the different solutions?)</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-
-</div>
-</div>
-</div>
-</div>
-<hr class="problem-sep">
-</section>
-<section id="unknown-correlation" class="level3" data-number="2.4">
-<h3 data-number="2.4" class="anchored" data-anchor-id="unknown-correlation"><span class="header-section-number">2.4</span> Unknown Correlation</h3>
-<div class="problem">
-<p>Suppose we have three random variables X, Y , Z, and we know two of the three pairwise correlations. We know X, Y have a correlation of 0.9, and Y, Z have a correlation of 0.8, but we don’t know the correlation of X, Z exactly. What are the best bounds that we can find for the correlation of X, Z?</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Define the correlation matrix <span class="math display">\[
-\rho =
-\begin{bmatrix}
-1 &amp; 0.9 &amp; r\\
-0.9 &amp; 1 &amp; 0.8\\
-r &amp; 0.8 &amp; 1
-\end{bmatrix}
-\]</span></p>
-<p>and note that this must be <em>positive semidefinite</em>. Now note <span class="math inline">\(\det\rho\ge 0\)</span> which leads us to <span class="math inline">\(-r^2+1.44r-0.45 \geq 0\)</span> giving us the bound <span class="math display">\[
-|r-0.72| \le \sqrt{0.0684}.
-\]</span></p>
-</div>
-</div>
-</div>
-</div>
-<hr class="problem-sep">
-</section>
-</section>
-<section id="expected-value" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="expected-value"><span class="header-section-number">3</span> Expected Value</h2>
-<section id="problem" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="problem"><span class="header-section-number">3.1</span> Roll Again I</h3>
-<div class="problem">
-<p>Kelly rolls a fair standard die. She observes the value on the face. Afterwards, she is given the option to either receive the number on the face as a payout or to roll again. If she rolls again, she receives the number on the face as a payout, regardless of what she rolled in the first turn. If Kelly plays optimally, what is her expected pay out?</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The optimal strategy is to re-roll if Kelly initially rolls lower than a 4. If Kelly re-rolls the average face value she observes is 3.5, otherwise her average face value is a 5. Hence our expected value is: <span class="math display">\[
 \mathbb{E}X=\frac{1}{2}(3.5)+\frac{1}{2}(5)=4.25
@@ -408,7 +324,7 @@ Solution
 <div class="problem">
 <p>Kelly rolls a fair standard die. She observes the value on the face. Afterwards, she is given the option to either receive the number on the face as a payout or to roll again. If she rolls again, she is given the same decision of paying out or rolling a third time. If she chooses to roll for the third time, she receives a payout equal to the final roll, regardless of what she rolled previously, If Kelly plays optimally, what is her expected pay out?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -417,7 +333,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>We use backwards induction on this. Suppose we are on the third roll, our expected value is <span class="math inline">\(3.5\)</span>. Moving on to the second roll, we should take if the value is greater than or equal to 4. Our expected value on the second roll is <span class="math display">\[
 \frac{1}{6}(3.5+3.5+3+3.5+4+5+6)=\frac{51}{12}=4.25
@@ -435,7 +351,7 @@ Solution
 <div class="problem">
 <p>Kelly plays a game where she has a standard fair die and repeatedly rolls the die. After each roll, she is allowed to decide whether to re-roll the die or recieve a payout equal to the face of the roll. If she decided to re-roll, Kelly must pay $1 and then is face with the same decision. Under optimal play from Kelly, what is her expected payout?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -444,7 +360,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 
 </div>
@@ -458,7 +374,7 @@ Solution
 <div class="problem">
 <p>Varun has 4 fair coins. He tosses all 4 at once and checks the parity of each. Varun is now allowed to <strong><em>turn over</em></strong> any pair of coins. In other words, he is only allowed to turn over a coin if he turns over another. He may iterate this process as many times as he would like to maximize his expected number of heads. What is his expected number of heads?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -467,7 +383,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>If Varun tosses either <span class="math inline">\(2\)</span> or <span class="math inline">\(4\)</span> heads, he is guaranteed <span class="math inline">\(4\)</span> coins. On the contrary, if Varun flips either <span class="math inline">\(1\)</span> or <span class="math inline">\(3\)</span> heads, he is guaranteed <span class="math inline">\(3\)</span> coins. Hence our expected value is: <span class="math display">\[
 \mathbb{E}X=\frac{1}{2}(3)+\frac{1}{2}(4)=3.5
@@ -483,7 +399,7 @@ Solution
 <div class="problem">
 <p>Varun has 4 fair coins. He tosses all 4 at once and checks the parity of each. Varun is now allowed to <strong><em>toss</em></strong> any pair of coins. In other words, he is only allowed to toss a coin if he tosses another. He may iterate this process as many times as he would like to maximize his expected number of heads. What is his expected number of heads?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -492,7 +408,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Varun’s optimal strategy is to keep tossing pairs until he has all 4 heads as there is no cost to do so. We can think of this as a Markov chain that will hit an all-heads state with probability 1. Hence, our expected value is 4 heads.</p>
 </div>
@@ -506,7 +422,7 @@ Solution
 <div class="problem">
 <p>Varun has 4 fair coins. He tosses all 4 at once and notes the parity of each. After seeing the outcomes, he may <strong><em>toss</em></strong> any pair of tails again. Varun may not toss a single coin without tossing another. He can iterate as many times as he desires, as long as he has less than 3 heads obtained (otherwise, no pairs of tails exists and game over). Find the expected number of tosses Varun performs. Note that the initial 4 tosses are still tosses and each pair counts as 2 tosses.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -515,7 +431,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Denote <span class="math inline">\(F(k)\)</span> as the maximum expected number of heads after <span class="math inline">\(k\)</span> tails on the first toss. Our strategy is to iterate until we have less than 2 tails. Immediately, <span class="math inline">\(F(0)=4, \ F(1)=3\)</span>. Suppose we toss k tails at first, then with probability <span class="math inline">\(\frac{1}{2}\)</span> we go to k-1 tails on the next toss, probability <span class="math inline">\(\frac{1}{4}\)</span> we go to k-2 tails, and probability <span class="math inline">\(\frac{1}{4}\)</span> we stay at k tails. Hence we get the recursion: <span class="math display">\[
 F(k)= \frac{1}{2}F(k-1)+\frac{1}{4}F(k-2)+\frac{1}{4}F(k)
@@ -542,52 +458,6 @@ F(4) = \frac{1}{2}F(3)+\frac{1}{4}F(2)+\frac{1}{4}F(4)
 </div>
 <hr class="problem-sep">
 </section>
-<section id="the-dice-game" class="level3" data-number="3.7">
-<h3 data-number="3.7" class="anchored" data-anchor-id="the-dice-game"><span class="header-section-number">3.7</span> The Dice Game</h3>
-<div class="problem">
-<p>Consider “The Dice Game” consisting of the following steps: 1) Roll a 4-sided die (d4). If you roll a 4, go on; otherwise, start over. 2) Roll a 6-sided die (d6). If you roll a 6, go on; otherwise, start over from the 4-sided die. 3) Repeat the process for a d8, d10, d12, and d20, starting over from the d4 if you do not attain the maximum value of the die you are rolling. If you manage to roll a 20 on the d20, you “win” the game. What is the expected number of rolls required to “win” the game?</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-
-</div>
-</div>
-</div>
-</div>
-<hr class="problem-sep">
-</section>
-<section id="same-parity-stop" class="level3" data-number="3.8">
-<h3 data-number="3.8" class="anchored" data-anchor-id="same-parity-stop"><span class="header-section-number">3.8</span> Same Parity Stop</h3>
-<div class="problem">
-<p>Suppose we have an unfair coin with success probability 0.7. We continually flip until we have the same number of heads and tails which is when the game finishes. What is the expected number of flips that it will take for the game to end, given that your first flip is a Tails?</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-
-</div>
-</div>
-</div>
-</div>
-<hr class="problem-sep">
-</section>
 </section>
 <section id="general" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="general"><span class="header-section-number">4</span> General</h2>
@@ -596,7 +466,7 @@ Solution
 <div class="problem">
 <p>Suppose we draw two random numbers X and Y each distributed uniform on the interval [0, 1]. If X and Y are independent, what is the probability that their product is greater than 1/2?</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -605,7 +475,7 @@ Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math display">\[
 \mathbb{P}(XY&gt;1/2)=\int \int_{[0,1]^2}\mathbb{I}_{\{\ XY&gt; 1/2 \}}dxdy
@@ -1051,5 +921,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

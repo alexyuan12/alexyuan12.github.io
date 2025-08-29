@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alex Yuan">
+<meta name="description" content="This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.">
 
-<title>Blog – Alex Yuan</title>
+<title>Sigma-Algebras as Information – Alex Yuan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,7 +99,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +109,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Alex Yuan</span>
     </a>
   </div>
@@ -149,15 +120,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./writing.html" aria-current="page"> 
+    <a class="nav-link" href="../../../writing.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./readings.html"> 
+    <a class="nav-link" href="../../../readings.html"> 
 <span class="menu-text">Readings</span></a>
   </li>  
 </ul>
@@ -170,272 +141,87 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Sigma-Algebras as Information</h1>
+                  <div>
+        <div class="description">
+          This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Analysis</div>
+                <div class="quarto-category">Probability</div>
+                <div class="quarto-category">Information Theory</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alex Yuan </p>
+            </div>
+    </div>
       
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Analysis">Analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Combinatorics">Combinatorics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Information Theory">Information Theory <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Interview Prep">Interview Prep <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Linear Algebra">Linear Algebra <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Problem Solving">Problem Solving <span class="quarto-category-count">(4)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#example" id="toc-example" class="nav-link active" data-scroll-target="#example">Example:</a></li>
+  </ul>
+</nav>
     </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Probability,Linear Algebra,Problem Solving" data-listing-file-modified-sort="1756111644947" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./posts/2nd-post/index.html" class="no-external"></a></p><a href="./posts/2nd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/2nd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2nd-post/index.html" class="no-external">Mathematical Tips and Tricks</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/2nd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Linear Algebra'); return false;">
-Linear Algebra
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/2nd-post/index.html" class="no-external">In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/2nd-post/index.html" class="no-external"></a></p><a href="./posts/2nd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Analysis,Probability,Information Theory" data-listing-file-modified-sort="1756111324506" data-listing-reading-time-sort="3" data-listing-word-count-sort="524">
-<div class="thumbnail">
-<p><a href="./posts/1st-post/index.html" class="no-external"></a></p><a href="./posts/1st-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/1st-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/1st-post/index.html" class="no-external">Sigma-Algebras as Information</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/1st-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Analysis'); return false;">
-Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Information Theory'); return false;">
-Information Theory
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/1st-post/index.html" class="no-external">This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/1st-post/index.html" class="no-external"></a></p><a href="./posts/1st-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Probability,Combinatorics,Problem Solving,Interview Prep" data-listing-file-modified-sort="1756448932503" data-listing-reading-time-sort="8" data-listing-word-count-sort="1476">
-<div class="thumbnail">
-<p><a href="./posts/3rd-post/index.html" class="no-external"></a></p><a href="./posts/3rd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/3rd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/3rd-post/index.html" class="no-external">Exercises and questions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/3rd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Combinatorics'); return false;">
-Combinatorics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Interview Prep'); return false;">
-Interview Prep
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/3rd-post/index.html" class="no-external">I plan to document some probability-ish questions and solutions here. Some problems are significantly more difficult than others, however there can be multiple ways to approach the more difficult problems.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/3rd-post/index.html" class="no-external"></a></p><a href="./posts/3rd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Probability,Linear Algebra,Problem Solving" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">Mathematical Tips and Tricks</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Linear Algebra'); return false;">
-Linear Algebra
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Analysis,Probability,Information Theory" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="3" data-listing-word-count-sort="524">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">Sigma-Algebras as Information</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Analysis'); return false;">
-Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Information Theory'); return false;">
-Information Theory
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Probability,Combinatorics,Problem Solving,Interview Prep" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">Exercises and questions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Combinatorics'); return false;">
-Combinatorics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Interview Prep'); return false;">
-Interview Prep
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">I plan to document some probability-ish questions and solutions here.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>While one learns all about <span class="math inline">\(\sigma\)</span>-algebras and other types of closure structures in measure theory, often it is just for the sake of defining the domain of a measure. We can however develop some decent intution regarding these structures through a information-theoretic lense.</p>
+<p>Consider the statements:<br>
+1) “In retrospect it was a bad idea to buy tech stocks.”<br>
+2) “Tom knows more about nutrition than Jerry does.”<br>
+3) “Tom and Jerry each know things about nutrition which the other does not.”<br>
+4) “You learn something new each day.”<br>
+5) “When I played that poker hand, my opponent did know that I saw his cards.”</p>
+<p>Each of these is a statement about knowledge, or the lack thereof. In particular, each compares the states of knowledge of two agents (or the same agent at different times). How can we mathematically model this though?</p>
+<p>The appropriate and natural mathematical model of a knowledge-state is a sigma-algebra.</p>
+<p>Let <span class="math inline">\(\mathcal{F}\)</span> be a sigma algebra over some set <span class="math inline">\(\Omega\)</span> and suppose <span class="math inline">\(w\in\Omega\)</span> is the unknown state of a system <span class="math inline">\(\mathcal{S}\)</span>. The knowledge represented by <span class="math inline">\(\mathcal{F}\)</span> is the information about <span class="math inline">\(\mathcal{S}\)</span> that one obtains from observing for every <span class="math inline">\(U \in \mathcal{F}\)</span> whether or not <span class="math inline">\(w \in U\)</span>. Thus, it should be natural that if another sigma algebra <span class="math inline">\(\mathcal{D} \supset \mathcal{F}\)</span> then we say <span class="math inline">\(\mathcal{D}\)</span> contains “more” information than <span class="math inline">\(\mathcal{F}\)</span>.<br>
+</p>
+<p>If one remembers back to the first examples of <span class="math inline">\(\sigma\)</span>-algebras, it becomes obvious that <span class="math inline">\(\mathcal{P}(\Omega)\)</span> represents a state of total omniscience, while <span class="math inline">\(\{\emptyset,\Omega\}\)</span> represents a state of total ignorance.</p>
+<p>Let <span class="math inline">\((X, \mathcal{X})\)</span> and <span class="math inline">\((Y, \mathcal{Y})\)</span> be measurable spaces. If <span class="math inline">\(\mathcal{X}\)</span> contains strictly more information (in the sense that we could recover every bit of information about <span class="math inline">\(\mathcal{Y}\)</span> by observing <span class="math inline">\(\mathcal{X}\)</span>) than <span class="math inline">\(\mathcal{Y}\)</span> then we say <span class="math inline">\(\mathcal{X}\)</span> refines <span class="math inline">\(\mathcal{Y}\)</span>. One can think of this as saying once we have observed the information contained in <span class="math inline">\(\mathcal{X}\)</span>, the information in <span class="math inline">\(\mathcal{Y}\)</span> would be redundant.</p>
+<p>We say that <span class="math inline">\(\mathcal{X}\)</span> <strong><em>refines</em></strong> <span class="math inline">\(\mathcal{Y}\)</span> if <span class="math inline">\(\mathcal{Y}\)</span> is a subset of <span class="math inline">\(\mathcal{X}\)</span>. This is almost analogous to the discussion of coarse and fine topologies.</p>
+<p>Let <span class="math inline">\((X,\mathcal{X})\)</span> be a measurable space, and let <span class="math inline">\(\mathbb{T}\)</span> be a linearly ordered set. A <span class="math inline">\(\mathbb{T}\)</span>-indexed <strong><em>filtration</em></strong> is a collection <span class="math inline">\((\mathcal{F}_t)_{t\in\mathbb{T}}\)</span> of <span class="math inline">\(\sigma\)</span>-subalgebras of <span class="math inline">\(\mathcal{X}\)</span> such that, for any <span class="math inline">\(s,t\in\mathbb{T}\)</span>, <span class="math display">\[
+s &lt; t \;\Longrightarrow\; \mathcal{F}_s \subseteq \mathcal{F}_t .
+\]</span></p>
+<p>The opposite of the concept of refinement is the concept of <strong><em>independence</em></strong>. If <span class="math inline">\(\mathcal{Y}\)</span> contains no information about <span class="math inline">\(\mathcal{X},\)</span> then the information contained in the two <span class="math inline">\(\sigma\)</span>-algebras is <em>complementary</em>, meaning each one tells us things the other does not.</p>
+<p>Heuristically, if we observed the information about both <span class="math inline">\(\sigma\)</span>-algebras then we would have “twice” as much information as if we only observed one or the other. We then say <span class="math inline">\(\mathcal{X}\)</span> and <span class="math inline">\(\mathcal{Y}\)</span> are independent of one another. With these ideas in hand, we give a definition for independence of sets and independence of <span class="math inline">\(\sigma\)</span>-algebras.</p>
+<p>Let <span class="math inline">\((X,\mathcal{X},\mu)\)</span> be a measure space, and <span class="math inline">\(U,V \in \mathcal{X}\)</span>. We say the sets <span class="math inline">\(U\)</span> and <span class="math inline">\(V\)</span> are <strong><em>independent</em></strong> if <span class="math display">\[
+\mu(U \cap V) \;=\; \mu(U)\,\mu(V)
+\]</span></p>
+<p>Let <span class="math inline">\(\mathcal{Y}_1, \mathcal{Y}_2 \subset \mathcal{X}\)</span> be two <span class="math inline">\(\sigma\)</span>-subalgebras. We say <span class="math inline">\(\mathcal{Y}_1\)</span> and <span class="math inline">\(\mathcal{Y}_2\)</span> are <strong><em>independent</em></strong> <span class="math inline">\(\sigma\)</span>-algebras if every element of <span class="math inline">\(\mathcal{Y}_1\)</span> is independent of every element of <span class="math inline">\(\mathcal{Y}_2\)</span> with respect to the measure <span class="math inline">\(\mu\)</span>. In other words, for all <span class="math inline">\(U_1 \in \mathcal{Y}_1\)</span> and <span class="math inline">\(U_2 \in \mathcal{Y}_2\)</span>, we have <span class="math display">\[
+\mu(U_1 \cap U_2) \;=\; \mu(U_1)\,\mu(U_2)
+\]</span></p>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example:</h3>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
