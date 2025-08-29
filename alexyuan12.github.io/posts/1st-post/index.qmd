@@ -1,0 +1,66 @@
+---
+title: "Sigma-Algebras as Information"
+description: "This post is heavily inspired by Marcus Pivato's notes on measure and probability. This post is still in progress."
+author:
+  - name: "Alex Yuan"
+categories: [Analysis, Probability, Information Theory]
+draft: false
+---
+While one learns all about $\sigma$-algebras and other types of closure structures in measure theory, often it is just for the sake of defining the domain of a measure. We can however develop some decent intution regarding these structures through a information-theoretic lense.
+```{r}
+
+```
+
+Consider the statements:\
+1) "In retrospect it was a bad idea to buy tech stocks."\
+2) "Tom knows more about nutrition than Jerry does."\
+3) "Tom and Jerry each know things about nutrition which the other does not."\
+4) "You learn something new each day."\
+5) "When I played that poker hand, my opponent did know that I saw his cards."
+
+Each of these is a statement about knowledge, or the lack thereof. In particular, each
+compares the states of knowledge of two agents (or the same agent at different times). How can we mathematically
+model this though? 
+
+The appropriate and natural mathematical model of a knowledge-state is a sigma-algebra.
+
+Let $\mathcal{F}$ be a sigma algebra over some set $\Omega$ and suppose $w\in\Omega$ is the unknown state of a system $\mathcal{S}$. The knowledge represented by $\mathcal{F}$ is the information about $\mathcal{S}$ that one obtains from observing for every $U \in \mathcal{F}$ whether or not $w \in U$. Thus, it should be natural that if another sigma algebra $\mathcal{D} \supset \mathcal{F}$ then we say $\mathcal{D}$ contains "more" information than $\mathcal{F}$.\
+
+If one remembers back to the first examples of $\sigma$-algebras, it becomes obvious that $\mathcal{P}(\Omega)$ represents a state of total omniscience, while $\{\emptyset,\Omega\}$ represents a state of total ignorance.
+
+Let $(X, \mathcal{X})$ and $(Y, \mathcal{Y})$ be measurable spaces. If $\mathcal{X}$ contains strictly more information (in the sense that we could recover every bit of information about $\mathcal{Y}$ by observing $\mathcal{X}$) than $\mathcal{Y}$ then we say $\mathcal{X}$ refines $\mathcal{Y}$. One can think of this as saying once we have observed the information contained in $\mathcal{X}$, the information in $\mathcal{Y}$ would be redundant.
+
+We say that $\mathcal{X}$ ***refines*** $\mathcal{Y}$ if $\mathcal{Y}$ is a subset of $\mathcal{X}$. This is almost analogous to the discussion of coarse and fine topologies.
+
+
+Let $(X,\mathcal{X})$ be a measurable space, and let $\mathbb{T}$ be a linearly ordered set.
+A $\mathbb{T}$-indexed ***filtration*** is a collection $(\mathcal{F}_t)_{t\in\mathbb{T}}$ of
+$\sigma$-subalgebras of $\mathcal{X}$ such that, for any $s,t\in\mathbb{T}$,
+$$
+s < t \;\Longrightarrow\; \mathcal{F}_s \subseteq \mathcal{F}_t .
+$$
+
+
+The opposite of the concept of refinement is the concept of ***independence***. If $\mathcal{Y}$ contains no information about $\mathcal{X},$ then the information contained in the two $\sigma$-algebras is *complementary*, meaning each one tells us things the other does not.
+
+Heuristically, if we observed the information about both $\sigma$-algebras 
+then we would have "twice" as much information as if we only observed one or the other. We then say $\mathcal{X}$ and $\mathcal{Y}$ are independent of one another. 
+With these ideas in hand, we give a definition for independence of sets and independence of $\sigma$-algebras.
+
+Let $(X,\mathcal{X},\mu)$ be a measure space, and $U,V \in \mathcal{X}$. We say the sets $U$ and $V$ are ***independent*** if
+$$
+\mu(U \cap V) \;=\; \mu(U)\,\mu(V)
+$$
+
+Let $\mathcal{Y}_1, \mathcal{Y}_2 \subset \mathcal{X}$ be two $\sigma$-subalgebras. We say $\mathcal{Y}_1$ and $\mathcal{Y}_2$ are ***independent*** $\sigma$-algebras if every element of $\mathcal{Y}_1$ is independent of every element of $\mathcal{Y}_2$ 
+with respect to the measure $\mu$. In other words, for all $U_1 \in \mathcal{Y}_1$ and $U_2 \in \mathcal{Y}_2$, we have
+$$
+\mu(U_1 \cap U_2) \;=\; \mu(U_1)\,\mu(U_2)
+$$
+
+### Example:
+
+
+
+
+

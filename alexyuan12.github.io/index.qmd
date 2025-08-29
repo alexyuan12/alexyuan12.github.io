@@ -1,0 +1,18 @@
+---
+title: "Alex(ander) Yuan"
+image: pfpWeb.jpeg
+about: 
+  template: trestles
+  links:
+    - text: Email
+      icon: envelope
+      href: mailto:ayuan07@calpoly.edu.zz
+    - text: Github
+      icon: github
+      href: https://github.com/alexyuan12
+  id: ppc
+---
+:::{#ppc}
+Howdy! I am currently finishing up a master’s degree in Statistics at *California Polytechnic State University, San Luis Obispo* (*Cal Poly SLO* for short). I'm originally from Austin, TX, but I have been enjoying my time out here in the central coast.
+
+:::

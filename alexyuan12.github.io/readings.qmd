@@ -1,0 +1,138 @@
+---
+title: "Readings"
+---
+The following are lists of books, papers, and other readings. I have either read these personally (at least partially), or I have had them recommended to me.
+
+## Books
+#### [Analysis:]{.underline}
+***Principles of Mathematical Analysis (Walter Rudin):*** \
+A notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential. I don't think this is a good book to learn from unless you have other resources or an instructor. The exercises are pretty difficult. 
+
+***An Introduction to Hilbert Space (Nicholas Young):*** \
+An introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It's very concise and readable without getting into the more abstract measure theoretical issues. I think this book also has nice exercises built into the body of the text. 
+
+***Analysis (Elliot Lieb, Michael Loss):***\
+Supposedly a good introduction to analysis at the graduate level. The focus is more on 'applied' analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations. I've been told that the exercises are good qualifying exam practice.
+
+***Real Analysis: Modern Techniques and Their Applications (Gerald Folland):***\
+It is a standard analysis textbook at the graduate level along with the other books by Rudin, Royden, etc. It covers measure theory, point-set topology, functional analysis, and some other relevant topics. The analysis done in this book is very general, however it is very well written albeit terse at times. 
+
+*(Currently going through this.)*
+
+***Functional Analysis, Sobolev Spaces and Partial Differential Equations (Haim Brezis):***\
+This is a standard textbook for functional analysis (with a view of PDEs) at the graduate level. I have only read a couple pages about Hanh-Banach, but supposedly it is a must read for those interested in partial differential equations.
+
+
+#### [Probability:]{.underline}
+***Probability Theory and Examples (Rick Durrett):*** \
+This is a standard graduate text on probability. It is terse and has some annoying/unstandard notation. I think this book is unreadable if you do not have an instructor handy or previous background in measure theory. I would recommend skipping the measure theory intro if you already know it. Despite these issues, the coverage of topics and examples is great.
+
+*(Currently going through this.)*
+
+***Probability and Measure (Patrick Billingsley):***\
+This is supposedly the reference on probability theory. I have skimmed parts of it, and it is very terse. I have been told that if you want to pursue a research career in probability theory, Billingsley is a must read. 
+
+***Measure Theory and Probability Theory (Krishna Athreya, Soumendra Lahiri):***\
+This is a book that was just brought to my attention at the time of writing (August 2025). It seems to be sort of similar in spirit to Billingsley, and it takes a general approach from the beginning. Skimming through, it seems to try to offer a lot of intuition on the measure theoretic details.
+
+***High-Dimensional Probability (Roman Vershynin):***\
+A book on probability in high dimensions. It is pedagogically sound and is a pretty different flavor compared to other probability texts. No measure theory is requried. The exercises are great, and I think there is a lot of motivation in data science for the results in the book. 
+
+*(Currently going through this.)*
+
+***Stochastic Calculus and Financial Applications (J. Michael Steele):***\
+
+#### [Statistics:]{.underline}
+***Statistical Inference (George Casella, Roger Berger):*** \
+This is the definitive 'mathematical statistics' book at the masters level. I believe many schools also draw their qualifying exam material/questions out of this book. I think it can be a little unmotivated at times and even a bit hand-wavy, but most people think it is the best book around this level. Some people suggest supplementing this book with *Mathematical Statistics with Applications* by Wackerly, et al. as the book is slower and does a better job with motivating the material. 
+
+***Mathematical Statistics (Jun Shao):*** \
+A 'mathematical statistics' book at the PhD level. It pretty much expects you to have had a graduate probability course or equivalent from the get-go. It is supposed to prepare you for PhD statistics qualifiers and is a good resource for exercises as there is an associated solutions manual. I am currently going through this.
+
+*(Currently going through this.)*
+
+***All of Statistics (Larry Wasserman):***\
+
+***Mathematical Statistics: Basic Ideas and Selected Topics (Peter Bickel, Kjell Doksum):*** \
+
+***Asymptotic Theory of Statistics and Probability (Anirban DasGupta):***\
+
+***Theory of Point Estimation (Erich Lehmann, George Casella): ***\
+
+
+***High-Dimensional Statistics: A Non-Asymptotic Viewpoint (Martin Wainwright):*** \
+
+
+#### [ML/AI:]{.underline}
+***Elements of Statistical Learning (Trevor Hastie, et al.): ***\
+Considered classic introduction to ML with a statistical view. It's kind of a weird blend of some theory and application. I think the authors underestimate the pre-requisites they state in the beginning. In my opinion, if you don't have a decent linear models/linear algebra background, the book is nearly unreadable.
+
+***Statistical Learning with Sparsity (Trevor Hastie, et al.): ***\
+I have a copy of this book and it looks like a good exposition of the LASSO (considering Robert Tibshirani is an author), as well as other methods with a focus on sparsity for high dimensions. 
+
+***Probabilistic Machine Learning: An Introduction (Kevin Murphy): ***\
+
+***Probabilistic Machine Learning: Advanced Topics (Kevin Murphy): ***\
+
+***Deep Learning (Goodfellow, et al.): ***\
+
+***Pattern Recognition and Machine Learning (Christopher Bishop): ***\
+
+***Large Language Models: A Deep Dive (Uday Kamath, et al.): ***\
+
+
+#### [Optimization:]{.underline}
+***Numerical Optimization (Jorge Nocedal, Stephen J. Wright):***\
+
+***Convex Optimization (Lieven Vandenberghe, Stephen Boyd): ***\
+
+
+#### [Differential Geometry:]{.underline}
+***An Introduction to Manifolds (Loring Tu):*** \
+A great introduction to smooth manifolds. The appendix on point-set topology is excellent. 
+
+*(Currently going through this.)*
+
+***Introduction to  Smooth Manifolds (John M. Lee):*** \
+Another great introduction to smooth manifolds. This book is much slower than Tu and covers a lot more content. 
+
+*(Currently going through this.)*
+
+#### [Optimal Transport:]{.underline}
+***Optimal Transport for Applied Mathematicians: Calculus of Variations, PDEs, and Modeling (Filippo Santambrogio):*** \
+
+***Statistical Optimal Transport  (Jonathan Niles-Weed, et al.):*** \
+
+#### [Problem Books:]{.underline}
+
+***50 Challenging Problems in Probability (Frederick Mosteller):***\
+
+***A Practical Guide to Quantitative Finance Interviews (Xinfeng Zhou):***\
+
+***Heard on the Street: Quantitative Questions from Wall Street Job Interviews (Timothy Crack):***\
+
+***Intermediate Counting & Probability (David Patrick):***\
+
+## Papers
+I've tried to organize these by subjects listed on arxiv or elsewhere.
+
+#### [Statistics Theory:]{.underline}
+[DNNs for nonparametric interaction models with diverging dimension (Bhattacharya, et al.)](https://arxiv.org/pdf/2302.05851)
+
+#### [Machine Learning:]{.underline}
+[LLMs are Bayesian, in expectation, not in realization (Chlon, et al.)](https://arxiv.org/pdf/2507.11768)
+
+#### [Computation and Language:]{.underline}
+[Attention is all you need (Vaswani, et al.)](https://arxiv.org/pdf/1706.03762)
+
+[Efficient estimation of word representations in vector space (Mikolov, et al.)](https://arxiv.org/pdf/1301.3781)
+
+[BERT: Pre-training of deep bidirectional transformers for language understanding (Devlin, et al.)](https://arxiv.org/pdf/1810.04805)
+
+#### [Symbolic Computation:]{.underline}
+
+[Automatic differentiation in machine learning: a survey](https://arxiv.org/pdf/1502.05767)
+
+## Other
+
+

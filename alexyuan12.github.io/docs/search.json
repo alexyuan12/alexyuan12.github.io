@@ -1,0 +1,191 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Alex(ander) Yuan",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     Github\n  \n\n  \n  \nHowdy! I am currently finishing up a master’s degree in Statistics at California Polytechnic State University, San Luis Obispo (Cal Poly SLO for short). I’m originally from Austin, TX, but I have been enjoying my time out here in the central coast."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "Blog.html",
+    "href": "Blog.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "blogs.html",
+    "href": "blogs.html",
+    "title": "Blog",
+    "section": "",
+    "text": "All views expressed are my own. Why is this not changing"
+  },
+  {
+    "objectID": "readings.html",
+    "href": "readings.html",
+    "title": "Readings",
+    "section": "",
+    "text": "The following are lists of books, papers, and other readings. I have either read these personally (at least partially), or I have had them recommended to me."
+  },
+  {
+    "objectID": "readings.html#books",
+    "href": "readings.html#books",
+    "title": "Readings",
+    "section": "Books",
+    "text": "Books\n\nAnalysis:\nPrinciples of Mathematical Analysis (Walter Rudin):\nA notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential. I don’t think this is a good book to learn from unless you have other resources or an instructor. The exercises are pretty difficult.\nAn Introduction to Hilbert Space (Nicholas Young):\nAn introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It’s very concise and readable without getting into the more abstract measure theoretical issues. I think this book also has nice exercises built into the body of the text.\nAnalysis (Elliot Lieb, Michael Loss):\nSupposedly a good introduction to analysis at the graduate level. The focus is more on ‘applied’ analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations. I’ve been told that the exercises are good qualifying exam practice.\nReal Analysis: Modern Techniques and Their Applications (Gerald Folland):\nIt is a standard analysis textbook at the graduate level along with the other books by Rudin, Royden, etc. It covers measure theory, point-set topology, functional analysis, and some other relevant topics. The analysis done in this book is very general, however it is very well written albeit terse at times.\n(Currently going through this.)\nFunctional Analysis, Sobolev Spaces and Partial Differential Equations (Haim Brezis):\nThis is a standard textbook for functional analysis (with a view of PDEs) at the graduate level. I have only read a couple pages about Hanh-Banach, but supposedly it is a must read for those interested in partial differential equations.\n\n\nProbability:\nProbability Theory and Examples (Rick Durrett):\nThis is a standard graduate text on probability. It is terse and has some annoying/unstandard notation. I think this book is unreadable if you do not have an instructor handy or previous background in measure theory. I would recommend skipping the measure theory intro if you already know it. Despite these issues, the coverage of topics and examples is great.\n(Currently going through this.)\nProbability and Measure (Patrick Billingsley):\nThis is supposedly the reference on probability theory. I have skimmed parts of it, and it is very terse. I have been told that if you want to pursue a research career in probability theory, Billingsley is a must read.\nMeasure Theory and Probability Theory (Krishna Athreya, Soumendra Lahiri):\nThis is a book that was just brought to my attention at the time of writing (August 2025). It seems to be sort of similar in spirit to Billingsley, and it takes a general approach from the beginning. Skimming through, it seems to try to offer a lot of intuition on the measure theoretic details.\nHigh-Dimensional Probability (Roman Vershynin):\nA book on probability in high dimensions. It is pedagogically sound and is a pretty different flavor compared to other probability texts. No measure theory is requried. The exercises are great, and I think there is a lot of motivation in data science for the results in the book.\n(Currently going through this.)\nStochastic Calculus and Financial Applications (J. Michael Steele):\n\n\n\nStatistics:\nStatistical Inference (George Casella, Roger Berger):\nThis is the definitive ‘mathematical statistics’ book at the masters level. I believe many schools also draw their qualifying exam material/questions out of this book. I think it can be a little unmotivated at times and even a bit hand-wavy, but most people think it is the best book around this level. Some people suggest supplementing this book with Mathematical Statistics with Applications by Wackerly, et al. as the book is slower and does a better job with motivating the material.\nMathematical Statistics (Jun Shao):\nA ‘mathematical statistics’ book at the PhD level. It pretty much expects you to have had a graduate probability course or equivalent from the get-go. It is supposed to prepare you for PhD statistics qualifiers and is a good resource for exercises as there is an associated solutions manual. I am currently going through this.\n(Currently going through this.)\nAll of Statistics (Larry Wasserman):\n\nMathematical Statistics: Basic Ideas and Selected Topics (Peter Bickel, Kjell Doksum):\n\nAsymptotic Theory of Statistics and Probability (Anirban DasGupta):\n\nTheory of Point Estimation (Erich Lehmann, George Casella): \n\nHigh-Dimensional Statistics: A Non-Asymptotic Viewpoint (Martin Wainwright):\n\n\n\nML/AI:\nElements of Statistical Learning (Trevor Hastie, et al.): \nConsidered classic introduction to ML with a statistical view. It’s kind of a weird blend of some theory and application. I think the authors underestimate the pre-requisites they state in the beginning. In my opinion, if you don’t have a decent linear models/linear algebra background, the book is nearly unreadable.\nStatistical Learning with Sparsity (Trevor Hastie, et al.): \nI have a copy of this book and it looks like a good exposition of the LASSO (considering Robert Tibshirani is an author), as well as other methods with a focus on sparsity for high dimensions.\nProbabilistic Machine Learning: An Introduction (Kevin Murphy): \n\nProbabilistic Machine Learning: Advanced Topics (Kevin Murphy): \n\nDeep Learning (Goodfellow, et al.): \n\nPattern Recognition and Machine Learning (Christopher Bishop): \n\nLarge Language Models: A Deep Dive (Uday Kamath, et al.): \n\n\n\nOptimization:\nNumerical Optimization (Jorge Nocedal, Stephen J. Wright):\n\nConvex Optimization (Lieven Vandenberghe, Stephen Boyd): \n\n\n\nDifferential Geometry:\nAn Introduction to Manifolds (Loring Tu):\nA great introduction to smooth manifolds. The appendix on point-set topology is excellent.\n(Currently going through this.)\nIntroduction to Smooth Manifolds (John M. Lee):\nAnother great introduction to smooth manifolds. This book is much slower than Tu and covers a lot more content.\n(Currently going through this.)\n\n\nOptimal Transport:\nOptimal Transport for Applied Mathematicians: Calculus of Variations, PDEs, and Modeling (Filippo Santambrogio):\n\nStatistical Optimal Transport (Jonathan Niles-Weed, et al.):\n\n\n\nProblem Books:\n50 Challenging Problems in Probability (Frederick Mosteller):\n\nA Practical Guide to Quantitative Finance Interviews (Xinfeng Zhou):\n\nHeard on the Street: Quantitative Questions from Wall Street Job Interviews (Timothy Crack):\n\nIntermediate Counting & Probability (David Patrick):"
+  },
+  {
+    "objectID": "readings.html#papers",
+    "href": "readings.html#papers",
+    "title": "Readings",
+    "section": "Papers",
+    "text": "Papers\nI’ve tried to organize these by subjects listed on arxiv or elsewhere.\n\nStatistics Theory:\nDNNs for nonparametric interaction models with diverging dimension (Bhattacharya, et al.)\n\n\nMachine Learning:\nLLMs are Bayesian, in expectation, not in realization (Chlon, et al.)\n\n\nComputation and Language:\nAttention is all you need (Vaswani, et al.)\nEfficient estimation of word representations in vector space (Mikolov, et al.)\nBERT: Pre-training of deep bidirectional transformers for language understanding (Devlin, et al.)\n\n\nSymbolic Computation:\nAutomatic differentiation in machine learning: a survey"
+  },
+  {
+    "objectID": "readings.html#other",
+    "href": "readings.html#other",
+    "title": "Readings",
+    "section": "Other",
+    "text": "Other"
+  },
+  {
+    "objectID": "readings.html#probability-theory",
+    "href": "readings.html#probability-theory",
+    "title": "Readings",
+    "section": "Probability Theory",
+    "text": "Probability Theory"
+  },
+  {
+    "objectID": "writing.html",
+    "href": "writing.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Mathematical Tips and Tricks\n\n\n\n\n\n\nProbability\n\n\nLinear Algebra\n\n\nProblem Solving\n\n\n\nIn mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’\n\n\n\n\n\nAlex Yuan\n\n\n\n\n\n\n\n\n\n\n\n\nSigma-Algebras as Information\n\n\n\n\n\n\nAnalysis\n\n\nProbability\n\n\nInformation Theory\n\n\n\nThis post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.\n\n\n\n\n\nAlex Yuan\n\n\n\n\n\n\n\n\n\n\n\n\nExercises and questions\n\n\n\n\n\n\nProbability\n\n\nCombinatorics\n\n\nProblem Solving\n\n\nInterview Prep\n\n\n\nI plan to document some probability-ish questions and solutions here.\n\n\n\n\n\nAlex Yuan\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Mathematical Tips and Tricks\n\n\n\nProbability\n\n\nLinear Algebra\n\n\nProblem Solving\n\n\n\nIn mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in…\n\n\n\nAlex Yuan\n\n\n\n\n\n\n\n\n\n\n\n\nSigma-Algebras as Information\n\n\n\nAnalysis\n\n\nProbability\n\n\nInformation Theory\n\n\n\nThis post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.\n\n\n\nAlex Yuan\n\n\n\n\n\n\n\n\n\n\n\n\nExercises and questions\n\n\n\nProbability\n\n\nCombinatorics\n\n\nProblem Solving\n\n\nInterview Prep\n\n\n\nI plan to document some probability-ish questions and solutions here.\n\n\n\nAlex Yuan\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/1st-post/index.html",
+    "href": "posts/1st-post/index.html",
+    "title": "Sigma-Algebras as Information",
+    "section": "",
+    "text": "While one learns all about \\(\\sigma\\)-algebras and other types of closure structures in measure theory, often it is just for the sake of defining the domain of a measure. We can however develop some decent intution regarding these structures through a information-theoretic lense.\nConsider the statements:\n1) “In retrospect it was a bad idea to buy tech stocks.”\n2) “Tom knows more about nutrition than Jerry does.”\n3) “Tom and Jerry each know things about nutrition which the other does not.”\n4) “You learn something new each day.”\n5) “When I played that poker hand, my opponent did know that I saw his cards.”\nEach of these is a statement about knowledge, or the lack thereof. In particular, each compares the states of knowledge of two agents (or the same agent at different times). How can we mathematically model this though?\nThe appropriate and natural mathematical model of a knowledge-state is a sigma-algebra.\nLet \\(\\mathcal{F}\\) be a sigma algebra over some set \\(\\Omega\\) and suppose \\(w\\in\\Omega\\) is the unknown state of a system \\(\\mathcal{S}\\). The knowledge represented by \\(\\mathcal{F}\\) is the information about \\(\\mathcal{S}\\) that one obtains from observing for every \\(U \\in \\mathcal{F}\\) whether or not \\(w \\in U\\). Thus, it should be natural that if another sigma algebra \\(\\mathcal{D} \\supset \\mathcal{F}\\) then we say \\(\\mathcal{D}\\) contains “more” information than \\(\\mathcal{F}\\).\n\nIf one remembers back to the first examples of \\(\\sigma\\)-algebras, it becomes obvious that \\(\\mathcal{P}(\\Omega)\\) represents a state of total omniscience, while \\(\\{\\emptyset,\\Omega\\}\\) represents a state of total ignorance.\nLet \\((X, \\mathcal{X})\\) and \\((Y, \\mathcal{Y})\\) be measurable spaces. If \\(\\mathcal{X}\\) contains strictly more information (in the sense that we could recover every bit of information about \\(\\mathcal{Y}\\) by observing \\(\\mathcal{X}\\)) than \\(\\mathcal{Y}\\) then we say \\(\\mathcal{X}\\) refines \\(\\mathcal{Y}\\). One can think of this as saying once we have observed the information contained in \\(\\mathcal{X}\\), the information in \\(\\mathcal{Y}\\) would be redundant.\nWe say that \\(\\mathcal{X}\\) refines \\(\\mathcal{Y}\\) if \\(\\mathcal{Y}\\) is a subset of \\(\\mathcal{X}\\). This is almost analogous to the discussion of coarse and fine topologies.\nLet \\((X,\\mathcal{X})\\) be a measurable space, and let \\(\\mathbb{T}\\) be a linearly ordered set. A \\(\\mathbb{T}\\)-indexed filtration is a collection \\((\\mathcal{F}_t)_{t\\in\\mathbb{T}}\\) of \\(\\sigma\\)-subalgebras of \\(\\mathcal{X}\\) such that, for any \\(s,t\\in\\mathbb{T}\\), \\[\ns &lt; t \\;\\Longrightarrow\\; \\mathcal{F}_s \\subseteq \\mathcal{F}_t .\n\\]\nThe opposite of the concept of refinement is the concept of independence. If \\(\\mathcal{Y}\\) contains no information about \\(\\mathcal{X},\\) then the information contained in the two \\(\\sigma\\)-algebras is complementary, meaning each one tells us things the other does not.\nHeuristically, if we observed the information about both \\(\\sigma\\)-algebras then we would have “twice” as much information as if we only observed one or the other. We then say \\(\\mathcal{X}\\) and \\(\\mathcal{Y}\\) are independent of one another. With these ideas in hand, we give a definition for independence of sets and independence of \\(\\sigma\\)-algebras.\nLet \\((X,\\mathcal{X},\\mu)\\) be a measure space, and \\(U,V \\in \\mathcal{X}\\). We say the sets \\(U\\) and \\(V\\) are independent if \\[\n\\mu(U \\cap V) \\;=\\; \\mu(U)\\,\\mu(V)\n\\]\nLet \\(\\mathcal{Y}_1, \\mathcal{Y}_2 \\subset \\mathcal{X}\\) be two \\(\\sigma\\)-subalgebras. We say \\(\\mathcal{Y}_1\\) and \\(\\mathcal{Y}_2\\) are independent \\(\\sigma\\)-algebras if every element of \\(\\mathcal{Y}_1\\) is independent of every element of \\(\\mathcal{Y}_2\\) with respect to the measure \\(\\mu\\). In other words, for all \\(U_1 \\in \\mathcal{Y}_1\\) and \\(U_2 \\in \\mathcal{Y}_2\\), we have \\[\n\\mu(U_1 \\cap U_2) \\;=\\; \\mu(U_1)\\,\\mu(U_2)\n\\]\n\nExample:"
+  },
+  {
+    "objectID": "posts/1st-post/index.html#example",
+    "href": "posts/1st-post/index.html#example",
+    "title": "Sigma-Algebras as Information",
+    "section": "Example",
+    "text": "Example"
+  },
+  {
+    "objectID": "posts/2nd-post/index.html",
+    "href": "posts/2nd-post/index.html",
+    "title": "Mathematical Tips and Tricks",
+    "section": "",
+    "text": "Given a square matrix \\(A \\in \\mathbb{R}^{n \\times n}\\) and a vector \\(x \\in \\mathbb{R}^n\\), the scalar \\(x^T A x\\) is called a quadratic form:\n\\[\nx^T A x = \\sum_{i=1}^n \\sum_{j=1}^n A_{i,j} x_i x_j\n\\]\n\n\n\nFor matrices \\(A, B, C\\) such that \\(ABC\\) is square, we have:\n\\[\n\\text{tr}(ABC) = \\text{tr}(BCA) = \\text{tr}(CAB)\n\\]\n\n\n\nUsing the cyclic permutation property we can derive the trace trick, which allows us to rewrite the scalar inner product \\(x^T A x\\) as follows:\n\\[\nx^T A x = \\text{tr}(x^T A x) = \\text{tr}(x x^T A)\n\\]\n\n\n\nThis is a nice notational convention for simplifying expressions with tensors. The three rules are namely:\n\nRepeated indices are implicitly summed over\nEach index can appear at most twice in any term\nEach term must contain identical non-repeated indices.\n\nAs a slightly complex example, suppose we have a tensor \\(S_{ntk}\\) where n indexes examples in a batch, t indexes locations in the sequence, and k indexes words in a one-hot representation. Let \\(W_{kd}\\) be an embedding matrix that maps sparse one-hot vectors in \\(R^k\\) to dense vectors in \\(R^d\\). We can convert the batch of sequences of one-hots to a batch of sequences of embeddings as follows: \\[\nE_{ntd} = \\sum_kS_{ntk}W_{kd}\n\\] We can compute the sum of the embedding vectors of each sequence (to get a bag of words) as follows:\n\\[\nE_{nd} = \\sum_k \\sum_t S_{ntk}W_{kd}\n\\] Finally, we can pass each sequence’s vector representation through another linear transformation \\(V_{dc}\\) to map to the logits over a classifier with c labels:\n\\[\nL_{nc} = \\sum_dE_{nd}V_{dc}=\\sum_d \\sum_k \\sum_tS_{ntk}W_{kd}V_{dc}\n\\] In Einstein notation, we write \\(L_{nc}=S_{ntk}W_{kd}V_{dc}\\). Note that k and d are summed over because those indices appear twice on the right hand side, while we sum over t because that index does not occur on the left hand side.\n\n\n\nConsider a general partitioned matrix \\[\nM = \\begin{pmatrix}\nE & F \\\\\nG & H\n\\end{pmatrix}\n\\] where we assume \\(E\\) and \\(H\\) are invertible. We have \\[\nM^{-1} =\n\\begin{pmatrix}\n(M/H)^{-1} & -(M/H)^{-1} F H^{-1} \\\\\n- H^{-1} G (M/H)^{-1} & H^{-1} + H^{-1} G (M/H)^{-1} F H^{-1}\n\\end{pmatrix}\n\\] \\[\n= \\begin{pmatrix}\nE^{-1} + E^{-1} F (M/E)^{-1} G E^{-1} & - E^{-1} F (M/E)^{-1} \\\\\n-(M/E)^{-1} G E^{-1} & (M/E)^{-1}\n\\end{pmatrix}\n\\] where \\[\nM/H := E - F H^{-1} G\n\\] \\[\nM/E := H - G E^{-1} F\n\\] We say that \\(M/H\\) is the schur complement of \\(M\\) with respect to \\(H\\), while \\(M/E\\) is the schur complement of \\(M\\) with respect to \\(E\\).\nThe proof can be found in Probabilistic Machine Learning: An Introduction by Kevin Murphy."
+  },
+  {
+    "objectID": "posts/2nd-post/index.html#linear-algebra-tricks",
+    "href": "posts/2nd-post/index.html#linear-algebra-tricks",
+    "title": "Mathematical Tricks",
+    "section": "",
+    "text": "#### Cyclic Permutation Property"
+  },
+  {
+    "objectID": "posts/2nd-post/index.html#cyclic-permutation-property",
+    "href": "posts/2nd-post/index.html#cyclic-permutation-property",
+    "title": "Mathematical Tricks",
+    "section": "Cyclic Permutation Property",
+    "text": "Cyclic Permutation Property"
+  },
+  {
+    "objectID": "posts/2nd-post/index.html#probability-theory",
+    "href": "posts/2nd-post/index.html#probability-theory",
+    "title": "Mathematical Tips and Tricks",
+    "section": "Probability Theory:",
+    "text": "Probability Theory:\n\nInvertible Transformations\nSuppose \\(g:\\mathbb{R}^n \\to \\mathbb{R}^n\\) is a bijection (equivalently strictly monotonic) and \\(X\\) is a random variable. If we are interested in calcuating the probability density function \\(f_Y(y)\\) of some deterministic transformation \\(Y=g(X)\\), the change of variable formula tells us that\n\\[\nf_Y(y) = f_X(g^{-1}(y))|\\text{det}(J_{g^{-1}}(y))|\n\\] where \\(J_{g^{-1}}(y)\\) is the Jacobian matrix of \\(g^{-1}\\)."
+  },
+  {
+    "objectID": "posts/2nd-post/index.html#linear-algebra",
+    "href": "posts/2nd-post/index.html#linear-algebra",
+    "title": "Mathematical Tips and Tricks",
+    "section": "",
+    "text": "Given a square matrix \\(A \\in \\mathbb{R}^{n \\times n}\\) and a vector \\(x \\in \\mathbb{R}^n\\), the scalar \\(x^T A x\\) is called a quadratic form:\n\\[\nx^T A x = \\sum_{i=1}^n \\sum_{j=1}^n A_{i,j} x_i x_j\n\\]\n\n\n\nFor matrices \\(A, B, C\\) such that \\(ABC\\) is square, we have:\n\\[\n\\text{tr}(ABC) = \\text{tr}(BCA) = \\text{tr}(CAB)\n\\]\n\n\n\nUsing the cyclic permutation property we can derive the trace trick, which allows us to rewrite the scalar inner product \\(x^T A x\\) as follows:\n\\[\nx^T A x = \\text{tr}(x^T A x) = \\text{tr}(x x^T A)\n\\]\n\n\n\nThis is a nice notational convention for simplifying expressions with tensors. The three rules are namely:\n\nRepeated indices are implicitly summed over\nEach index can appear at most twice in any term\nEach term must contain identical non-repeated indices.\n\nAs a slightly complex example, suppose we have a tensor \\(S_{ntk}\\) where n indexes examples in a batch, t indexes locations in the sequence, and k indexes words in a one-hot representation. Let \\(W_{kd}\\) be an embedding matrix that maps sparse one-hot vectors in \\(R^k\\) to dense vectors in \\(R^d\\). We can convert the batch of sequences of one-hots to a batch of sequences of embeddings as follows: \\[\nE_{ntd} = \\sum_kS_{ntk}W_{kd}\n\\] We can compute the sum of the embedding vectors of each sequence (to get a bag of words) as follows:\n\\[\nE_{nd} = \\sum_k \\sum_t S_{ntk}W_{kd}\n\\] Finally, we can pass each sequence’s vector representation through another linear transformation \\(V_{dc}\\) to map to the logits over a classifier with c labels:\n\\[\nL_{nc} = \\sum_dE_{nd}V_{dc}=\\sum_d \\sum_k \\sum_tS_{ntk}W_{kd}V_{dc}\n\\] In Einstein notation, we write \\(L_{nc}=S_{ntk}W_{kd}V_{dc}\\). Note that k and d are summed over because those indices appear twice on the right hand side, while we sum over t because that index does not occur on the left hand side.\n\n\n\nConsider a general partitioned matrix \\[\nM = \\begin{pmatrix}\nE & F \\\\\nG & H\n\\end{pmatrix}\n\\] where we assume \\(E\\) and \\(H\\) are invertible. We have \\[\nM^{-1} =\n\\begin{pmatrix}\n(M/H)^{-1} & -(M/H)^{-1} F H^{-1} \\\\\n- H^{-1} G (M/H)^{-1} & H^{-1} + H^{-1} G (M/H)^{-1} F H^{-1}\n\\end{pmatrix}\n\\] \\[\n= \\begin{pmatrix}\nE^{-1} + E^{-1} F (M/E)^{-1} G E^{-1} & - E^{-1} F (M/E)^{-1} \\\\\n-(M/E)^{-1} G E^{-1} & (M/E)^{-1}\n\\end{pmatrix}\n\\] where \\[\nM/H := E - F H^{-1} G\n\\] \\[\nM/E := H - G E^{-1} F\n\\] We say that \\(M/H\\) is the schur complement of \\(M\\) with respect to \\(H\\), while \\(M/E\\) is the schur complement of \\(M\\) with respect to \\(E\\).\nThe proof can be found in Probabilistic Machine Learning: An Introduction by Kevin Murphy."
+  },
+  {
+    "objectID": "posts/3rd-post/index.html",
+    "href": "posts/3rd-post/index.html",
+    "title": "Exercises and questions",
+    "section": "",
+    "text": "How many functions \\(f:\\{1,\\ldots,n\\}\\to \\{1,\\ldots,n\\}\\) are not one-to-one?\n\n\n\n\n\n\nSolution"
+  },
+  {
+    "objectID": "posts/3rd-post/index.html#brainteasers",
+    "href": "posts/3rd-post/index.html#brainteasers",
+    "title": "Probability Questions",
+    "section": "",
+    "text": "100 people are line up to board an airplane. For convenience, we can assume that the nth person is assigned the nth seat. However, the first person is drunk and unfortunately takes a random seat. The boarding process commences and if a person isn’t able to sit in their assigned seats they will randomly take an available one. This continues on until the plane has boarded. What is the probability that passenger number 100 ends up in seat 100?\n\n\n\n\n\n\nSolution\n\n\n\n\n\nWe can think about this symmetrically. The only two events of interest are 1) the event that seat 1 is filled before seat 100 and 2) the event that seat 100 is filled before seat 1. If 1) occurs then the 100th person gets to sit in their assigned seat. If 2) occurs then surely passenger number 100 is in the wrong seat. By symmetry the probability is \\(\\frac{1}{2}\\)."
+  },
+  {
+    "objectID": "posts/3rd-post/index.html#problems",
+    "href": "posts/3rd-post/index.html#problems",
+    "title": "Probability Questions",
+    "section": "",
+    "text": "100 people are line up to board an airplane. For convenience, we can assume that the nth person is assigned the nth seat. However, the first person is drunk and unfortunately takes a random seat. The boarding process commences and if a person isn’t able to sit in their assigned seats they will randomly take an available one. This continues on until the plane has boarded. What is the probability that passenger number 100 ends up in seat 100?\n\n\n\n\n\n\nSolution\n\n\n\n\n\nWe can think about this symmetrically. The only two events of interest are 1) the event that seat 1 is filled before seat 100 and 2) the event that seat 100 is filled before seat 1. If 1) occurs then the 100th person gets to sit in their assigned seat. If 2) occurs then surely passenger number 100 is in the wrong seat. By symmetry the probability is \\(\\frac{1}{2}\\)"
+  },
+  {
+    "objectID": "posts/3rd-post/index.html#expected-value",
+    "href": "posts/3rd-post/index.html#expected-value",
+    "title": "Exercises and questions",
+    "section": "3 Expected Value",
+    "text": "3 Expected Value\n\n3.1 Roll Again I\n\nKelly rolls a fair standard die. She observes the value on the face. Afterwards, she is given the option to either receive the number on the face as a payout or to roll again. If she rolls again, she receives the number on the face as a payout, regardless of what she rolled in the first turn. If Kelly plays optimally, what is her expected pay out?\n\n\n\n\n\n\nSolution\n\n\n\n\n\nThe optimal strategy is to re-roll if Kelly initially rolls lower than a 4. If Kelly re-rolls the average face value she observes is 3.5, otherwise her average face value is a 5. Hence our expected value is: \\[\n\\mathbb{E}X=\\frac{1}{2}(3.5)+\\frac{1}{2}(5)=4.25\n\\]\n\n\n\n\n\n\n\n3.2 Roll Again II\n\nKelly rolls a fair standard die. She observes the value on the face. Afterwards, she is given the option to either receive the number on the face as a payout or to roll again. If she rolls again, she is given the same decision of paying out or rolling a third time. If she chooses to roll for the third time, she receives a payout equal to the final roll, regardless of what she rolled previously, If Kelly plays optimally, what is her expected pay out?\n\n\n\n\n\n\nSolution\n\n\n\n\n\nWe use backwards induction on this. Suppose we are on the third roll, our expected value is \\(3.5\\). Moving on to the second roll, we should take if the value is greater than or equal to 4. Our expected value on the second roll is \\[\n\\frac{1}{6}(3.5+3.5+3+3.5+4+5+6)=\\frac{51}{12}=4.25\n\\] Now, on the first roll, we should take any value greater than or equal to 5. Our expected value on the first roll is \\[\n\\frac{1}{6}(\\frac{51}{12}+\\frac{51}{12}+\\frac{51}{12}+\\frac{51}{12}+5+6)=\\frac{14}{3}\n\\]\n\n\n\n\n\n\n\n3.3 Roll Again III\n\nKelly plays a game where she has a standard fair die and repeatedly rolls the die. After each roll, she is allowed to decide whether to re-roll the die or recieve a payout equal to the face of the roll. If she decided to re-roll, Kelly must pay $1 and then is face with the same decision. Under optimal play from Kelly, what is her expected payout?\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.4 4head I\n\nVarun has 4 fair coins. He tosses all 4 at once and checks the parity of each. Varun is now allowed to turn over any pair of coins. In other words, he is only allowed to turn over a coin if he turns over another. He may iterate this process as many times as he would like to maximize his expected number of heads. What is his expected number of heads?\n\n\n\n\n\n\nSolution\n\n\n\n\n\nIf Varun tosses either \\(2\\) or \\(4\\) heads, he is guaranteed \\(4\\) coins. On the contrary, if Varun flips either \\(1\\) or \\(3\\) heads, he is guaranteed \\(3\\) coins. Hence our expected value is: \\[\n\\mathbb{E}X=\\frac{1}{2}(3)+\\frac{1}{2}(4)=3.5\n\\]\n\n\n\n\n\n\n\n3.5 4head II\n\nVarun has 4 fair coins. He tosses all 4 at once and checks the parity of each. Varun is now allowed to toss any pair of coins. In other words, he is only allowed to toss a coin if he tosses another. He may iterate this process as many times as he would like to maximize his expected number of heads. What is his expected number of heads?\n\n\n\n\n\n\nSolution\n\n\n\n\n\nVarun’s optimal strategy is to keep tossing pairs until he has all 4 heads as there is no cost to do so. We can think of this as a Markov chain that will hit an all-heads state with probability 1. Hence, our expected value is 4 heads.\n\n\n\n\n\n\n\n3.6 4head III\n\nVarun has 4 fair coins. He tosses all 4 at once and notes the parity of each. After seeing the outcomes, he may toss any pair of tails again. Varun may not toss a single coin without tossing another. He can iterate as many times as he desires, as long as he has less than 3 heads obtained (otherwise, no pairs of tails exists and game over). Find the expected number of tosses Varun performs. Note that the initial 4 tosses are still tosses and each pair counts as 2 tosses.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nDenote \\(F(k)\\) as the maximum expected number of heads after \\(k\\) tails on the first toss. Our strategy is to iterate until we have less than 2 tails. Immediately, \\(F(0)=4, \\ F(1)=3\\). Suppose we toss k tails at first, then with probability \\(\\frac{1}{2}\\) we go to k-1 tails on the next toss, probability \\(\\frac{1}{4}\\) we go to k-2 tails, and probability \\(\\frac{1}{4}\\) we stay at k tails. Hence we get the recursion: \\[\nF(k)= \\frac{1}{2}F(k-1)+\\frac{1}{4}F(k-2)+\\frac{1}{4}F(k)\n\\]\nNow, \\[\nF(2) = \\frac{1}{2}F(1)+\\frac{1}{4}F(0)+\\frac{1}{4}F(2)\n\\]\n\\[\n=\\frac{3}{2} +  \\frac{4}{4} + \\frac{F(2)}{4}\n\\] which gives \\(F(2)=\\frac{10}{3}\\). Similarly, \\[\nF(3) = \\frac{1}{2}F(2)+\\frac{1}{4}F(1)+\\frac{1}{4}F(3)\n\\] \\[\n=\\frac{1}{2}(\\frac{10}{3}) +  \\frac{3}{4} + \\frac{F(3)}{4}\n\\] which gives \\(F(3)=\\frac{29}{9}\\). Finally, \\[\nF(4) = \\frac{1}{2}F(3)+\\frac{1}{4}F(2)+\\frac{1}{4}F(4)\n\\] \\[\n=\\frac{1}{2}(\\frac{29}{9}) +  \\frac{1}{4}\\frac{10}{3} + \\frac{F(4)}{4}\n\\] which gives \\(F(4) = \\frac{88}{27}\\). Taking the expected value, \\[\n\\mathbb{E}[F(k)] = \\frac{4 \\choose 0}{16}F(0)+\\frac{4 \\choose 1}{16}F(1)+\\frac{4 \\choose 2}{16}F(2)+\\frac{4 \\choose 3}{16}F(3)+\\frac{4 \\choose 4}{16}F(4) = \\frac{88}{27}\n\\]"
+  },
+  {
+    "objectID": "posts/3rd-post/index.html#brainteaserspuzzles",
+    "href": "posts/3rd-post/index.html#brainteaserspuzzles",
+    "title": "Exercises and questions",
+    "section": "2 Brainteasers/Puzzles",
+    "text": "2 Brainteasers/Puzzles\n\n2.1 Drunk Airplane\n\n100 people are line up to board an airplane. For convenience, we can assume that the nth person is assigned the nth seat. However, the first person is drunk and unfortunately takes a random seat. The boarding process commences and if a person isn’t able to sit in their assigned seats they will randomly take an available one. This continues on until the plane has boarded. What is the probability that passenger number 100 ends up in seat 100?\n\n\n\n\n\n\nSolution\n\n\n\n\n\nWe can think about this symmetrically. The only two events of interest are 1) the event that seat 1 is filled before seat 100 and 2) the event that seat 100 is filled before seat 1. If 1) occurs then the 100th person gets to sit in their assigned seat. If 2) occurs then surely passenger number 100 is in the wrong seat. By symmetry the probability is \\(\\frac{1}{2}\\).\n\n\n\n\n\n\n\n2.2 Bertrand’s Paradox\n\nTake a circle of radius 2 inches in the plane and choose a chord of this circle at random. What is the probability this chord intersects the concentric circle of radius 1 inch? (What are the different solutions?)\n\n\n\n\n\n\nSolution"
+  },
+  {
+    "objectID": "posts/3rd-post/index.html#uniform-distribution",
+    "href": "posts/3rd-post/index.html#uniform-distribution",
+    "title": "Probability Questions",
+    "section": "3 Uniform Distribution",
+    "text": "3 Uniform Distribution\n\n3.1 Uniform product\n\nSuppose we draw two random numbers X and Y each distributed uniform on the interval [0, 1]. If X and Y are independent, what is the probability that their product is greater than 1/2?\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\[\n\\mathbb{P}(XY&gt;1/2)=\\int \\int_{[0,1]^2}\\mathbb{I}_{\\{\\ XY&gt; 1/2 \\}}dxdy\n\\]\n\\[\n= \\int_{\\frac{1}{2}}^1 \\int_{\\frac{1}{2x}}^1dydx=\\int_{\\frac{1}{2}}^11-\\frac{1}{2x}dx\n\\] \\[\n=\\frac{1}{2}+\\frac{1}{2}\\text{ln}(\\frac{1}{2})\n\\]"
+  },
+  {
+    "objectID": "posts/3rd-post/index.html#general",
+    "href": "posts/3rd-post/index.html#general",
+    "title": "Exercises and questions",
+    "section": "4 General",
+    "text": "4 General\n\n4.1 Uniform product\n\nSuppose we draw two random numbers X and Y each distributed uniform on the interval [0, 1]. If X and Y are independent, what is the probability that their product is greater than 1/2?\n\n\n\n\n\n\nSolution\n\n\n\n\n\n\\[\n\\mathbb{P}(XY&gt;1/2)=\\int \\int_{[0,1]^2}\\mathbb{I}_{\\{\\ XY&gt; 1/2 \\}}dxdy\n\\]\n\\[\n= \\int_{\\frac{1}{2}}^1 \\int_{\\frac{1}{2x}}^1dydx=\\int_{\\frac{1}{2}}^11-\\frac{1}{2x}dx\n\\] \\[\n=\\frac{1}{2}+\\frac{1}{2}\\text{ln}(\\frac{1}{2})\n\\]"
+  },
+  {
+    "objectID": "posts/3rd-post/index.html#combinatorics",
+    "href": "posts/3rd-post/index.html#combinatorics",
+    "title": "Exercises and questions",
+    "section": "",
+    "text": "How many functions \\(f:\\{1,\\ldots,n\\}\\to \\{1,\\ldots,n\\}\\) are not one-to-one?\n\n\n\n\n\n\nSolution"
+  },
+  {
+    "objectID": "posts/3rd-post/index.html#brainteaserspuzzlesparadoxes",
+    "href": "posts/3rd-post/index.html#brainteaserspuzzlesparadoxes",
+    "title": "Exercises and questions",
+    "section": "2 Brainteasers/Puzzles/Paradoxes",
+    "text": "2 Brainteasers/Puzzles/Paradoxes\n\n2.1 Drunk Airplane\n\n100 people are line up to board an airplane. For convenience, we can assume that the nth person is assigned the nth seat. However, the first person is drunk and unfortunately takes a random seat. The boarding process commences and if a person isn’t able to sit in their assigned seats they will randomly take an available one. This continues on until the plane has boarded. What is the probability that passenger number 100 ends up in seat 100?\n\n\n\n\n\n\nSolution\n\n\n\n\n\nWe can think about this symmetrically. The only two events of interest are 1) the event that seat 1 is filled before seat 100 and 2) the event that seat 100 is filled before seat 1. If 1) occurs then the 100th person gets to sit in their assigned seat. If 2) occurs then surely passenger number 100 is in the wrong seat. By symmetry the probability is \\(\\frac{1}{2}\\).\n\n\n\n\n\n\n\n2.2 Bertrand’s Paradox\n\nTake a circle of radius 2 inches in the plane and choose a chord of this circle at random. What is the probability this chord intersects the concentric circle of radius 1 inch? (What are the different solutions?)\n\n\n\n\n\n\nSolution"
+  }
+]
