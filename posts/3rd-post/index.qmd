@@ -36,23 +36,6 @@ There are $n^n$ total functions and $n!$ one-to-one functions. Hence, the number
 <hr class="problem-sep"/>
 
 
-### Odd number elements
-
-<div class="problem">
-Prove that the number of subsets of $\{1,\ldots,n\}$ that have an odd number of
-elements is $2^{n−1}$.
-
-
-
-::: {.callout-tip title="Solution" collapse="true"}
-The total number of subsets of n is $2^n$.
-:::
-
-</div>
-
-<hr class="problem-sep"/>
-
-
 
 ## Brainteasers/Puzzles/Paradoxes
 

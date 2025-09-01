@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-posts-list .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-posts-list'] = new List('listing-posts-list', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -189,7 +189,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Analysis">Analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Combinatorics">Combinatorics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Information Theory">Information Theory <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Interview Prep">Interview Prep <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Linear Algebra">Linear Algebra <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Problem Solving">Problem Solving <span class="quarto-category-count">(4)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Analysis">Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Combinatorics">Combinatorics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Information Theory">Information Theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Interview Prep">Interview Prep <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Linear Algebra">Linear Algebra <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Problem Solving">Problem Solving <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -197,11 +197,7 @@ window.Quarto = {
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div id="listing-posts-list" class="quarto-listing quarto-listing-container-default">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
@@ -281,7 +277,7 @@ Alex Yuan
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Probability,Combinatorics,Problem Solving,Interview Prep" data-listing-file-modified-sort="1756448932503" data-listing-reading-time-sort="8" data-listing-word-count-sort="1476">
+<div class="quarto-post image-right" data-index="2" data-categories="Probability,Combinatorics,Problem Solving,Interview Prep" data-listing-file-modified-sort="1756503365416" data-listing-reading-time-sort="8" data-listing-word-count-sort="1445">
 <div class="thumbnail">
 <p><a href="./posts/3rd-post/index.html" class="no-external"></a></p><a href="./posts/3rd-post/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -320,122 +316,16 @@ Alex Yuan
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Probability,Linear Algebra,Problem Solving" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">Mathematical Tips and Tricks</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Linear Algebra'); return false;">
-Linear Algebra
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/2nd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Analysis,Probability,Information Theory" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="3" data-listing-word-count-sort="524">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">Sigma-Algebras as Information</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Analysis'); return false;">
-Analysis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Information Theory'); return false;">
-Information Theory
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">This post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/1st-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Probability,Combinatorics,Problem Solving,Interview Prep" data-listing-file-modified-sort="1756113130448" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077">
-<div class="thumbnail">
-<p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">Exercises and questions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Combinatorics'); return false;">
-Combinatorics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Problem Solving'); return false;">
-Problem Solving
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Interview Prep'); return false;">
-Interview Prep
-</div>
-</div>
-<div class="listing-description">
-<a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">I plan to document some probability-ish questions and solutions here.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external"></a></p><a href="./alexyuan12.github.io/posts/3rd-post/index.html" class="no-external">
-<div class="listing-author">
-Alex Yuan
-</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
