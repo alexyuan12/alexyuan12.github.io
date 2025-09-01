@@ -1,6 +1,3 @@
----
-title: "Readings"
----
 The following are lists of books, papers, and other readings. I have either read these personally (at least partially), or I have had them recommended to me.
 
 ## Books
@@ -58,7 +55,6 @@ A 'mathematical statistics' book at the PhD level. It pretty much expects you to
 ***Asymptotic Theory of Statistics and Probability (Anirban DasGupta):***\
 
 ***Theory of Point Estimation (Erich Lehmann, George Casella): ***\
-
 
 ***High-Dimensional Statistics: A Non-Asymptotic Viewpoint (Martin Wainwright):*** \
 

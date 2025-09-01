@@ -81,7 +81,7 @@
     "href": "index.html",
     "title": "Alex(ander) Yuan",
     "section": "",
-    "text": "Email\n  \n  \n    \n     Github\n  \n\n  \n  \nHowdy! I am currently finishing up a master’s degree in Statistics at California Polytechnic State University, San Luis Obispo (Cal Poly SLO for short). I’m originally from Austin, TX, but I have been enjoying my time out here in the central coast."
+    "text": "Email\n  \n  \n    \n     Github\n  \n\n  \n  \nHowdy! I am currently finishing up a master’s degree in Statistics at California Polytechnic State University, San Luis Obispo (Cal Poly SLO for short). I’m originally from Austin, TX, but I have been enjoying my time out here in the central coast.\nI am mostly interested in a couple different areas of probability, statistics, and machine learning. Particularly, Optimal Transport and Functional Data Analysis are some subjects that I am working towards."
   },
   {
     "objectID": "posts/1st-post/index.html",
@@ -93,28 +93,28 @@
   {
     "objectID": "readings.html",
     "href": "readings.html",
-    "title": "Readings",
+    "title": "Alex Yuan",
     "section": "",
     "text": "The following are lists of books, papers, and other readings. I have either read these personally (at least partially), or I have had them recommended to me."
   },
   {
     "objectID": "readings.html#books",
     "href": "readings.html#books",
-    "title": "Readings",
+    "title": "Alex Yuan",
     "section": "Books",
     "text": "Books\n\nAnalysis:\nPrinciples of Mathematical Analysis (Walter Rudin):\nA notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential. I don’t think this is a good book to learn from unless you have other resources or an instructor. The exercises are pretty difficult.\nAn Introduction to Hilbert Space (Nicholas Young):\nAn introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It’s very concise and readable without getting into the more abstract measure theoretical issues. I think this book also has nice exercises built into the body of the text.\nAnalysis (Elliot Lieb, Michael Loss):\nSupposedly a good introduction to analysis at the graduate level. The focus is more on ‘applied’ analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations. I’ve been told that the exercises are good qualifying exam practice.\nReal Analysis: Modern Techniques and Their Applications (Gerald Folland):\nIt is a standard analysis textbook at the graduate level along with the other books by Rudin, Royden, etc. It covers measure theory, point-set topology, functional analysis, and some other relevant topics. The analysis done in this book is very general, however it is very well written albeit terse at times.\n(Currently going through this.)\nFunctional Analysis, Sobolev Spaces and Partial Differential Equations (Haim Brezis):\nThis is a standard textbook for functional analysis (with a view of PDEs) at the graduate level. I have only read a couple pages about Hanh-Banach, but supposedly it is a must read for those interested in partial differential equations.\n\n\nProbability:\nProbability Theory and Examples (Rick Durrett):\nThis is a standard graduate text on probability. It is terse and has some annoying/unstandard notation. I think this book is unreadable if you do not have an instructor handy or previous background in measure theory. I would recommend skipping the measure theory intro if you already know it. Despite these issues, the coverage of topics and examples is great.\n(Currently going through this.)\nProbability and Measure (Patrick Billingsley):\nThis is supposedly the reference on probability theory. I have skimmed parts of it, and it is very terse. I have been told that if you want to pursue a research career in probability theory, Billingsley is a must read.\nMeasure Theory and Probability Theory (Krishna Athreya, Soumendra Lahiri):\nThis is a book that was just brought to my attention at the time of writing (August 2025). It seems to be sort of similar in spirit to Billingsley, and it takes a general approach from the beginning. Skimming through, it seems to try to offer a lot of intuition on the measure theoretic details.\nHigh-Dimensional Probability (Roman Vershynin):\nA book on probability in high dimensions. It is pedagogically sound and is a pretty different flavor compared to other probability texts. No measure theory is requried. The exercises are great, and I think there is a lot of motivation in data science for the results in the book.\n(Currently going through this.)\nStochastic Calculus and Financial Applications (J. Michael Steele):\n\n\n\nStatistics:\nStatistical Inference (George Casella, Roger Berger):\nThis is the definitive ‘mathematical statistics’ book at the masters level. I believe many schools also draw their qualifying exam material/questions out of this book. I think it can be a little unmotivated at times and even a bit hand-wavy, but most people think it is the best book around this level. Some people suggest supplementing this book with Mathematical Statistics with Applications by Wackerly, et al. as the book is slower and does a better job with motivating the material.\nMathematical Statistics (Jun Shao):\nA ‘mathematical statistics’ book at the PhD level. It pretty much expects you to have had a graduate probability course or equivalent from the get-go. It is supposed to prepare you for PhD statistics qualifiers and is a good resource for exercises as there is an associated solutions manual. I am currently going through this.\n(Currently going through this.)\nAll of Statistics (Larry Wasserman):\n\nMathematical Statistics: Basic Ideas and Selected Topics (Peter Bickel, Kjell Doksum):\n\nAsymptotic Theory of Statistics and Probability (Anirban DasGupta):\n\nTheory of Point Estimation (Erich Lehmann, George Casella): \n\nHigh-Dimensional Statistics: A Non-Asymptotic Viewpoint (Martin Wainwright):\n\n\n\nML/AI:\nElements of Statistical Learning (Trevor Hastie, et al.): \nConsidered classic introduction to ML with a statistical view. It’s kind of a weird blend of some theory and application. I think the authors underestimate the pre-requisites they state in the beginning. In my opinion, if you don’t have a decent linear models/linear algebra background, the book is nearly unreadable.\nStatistical Learning with Sparsity (Trevor Hastie, et al.): \nI have a copy of this book and it looks like a good exposition of the LASSO (considering Robert Tibshirani is an author), as well as other methods with a focus on sparsity for high dimensions.\nProbabilistic Machine Learning: An Introduction (Kevin Murphy): \n\nProbabilistic Machine Learning: Advanced Topics (Kevin Murphy): \n\nDeep Learning (Goodfellow, et al.): \n\nPattern Recognition and Machine Learning (Christopher Bishop): \n\nLarge Language Models: A Deep Dive (Uday Kamath, et al.): \n\n\n\nOptimization:\nNumerical Optimization (Jorge Nocedal, Stephen J. Wright):\n\nConvex Optimization (Lieven Vandenberghe, Stephen Boyd): \n\n\n\nDifferential Geometry:\nAn Introduction to Manifolds (Loring Tu):\nA great introduction to smooth manifolds. The appendix on point-set topology is excellent.\n(Currently going through this.)\nIntroduction to Smooth Manifolds (John M. Lee):\nAnother great introduction to smooth manifolds. This book is much slower than Tu and covers a lot more content.\n(Currently going through this.)\n\n\nOptimal Transport:\nOptimal Transport for Applied Mathematicians: Calculus of Variations, PDEs, and Modeling (Filippo Santambrogio):\n\nStatistical Optimal Transport (Jonathan Niles-Weed, et al.):\n\n\n\nProblem Books:\n50 Challenging Problems in Probability (Frederick Mosteller):\n\nA Practical Guide to Quantitative Finance Interviews (Xinfeng Zhou):\n\nHeard on the Street: Quantitative Questions from Wall Street Job Interviews (Timothy Crack):\n\nIntermediate Counting & Probability (David Patrick):"
   },
   {
     "objectID": "readings.html#papers",
     "href": "readings.html#papers",
-    "title": "Readings",
+    "title": "Alex Yuan",
     "section": "Papers",
     "text": "Papers\nI’ve tried to organize these by subjects listed on arxiv or elsewhere.\n\nStatistics Theory:\nDNNs for nonparametric interaction models with diverging dimension (Bhattacharya, et al.)\n\n\nMachine Learning:\nLLMs are Bayesian, in expectation, not in realization (Chlon, et al.)\nAn Overview of Large Language Models for Statisticians (Wenlong Ji, et al.)\n\n\nComputation and Language:\nAttention is all you need (Vaswani, et al.)\nEfficient estimation of word representations in vector space (Mikolov, et al.)\nBERT: Pre-training of deep bidirectional transformers for language understanding (Devlin, et al.)\nAre LLMs Capable of Data-based Statistical and Causal Reasoning? Benchmarking Advanced Quantitative Reasoning with Data (Xiao Liu, et al.)\n\n\nSymbolic Computation:\nAutomatic differentiation in machine learning: a survey"
   },
   {
     "objectID": "readings.html#other",
     "href": "readings.html#other",
-    "title": "Readings",
+    "title": "Alex Yuan",
     "section": "Other",
     "text": "Other"
   },
@@ -137,7 +137,7 @@
     "href": "posts/2nd-post/index.html#probability-theory",
     "title": "Mathematical Tips and Tricks",
     "section": "Probability Theory:",
-    "text": "Probability Theory:\n\nInvertible Transformations\nSuppose \\(g:\\mathbb{R}^n \\to \\mathbb{R}^n\\) is a bijection (equivalently strictly monotonic) and \\(X\\) is a random variable. If we are interested in calcuating the probability density function \\(f_Y(y)\\) of some deterministic transformation \\(Y=g(X)\\), the change of variable formula tells us that\n\\[\nf_Y(y) = f_X(g^{-1}(y))|\\text{det}(J_{g^{-1}}(y))|\n\\] where \\(J_{g^{-1}}(y)\\) is the Jacobian matrix of \\(g^{-1}\\)."
+    "text": "Probability Theory:\n\nInvertible Transformations\nSuppose \\(g:\\mathbb{R}^n \\to \\mathbb{R}^n\\) is a bijection (equivalently strictly monotonic) and \\(X\\) is a random variable. If we are interested in calcuating the probability density function \\(f_Y(y)\\) of some deterministic transformation \\(Y=g(X)\\), the change of variable formula tells us that\n\\[\nf_Y(y) = f_X(g^{-1}(y))|\\text{det}(J_{g^{-1}}(y))|\n\\] where \\(J_{g^{-1}}(y)\\) is the Jacobian matrix of \\(g^{-1}\\).\n\n\nDisjointification:\nGiven any non empty set \\(\\Omega\\) and from any sequence \\(\\{A_n\\}_{n \\in \\mathbb{N}} \\subset \\mathcal{P}(\\Omega)\\), one can construct a pairwise disjoint sequence \\(\\{B_n\\}_{n \\in \\mathbb{N}} \\subset \\mathcal{P}(\\Omega)\\) defined by \\(B_1=A_1\\) and for \\(n \\geq 2:\\) \\[\nB_n = A_n \\cap (\\bigcup_{i=1}^{n-1}A_i)^c\n\\] with the same union \\[\n\\bigcup_{n \\in \\mathbb{N}}A_n = \\dot{\\bigcup}_{n\\in \\mathbb{N}}B_n\n\\] where \\(\\dot{\\bigcup}\\) denotes a disjoint union. This lemma comes up frequently in probability/analysis especially in the context of showing countable sub-additivity or inclusion-exclusion."
   },
   {
     "objectID": "posts/3rd-post/index.html",
@@ -229,5 +229,19 @@
     "title": "Blog",
     "section": "",
     "text": "Mathematical Tips and Tricks\n\n\n\n\n\n\nProbability\n\n\nLinear Algebra\n\n\nProblem Solving\n\n\n\nIn mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’\n\n\n\n\n\nAlex Yuan\n\n\n\n\n\n\n\n\n\n\n\n\nSigma-Algebras as Information\n\n\n\n\n\n\nAnalysis\n\n\nProbability\n\n\nInformation Theory\n\n\n\nThis post is heavily inspired by Marcus Pivato’s notes on measure and probability. This post is still in progress.\n\n\n\n\n\nAlex Yuan\n\n\n\n\n\n\n\n\n\n\n\n\nExercises and questions\n\n\n\n\n\n\nProbability\n\n\nCombinatorics\n\n\nProblem Solving\n\n\nInterview Prep\n\n\n\nI plan to document some probability-ish questions and solutions here.\n\n\n\n\n\nAlex Yuan\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2nd-post/index.html#analysis",
+    "href": "posts/2nd-post/index.html#analysis",
+    "title": "Mathematical Tips and Tricks",
+    "section": "Analysis:",
+    "text": "Analysis:\n\nDisjointification:\nGiven any non empty set \\(\\Omega\\) and from any sequence \\(\\{A_n\\}_{n \\in \\mathbb{N}} \\subset \\mathcal{P}(\\Omega)\\), one can construct a pairwise disjoint sequence \\(\\{B_n\\}_{n \\in \\mathbb{N}} \\subset \\mathcal{P}(\\Omega)\\) defined by \\(B_1=A_1\\) and for \\(n \\geq 2:\\) \\[\nB_n = A_n \\cap (\\bigcup_{i=1}^{n-1}A_i)^c\n\\] with the same union \\[\n\\bigcup_{n \\in \\mathbb{N}}A_n = \\dot{\\bigcup}_{n\\in \\mathbb{N}}B_n\n\\] where \\(\\dot{\\bigcup}\\) denotes a disjoint union. This lemma comes up frequently in analysis especially in the context of showing countable sub-additivity or inclusion-exclusion."
+  },
+  {
+    "objectID": "Notes.html",
+    "href": "Notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "This will be a page for some notes that I have compiled. Please note that these notes may contain errors and are not finished (and will likely never be…)\n\nProbability and Measure Theory:\nProbability & Measure (Aug 2025)"
   }
 ]
