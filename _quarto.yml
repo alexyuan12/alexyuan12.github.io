@@ -10,7 +10,6 @@ website:
       - href: index.qmd
         text: Home
       - writing.qmd
-      - readings.qmd
       - Notes.qmd
   
 format:
