@@ -4,6 +4,10 @@ title: "Notes"
 This will be a page for some notes that I have compiled. Please note that these notes may contain errors and are not finished (and will likely never be...)
 
 
-### Probability and Measure Theory:
+### Analysis:
 
-[Probability & Measure (Aug 2025)](https://github.com/alexyuan12/probabilitynotes/blob/main/probabilitynotes.pdf)
+[Probability & Measure](https://github.com/alexyuan12/probabilitynotes/blob/main/probabilitynotes.pdf)
+
+### Learning Theory:
+
+[Principal Components Analysis](https://github.com/alexyuan12/probabilitynotes/blob/main/PCA_notes.pdf)

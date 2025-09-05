@@ -11,6 +11,7 @@
     "listing": "/posts.html",
     "items": [
       "/posts/2nd-post/index.html",
+      "/posts/4th-post/index.html",
       "/posts/1st-post/index.html",
       "/posts/3rd-post/index.html"
     ]
@@ -19,6 +20,7 @@
     "listing": "/writing.html",
     "items": [
       "/posts/2nd-post/index.html",
+      "/posts/4th-post/index.html",
       "/posts/1st-post/index.html",
       "/posts/3rd-post/index.html"
     ]

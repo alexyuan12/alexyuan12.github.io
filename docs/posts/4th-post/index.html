@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alex Yuan">
-<meta name="description" content="In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’">
+<meta name="description" content="A compiled list of some books, papers, and other reading materials’">
 
-<title>Mathematical Tips and Tricks – Alex Yuan</title>
+<title>Reading List – Alex Yuan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -128,8 +99,9 @@ window.Quarto = {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../readings.html"> 
-<span class="menu-text">Books</span></a>
+    <span class="nav-link">
+<span class="menu-text">readings.qmd</span>
+    </span>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../Notes.html"> 
@@ -146,16 +118,16 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Mathematical Tips and Tricks</h1>
+      <h1 class="title">Reading List</h1>
                   <div>
         <div class="description">
-          In mathematics and statistics, there are often useful ‘tips and tricks’ to know. I hope to document at least a few of these. This post will likely be forever a work in progress, as I come across new ‘tips and tricks.’
+          A compiled list of some books, papers, and other reading materials’
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">Probability</div>
-                <div class="quarto-category">Linear Algebra</div>
-                <div class="quarto-category">Problem Solving</div>
+                <div class="quarto-category">Analysis</div>
+                <div class="quarto-category">Statistics</div>
               </div>
                   </div>
   </div>
@@ -183,19 +155,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#linear-algebra" id="toc-linear-algebra" class="nav-link active" data-scroll-target="#linear-algebra">Linear Algebra:</a>
-  <ul class="collapse">
-  <li><a href="#quadratic-forms" id="toc-quadratic-forms" class="nav-link" data-scroll-target="#quadratic-forms">Quadratic Forms</a></li>
-  <li><a href="#cyclic-permutation-property" id="toc-cyclic-permutation-property" class="nav-link" data-scroll-target="#cyclic-permutation-property">Cyclic Permutation Property</a></li>
-  <li><a href="#trace-trick" id="toc-trace-trick" class="nav-link" data-scroll-target="#trace-trick">Trace Trick</a></li>
-  <li><a href="#einstein-summation" id="toc-einstein-summation" class="nav-link" data-scroll-target="#einstein-summation">Einstein Summation</a></li>
-  <li><a href="#schur-complements" id="toc-schur-complements" class="nav-link" data-scroll-target="#schur-complements">Schur Complements</a></li>
-  </ul></li>
-  <li><a href="#probability-theory" id="toc-probability-theory" class="nav-link" data-scroll-target="#probability-theory">Probability Theory:</a>
-  <ul class="collapse">
-  <li><a href="#invertible-transformations" id="toc-invertible-transformations" class="nav-link" data-scroll-target="#invertible-transformations">Invertible Transformations</a></li>
-  <li><a href="#disjointification" id="toc-disjointification" class="nav-link" data-scroll-target="#disjointification">Disjointification:</a></li>
-  </ul></li>
+  <li><a href="#books" id="toc-books" class="nav-link active" data-scroll-target="#books">Books</a></li>
+  <li><a href="#papers" id="toc-papers" class="nav-link" data-scroll-target="#papers">Papers</a></li>
+  <li><a href="#other" id="toc-other" class="nav-link" data-scroll-target="#other">Other</a></li>
   </ul>
 </nav>
     </div>
@@ -206,92 +168,136 @@ window.Quarto = {
 
 
 
-<section id="linear-algebra" class="level2">
-<h2 class="anchored" data-anchor-id="linear-algebra">Linear Algebra:</h2>
-<section id="quadratic-forms" class="level3">
-<h3 class="anchored" data-anchor-id="quadratic-forms">Quadratic Forms</h3>
-<p>Given a square matrix <span class="math inline">\(A \in \mathbb{R}^{n \times n}\)</span> and a vector <span class="math inline">\(x \in \mathbb{R}^n\)</span>, the scalar <span class="math inline">\(x^T A x\)</span> is called a quadratic form:</p>
-<p><span class="math display">\[
-x^T A x = \sum_{i=1}^n \sum_{j=1}^n A_{i,j} x_i x_j
-\]</span></p>
+<p>The following are lists of books, papers, and other readings. I have either read these personally (at least partially), or I have had them recommended to me.</p>
+<section id="books" class="level2">
+<h2 class="anchored" data-anchor-id="books">Books</h2>
+<section id="analysis" class="level4">
+<h4 class="anchored" data-anchor-id="analysis"><u>Analysis:</u></h4>
+<p><strong><em>Principles of Mathematical Analysis (Walter Rudin):</em></strong><br>
+A notorious undergraduate textbook for good reason. It is very terse on a first read, but it has everything you need to know about analysis at the undergraduate level. Most people who have read this book tend to agree that chapters 1-7 are essential. I don’t think this is a good book to learn from unless you have other resources or an instructor. The exercises are pretty difficult.</p>
+<p><strong><em>An Introduction to Hilbert Space (Nicholas Young):</em></strong><br>
+An introduction to functional analysis, focusing heavily on the theory of Hilbert spaces and their applications. It’s very concise and readable without getting into the more abstract measure theoretical issues. I think this book also has nice exercises built into the body of the text.</p>
+<p><strong><em>Analysis (Elliot Lieb, Michael Loss):</em></strong><br>
+Supposedly a good introduction to analysis at the graduate level. The focus is more on ‘applied’ analysis and is good for getting up to speed quickly. I think the book is tailored more to those interested in physics and partial differential equations. I’ve been told that the exercises are good qualifying exam practice.</p>
+<p><strong><em>Real Analysis: Modern Techniques and Their Applications (Gerald Folland):</em></strong><br>
+It is a standard analysis textbook at the graduate level along with the other books by Rudin, Royden, etc. It covers measure theory, point-set topology, functional analysis, and some other relevant topics. The analysis done in this book is very general, however it is very well written albeit terse at times.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>Functional Analysis, Sobolev Spaces and Partial Differential Equations (Haim Brezis):</em></strong><br>
+This is a standard textbook for functional analysis (with a view of PDEs) at the graduate level. I have only read a couple pages about Hanh-Banach, but supposedly it is a must read for those interested in partial differential equations.</p>
 </section>
-<section id="cyclic-permutation-property" class="level3">
-<h3 class="anchored" data-anchor-id="cyclic-permutation-property">Cyclic Permutation Property</h3>
-<p>For matrices <span class="math inline">\(A, B, C\)</span> such that <span class="math inline">\(ABC\)</span> is <em>square</em>, we have:</p>
-<p><span class="math display">\[
-\text{tr}(ABC) = \text{tr}(BCA) = \text{tr}(CAB)
-\]</span></p>
+<section id="probability" class="level4">
+<h4 class="anchored" data-anchor-id="probability"><u>Probability:</u></h4>
+<p><strong><em>Probability Theory and Examples (Rick Durrett):</em></strong><br>
+This is a standard graduate text on probability. It is terse and has some annoying/unstandard notation. I think this book is unreadable if you do not have an instructor handy or previous background in measure theory. I would recommend skipping the measure theory intro if you already know it. Despite these issues, the coverage of topics and examples is great.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>Probability and Measure (Patrick Billingsley):</em></strong><br>
+This is supposedly the reference on probability theory. I have skimmed parts of it, and it is very terse. I have been told that if you want to pursue a research career in probability theory, Billingsley is a must read.</p>
+<p><strong><em>Measure Theory and Probability Theory (Krishna Athreya, Soumendra Lahiri):</em></strong><br>
+This is a book that was just brought to my attention at the time of writing (August 2025). It seems to be sort of similar in spirit to Billingsley, and it takes a general approach from the beginning. Skimming through, it seems to try to offer a lot of intuition on the measure theoretic details.</p>
+<p><strong><em>High-Dimensional Probability (Roman Vershynin):</em></strong><br>
+A book on probability in high dimensions. It is pedagogically sound and is a pretty different flavor compared to other probability texts. No measure theory is requried. The exercises are great, and I think there is a lot of motivation in data science for the results in the book.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>Stochastic Calculus and Financial Applications (J. Michael Steele):</em></strong><br>
+</p>
 </section>
-<section id="trace-trick" class="level3">
-<h3 class="anchored" data-anchor-id="trace-trick">Trace Trick</h3>
-<p>Using the <em>cyclic permutation property</em> we can derive the <em>trace trick</em>, which allows us to rewrite the scalar inner product <span class="math inline">\(x^T A x\)</span> as follows:</p>
-<p><span class="math display">\[
-x^T A x = \text{tr}(x^T A x) = \text{tr}(x x^T A)
-\]</span></p>
+<section id="statistics" class="level4">
+<h4 class="anchored" data-anchor-id="statistics"><u>Statistics:</u></h4>
+<p><strong><em>Statistical Inference (George Casella, Roger Berger):</em></strong><br>
+This is the definitive ‘mathematical statistics’ book at the masters level. I believe many schools also draw their qualifying exam material/questions out of this book. I think it can be a little unmotivated at times and even a bit hand-wavy, but most people think it is the best book around this level. Some people suggest supplementing this book with <em>Mathematical Statistics with Applications</em> by Wackerly, et al.&nbsp;as the book is slower and does a better job with motivating the material.</p>
+<p><strong><em>Mathematical Statistics (Jun Shao):</em></strong><br>
+A ‘mathematical statistics’ book at the PhD level. It pretty much expects you to have had a graduate probability course or equivalent from the get-go. It is supposed to prepare you for PhD statistics qualifiers and is a good resource for exercises as there is an associated solutions manual. I am currently going through this.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>All of Statistics (Larry Wasserman):</em></strong><br>
+</p>
+<p><strong><em>Mathematical Statistics: Basic Ideas and Selected Topics (Peter Bickel, Kjell Doksum):</em></strong><br>
+</p>
+<p><strong><em>Asymptotic Theory of Statistics and Probability (Anirban DasGupta):</em></strong><br>
+</p>
+<p><strong><em>Theory of Point Estimation (Erich Lehmann, George Casella): </em></strong><br>
+</p>
+<p><strong><em>High-Dimensional Statistics: A Non-Asymptotic Viewpoint (Martin Wainwright):</em></strong><br>
+</p>
 </section>
-<section id="einstein-summation" class="level3">
-<h3 class="anchored" data-anchor-id="einstein-summation">Einstein Summation</h3>
-<p>This is a nice notational convention for simplifying expressions with tensors. The three rules are namely:</p>
-<ol type="1">
-<li>Repeated indices are implicitly summed over</li>
-<li>Each index can appear at most twice in any term</li>
-<li>Each term must contain identical non-repeated indices.</li>
-</ol>
-<p>As a slightly complex example, suppose we have a tensor <span class="math inline">\(S_{ntk}\)</span> where n indexes examples in a batch, t indexes locations in the sequence, and k indexes words in a one-hot representation. Let <span class="math inline">\(W_{kd}\)</span> be an embedding matrix that maps sparse one-hot vectors in <span class="math inline">\(R^k\)</span> to dense vectors in <span class="math inline">\(R^d\)</span>. We can convert the batch of sequences of one-hots to a batch of sequences of embeddings as follows: <span class="math display">\[
-E_{ntd} = \sum_kS_{ntk}W_{kd}
-\]</span> We can compute the sum of the embedding vectors of each sequence (to get a bag of words) as follows:</p>
-<p><span class="math display">\[
-E_{nd} = \sum_k \sum_t S_{ntk}W_{kd}
-\]</span> Finally, we can pass each sequence’s vector representation through another linear transformation <span class="math inline">\(V_{dc}\)</span> to map to the logits over a classifier with c labels:</p>
-<p><span class="math display">\[
-L_{nc} = \sum_dE_{nd}V_{dc}=\sum_d \sum_k \sum_tS_{ntk}W_{kd}V_{dc}
-\]</span> In Einstein notation, we write <span class="math inline">\(L_{nc}=S_{ntk}W_{kd}V_{dc}\)</span>. Note that k and d are summed over because those indices appear twice on the right hand side, while we sum over t because that index does not occur on the left hand side.</p>
+<section id="mlai" class="level4">
+<h4 class="anchored" data-anchor-id="mlai"><u>ML/AI:</u></h4>
+<p><strong><em>Elements of Statistical Learning (Trevor Hastie, et al.): </em></strong><br>
+Considered classic introduction to ML with a statistical view. It’s kind of a weird blend of some theory and application. I think the authors underestimate the pre-requisites they state in the beginning. In my opinion, if you don’t have a decent linear models/linear algebra background, the book is nearly unreadable.</p>
+<p><strong><em>Statistical Learning with Sparsity (Trevor Hastie, et al.): </em></strong><br>
+I have a copy of this book and it looks like a good exposition of the LASSO (considering Robert Tibshirani is an author), as well as other methods with a focus on sparsity for high dimensions.</p>
+<p><strong><em>Probabilistic Machine Learning: An Introduction (Kevin Murphy): </em></strong><br>
+</p>
+<p><strong><em>Probabilistic Machine Learning: Advanced Topics (Kevin Murphy): </em></strong><br>
+</p>
+<p><strong><em>Deep Learning (Goodfellow, et al.): </em></strong><br>
+</p>
+<p><strong><em>Pattern Recognition and Machine Learning (Christopher Bishop): </em></strong><br>
+</p>
+<p><strong><em>Large Language Models: A Deep Dive (Uday Kamath, et al.): </em></strong><br>
+</p>
 </section>
-<section id="schur-complements" class="level3">
-<h3 class="anchored" data-anchor-id="schur-complements">Schur Complements</h3>
-<p>Consider a general partitioned matrix <span class="math display">\[
-M = \begin{pmatrix}
-E &amp; F \\
-G &amp; H
-\end{pmatrix}
-\]</span> where we assume <span class="math inline">\(E\)</span> and <span class="math inline">\(H\)</span> are invertible. We have <span class="math display">\[
-M^{-1} =
-\begin{pmatrix}
-(M/H)^{-1} &amp; -(M/H)^{-1} F H^{-1} \\
-- H^{-1} G (M/H)^{-1} &amp; H^{-1} + H^{-1} G (M/H)^{-1} F H^{-1}
-\end{pmatrix}
-\]</span> <span class="math display">\[
-= \begin{pmatrix}
-E^{-1} + E^{-1} F (M/E)^{-1} G E^{-1} &amp; - E^{-1} F (M/E)^{-1} \\
--(M/E)^{-1} G E^{-1} &amp; (M/E)^{-1}
-\end{pmatrix}
-\]</span> where <span class="math display">\[
-M/H := E - F H^{-1} G
-\]</span> <span class="math display">\[
-M/E := H - G E^{-1} F
-\]</span> We say that <span class="math inline">\(M/H\)</span> is the <strong><em>schur complement</em></strong> of <span class="math inline">\(M\)</span> with respect to <span class="math inline">\(H\)</span>, while <span class="math inline">\(M/E\)</span> is the <strong><em>schur complement</em></strong> of <span class="math inline">\(M\)</span> with respect to <span class="math inline">\(E\)</span>.</p>
-<p>The proof can be found in <em>Probabilistic Machine Learning: An Introduction</em> by Kevin Murphy.</p>
+<section id="optimization" class="level4">
+<h4 class="anchored" data-anchor-id="optimization"><u>Optimization:</u></h4>
+<p><strong><em>Numerical Optimization (Jorge Nocedal, Stephen J. Wright):</em></strong><br>
+</p>
+<p><strong><em>Convex Optimization (Lieven Vandenberghe, Stephen Boyd): </em></strong><br>
+</p>
+</section>
+<section id="differential-geometry" class="level4">
+<h4 class="anchored" data-anchor-id="differential-geometry"><u>Differential Geometry:</u></h4>
+<p><strong><em>An Introduction to Manifolds (Loring Tu):</em></strong><br>
+A great introduction to smooth manifolds. The appendix on point-set topology is excellent.</p>
+<p><em>(Currently going through this.)</em></p>
+<p><strong><em>Introduction to Smooth Manifolds (John M. Lee):</em></strong><br>
+Another great introduction to smooth manifolds. This book is much slower than Tu and covers a lot more content.</p>
+<p><em>(Currently going through this.)</em></p>
+</section>
+<section id="optimal-transport" class="level4">
+<h4 class="anchored" data-anchor-id="optimal-transport"><u>Optimal Transport:</u></h4>
+<p><strong><em>Optimal Transport for Applied Mathematicians: Calculus of Variations, PDEs, and Modeling (Filippo Santambrogio):</em></strong><br>
+</p>
+<p><strong><em>Statistical Optimal Transport (Jonathan Niles-Weed, et al.):</em></strong><br>
+</p>
+</section>
+<section id="problem-books" class="level4">
+<h4 class="anchored" data-anchor-id="problem-books"><u>Problem Books:</u></h4>
+<p><strong><em>50 Challenging Problems in Probability (Frederick Mosteller):</em></strong><br>
+</p>
+<p><strong><em>A Practical Guide to Quantitative Finance Interviews (Xinfeng Zhou):</em></strong><br>
+</p>
+<p><strong><em>Heard on the Street: Quantitative Questions from Wall Street Job Interviews (Timothy Crack):</em></strong><br>
+</p>
+<p><strong><em>Intermediate Counting &amp; Probability (David Patrick):</em></strong><br>
+</p>
 </section>
 </section>
-<section id="probability-theory" class="level2">
-<h2 class="anchored" data-anchor-id="probability-theory">Probability Theory:</h2>
-<section id="invertible-transformations" class="level3">
-<h3 class="anchored" data-anchor-id="invertible-transformations">Invertible Transformations</h3>
-<p>Suppose <span class="math inline">\(g:\mathbb{R}^n \to \mathbb{R}^n\)</span> is a bijection (equivalently strictly monotonic) and <span class="math inline">\(X\)</span> is a random variable. If we are interested in calcuating the probability density function <span class="math inline">\(f_Y(y)\)</span> of some deterministic transformation <span class="math inline">\(Y=g(X)\)</span>, the <strong><em>change of variable</em></strong> formula tells us that</p>
-<p><span class="math display">\[
-f_Y(y) = f_X(g^{-1}(y))|\text{det}(J_{g^{-1}}(y))|
-\]</span> where <span class="math inline">\(J_{g^{-1}}(y)\)</span> is the Jacobian matrix of <span class="math inline">\(g^{-1}\)</span>.</p>
+<section id="papers" class="level2">
+<h2 class="anchored" data-anchor-id="papers">Papers</h2>
+<p>I’ve tried to organize these by subjects listed on arxiv or elsewhere.</p>
+<section id="statistics-theory" class="level4">
+<h4 class="anchored" data-anchor-id="statistics-theory"><u>Statistics Theory:</u></h4>
+<p><a href="https://arxiv.org/pdf/2302.05851">DNNs for nonparametric interaction models with diverging dimension (Bhattacharya, et al.)</a></p>
 </section>
-<section id="disjointification" class="level3">
-<h3 class="anchored" data-anchor-id="disjointification">Disjointification:</h3>
-<p>Given any non empty set <span class="math inline">\(\Omega\)</span> and from any sequence <span class="math inline">\(\{A_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)\)</span>, one can construct a pairwise disjoint sequence <span class="math inline">\(\{B_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)\)</span> defined by <span class="math inline">\(B_1=A_1\)</span> and for <span class="math inline">\(n \geq 2:\)</span> <span class="math display">\[
-B_n = A_n \cap (\bigcup_{i=1}^{n-1}A_i)^c
-\]</span> with the same union <span class="math display">\[
-\bigcup_{n \in \mathbb{N}}A_n = \dot{\bigcup}_{n\in \mathbb{N}}B_n
-\]</span> where <span class="math inline">\(\dot{\bigcup}\)</span> denotes a disjoint union. This lemma comes up frequently in probability/analysis especially in the context of showing countable sub-additivity or inclusion-exclusion.</p>
+<section id="machine-learning" class="level4">
+<h4 class="anchored" data-anchor-id="machine-learning"><u>Machine Learning:</u></h4>
+<p><a href="https://arxiv.org/pdf/2507.11768">LLMs are Bayesian, in expectation, not in realization (Chlon, et al.)</a></p>
+<p><a href="https://arxiv.org/pdf/2502.17814">An Overview of Large Language Models for Statisticians (Wenlong Ji, et al.)</a></p>
+</section>
+<section id="computation-and-language" class="level4">
+<h4 class="anchored" data-anchor-id="computation-and-language"><u>Computation and Language:</u></h4>
+<p><a href="https://arxiv.org/pdf/1706.03762">Attention is all you need (Vaswani, et al.)</a></p>
+<p><a href="https://arxiv.org/pdf/1301.3781">Efficient estimation of word representations in vector space (Mikolov, et al.)</a></p>
+<p><a href="https://arxiv.org/pdf/1810.04805">BERT: Pre-training of deep bidirectional transformers for language understanding (Devlin, et al.)</a></p>
+<p><a href="https://arxiv.org/pdf/2402.17644">Are LLMs Capable of Data-based Statistical and Causal Reasoning? Benchmarking Advanced Quantitative Reasoning with Data (Xiao Liu, et al.)</a></p>
+</section>
+<section id="symbolic-computation" class="level4">
+<h4 class="anchored" data-anchor-id="symbolic-computation"><u>Symbolic Computation:</u></h4>
+<p><a href="https://arxiv.org/pdf/1502.05767">Automatic differentiation in machine learning: a survey</a></p>
+</section>
+</section>
+<section id="other" class="level2">
+<h2 class="anchored" data-anchor-id="other">Other</h2>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

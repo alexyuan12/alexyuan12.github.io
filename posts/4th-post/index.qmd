@@ -1,3 +1,12 @@
+---
+title: "Reading List"
+description: "A compiled list of some books, papers, and other reading materials'"
+author:
+  - name: "Alex Yuan"
+categories: [Probability, Analysis, Statistics]
+draft: false
+---
+
 The following are lists of books, papers, and other readings. I have either read these personally (at least partially), or I have had them recommended to me.
 
 ## Books
@@ -135,5 +144,3 @@ I've tried to organize these by subjects listed on arxiv or elsewhere.
 [Automatic differentiation in machine learning: a survey](https://arxiv.org/pdf/1502.05767)
 
 ## Other
-
-
