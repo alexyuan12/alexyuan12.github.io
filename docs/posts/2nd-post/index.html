@@ -128,10 +128,6 @@ window.Quarto = {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../readings.html"> 
-<span class="menu-text">Books</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../Notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
@@ -194,6 +190,7 @@ window.Quarto = {
   <li><a href="#probability-theory" id="toc-probability-theory" class="nav-link" data-scroll-target="#probability-theory">Probability Theory:</a>
   <ul class="collapse">
   <li><a href="#invertible-transformations" id="toc-invertible-transformations" class="nav-link" data-scroll-target="#invertible-transformations">Invertible Transformations</a></li>
+  <li><a href="#t-step-transition-probabilities" id="toc-t-step-transition-probabilities" class="nav-link" data-scroll-target="#t-step-transition-probabilities"><span class="math inline">\(T\)</span>-step Transition Probabilities</a></li>
   <li><a href="#disjointification" id="toc-disjointification" class="nav-link" data-scroll-target="#disjointification">Disjointification:</a></li>
   </ul></li>
   </ul>
@@ -281,6 +278,12 @@ M/E := H - G E^{-1} F
 <p><span class="math display">\[
 f_Y(y) = f_X(g^{-1}(y))|\text{det}(J_{g^{-1}}(y))|
 \]</span> where <span class="math inline">\(J_{g^{-1}}(y)\)</span> is the Jacobian matrix of <span class="math inline">\(g^{-1}\)</span>.</p>
+</section>
+<section id="t-step-transition-probabilities" class="level3">
+<h3 class="anchored" data-anchor-id="t-step-transition-probabilities"><span class="math inline">\(T\)</span>-step Transition Probabilities</h3>
+<p>Let <span class="math inline">\(\{X_0, X_1,\ldots, X_n\}\)</span> be a markov chain <span class="math inline">\(S\)</span> be a state space, and <span class="math inline">\((P)_{i,j}\)</span> be an entry of the transition matrix. If we are interested in the probability of making it from state <span class="math inline">\(i\)</span> to state <span class="math inline">\(j\)</span> over <span class="math inline">\(T\)</span> steps, then the <span class="math inline">\(T\)</span>-step probabilities are given by <span class="math display">\[
+\mathbb{P}(X_t=j|X_0=i) = \mathbb{P}(X_{t+n}=j|X_0=i)= (P^T)_{ij}
+\]</span> for all n.&nbsp;</p>
 </section>
 <section id="disjointification" class="level3">
 <h3 class="anchored" data-anchor-id="disjointification">Disjointification:</h3>

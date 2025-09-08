@@ -98,9 +98,9 @@ where $J_{g^{-1}}(y)$ is the Jacobian matrix of $g^{-1}$.
 
 ### $T$-step Transition Probabilities
 
-Let $\{X_0, X_1,\ldots, X_n\}$ be a markov chain and $S$ be a state space. If we are interested in the probability of making it from state $i$ to state $j$ over $T$ steps, then the $T$-step probabilities are given by 
+Let $\{X_0, X_1,\ldots, X_n\}$ be a markov chain $S$ be a state space, and $(P)_{i,j}$ be an entry of the transition matrix. If we are interested in the probability of making it from state $i$ to state $j$ over $T$ steps, then the $T$-step probabilities are given by 
 $$
-\mathbb{P}(X_t=j|X_0=i) = \mathbb{P}(X_{t+n}=j|X_0=i)= (P^t)_{ij}
+\mathbb{P}(X_t=j|X_0=i) = \mathbb{P}(X_{t+n}=j|X_0=i)= (P^T)_{ij}
 $$
 for all n. 
 
