@@ -96,6 +96,14 @@ f_Y(y) = f_X(g^{-1}(y))|\text{det}(J_{g^{-1}}(y))|
 $$
 where $J_{g^{-1}}(y)$ is the Jacobian matrix of $g^{-1}$.
 
+### $T$-step Transition Probabilities
+
+Let $\{X_0, X_1,\ldots, X_n\}$ be a markov chain and $S$ be a state space. If we are interested in the probability of making it from state $i$ to state $j$ over $T$ steps, then the $T$-step probabilities are given by 
+$$
+\mathbb{P}(X_t=j|X_0=i) = \mathbb{P}(X_{t+n}=j|X_0=i)= (P^t)_{ij}
+$$
+for all n. 
+
 ### Disjointification: 
 Given any non empty set $\Omega$ and from any sequence $\{A_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)$, one can construct a pairwise disjoint sequence $\{B_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)$ defined by $B_1=A_1$ and for $n \geq 2:$
 $$

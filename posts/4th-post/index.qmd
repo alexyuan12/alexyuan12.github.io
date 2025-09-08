@@ -1,6 +1,6 @@
 ---
 title: "Reading List"
-description: "A compiled list of some books, papers, and other reading materials'"
+description: "A compiled list of some books, papers, and other reading materials"
 author:
   - name: "Alex Yuan"
 categories: [Probability, Analysis, Statistics]
