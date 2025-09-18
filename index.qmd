@@ -18,3 +18,4 @@ Howdy! I am currently finishing up a master’s degree in Statistics at *Califor
 I am mostly interested in a couple different areas of probability, statistics, and machine learning. Particularly, Optimal Transport and Functional Data Analysis are some subjects that I am working towards.
 
 :::
+s

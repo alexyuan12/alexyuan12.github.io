@@ -185,13 +185,15 @@ window.Quarto = {
   <li><a href="#cyclic-permutation-property" id="toc-cyclic-permutation-property" class="nav-link" data-scroll-target="#cyclic-permutation-property">Cyclic Permutation Property</a></li>
   <li><a href="#trace-trick" id="toc-trace-trick" class="nav-link" data-scroll-target="#trace-trick">Trace Trick</a></li>
   <li><a href="#einstein-summation" id="toc-einstein-summation" class="nav-link" data-scroll-target="#einstein-summation">Einstein Summation</a></li>
-  <li><a href="#schur-complements" id="toc-schur-complements" class="nav-link" data-scroll-target="#schur-complements">Schur Complements</a></li>
+  <li><a href="#schur-complements" id="toc-schur-complements" class="nav-link" data-scroll-target="#schur-complements">Schur Complements:</a></li>
+  <li><a href="#hutchinson-trace-estimator" id="toc-hutchinson-trace-estimator" class="nav-link" data-scroll-target="#hutchinson-trace-estimator">Hutchinson Trace Estimator</a></li>
   </ul></li>
   <li><a href="#probability-theory" id="toc-probability-theory" class="nav-link" data-scroll-target="#probability-theory">Probability Theory:</a>
   <ul class="collapse">
   <li><a href="#invertible-transformations" id="toc-invertible-transformations" class="nav-link" data-scroll-target="#invertible-transformations">Invertible Transformations</a></li>
-  <li><a href="#t-step-transition-probabilities" id="toc-t-step-transition-probabilities" class="nav-link" data-scroll-target="#t-step-transition-probabilities"><span class="math inline">\(T\)</span>-step Transition Probabilities</a></li>
   <li><a href="#disjointification" id="toc-disjointification" class="nav-link" data-scroll-target="#disjointification">Disjointification:</a></li>
+  <li><a href="#exponential-families" id="toc-exponential-families" class="nav-link" data-scroll-target="#exponential-families">Exponential Families:</a></li>
+  <li><a href="#t-step-transition-probabilities" id="toc-t-step-transition-probabilities" class="nav-link" data-scroll-target="#t-step-transition-probabilities"><span class="math inline">\(T\)</span>-step Transition Probabilities</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -245,7 +247,7 @@ L_{nc} = \sum_dE_{nd}V_{dc}=\sum_d \sum_k \sum_tS_{ntk}W_{kd}V_{dc}
 \]</span> In Einstein notation, we write <span class="math inline">\(L_{nc}=S_{ntk}W_{kd}V_{dc}\)</span>. Note that k and d are summed over because those indices appear twice on the right hand side, while we sum over t because that index does not occur on the left hand side.</p>
 </section>
 <section id="schur-complements" class="level3">
-<h3 class="anchored" data-anchor-id="schur-complements">Schur Complements</h3>
+<h3 class="anchored" data-anchor-id="schur-complements">Schur Complements:</h3>
 <p>Consider a general partitioned matrix <span class="math display">\[
 M = \begin{pmatrix}
 E &amp; F \\
@@ -269,6 +271,12 @@ M/E := H - G E^{-1} F
 \]</span> We say that <span class="math inline">\(M/H\)</span> is the <strong><em>schur complement</em></strong> of <span class="math inline">\(M\)</span> with respect to <span class="math inline">\(H\)</span>, while <span class="math inline">\(M/E\)</span> is the <strong><em>schur complement</em></strong> of <span class="math inline">\(M\)</span> with respect to <span class="math inline">\(E\)</span>.</p>
 <p>The proof can be found in <em>Probabilistic Machine Learning: An Introduction</em> by Kevin Murphy.</p>
 </section>
+<section id="hutchinson-trace-estimator" class="level3">
+<h3 class="anchored" data-anchor-id="hutchinson-trace-estimator">Hutchinson Trace Estimator</h3>
+<p>Sometimes it is difficult to evaluate the matrix <span class="math inline">\(A\)</span>, but it may be easy to compute the matrix products <span class="math inline">\(Av\)</span>. Suppose <span class="math inline">\(v\)</span> is a random vector such that <span class="math inline">\(\mathbb{E}(vv^T)=I\)</span>. In this case, we can create a Monte Carlo approximation to tr(<span class="math inline">\(A\)</span>) using the following identity: <span class="math display">\[
+\text{tr}(A)=\text{tr}(A\mathbb{E}[vv^T])=\mathbb{E}[\text{tr}(Avv^T)]=\mathbb{E}[\text{tr}(v^TAv)]=\mathbb{E}[v^TAv]
+\]</span></p>
+</section>
 </section>
 <section id="probability-theory" class="level2">
 <h2 class="anchored" data-anchor-id="probability-theory">Probability Theory:</h2>
@@ -279,19 +287,33 @@ M/E := H - G E^{-1} F
 f_Y(y) = f_X(g^{-1}(y))|\text{det}(J_{g^{-1}}(y))|
 \]</span> where <span class="math inline">\(J_{g^{-1}}(y)\)</span> is the Jacobian matrix of <span class="math inline">\(g^{-1}\)</span>.</p>
 </section>
+<section id="disjointification" class="level3">
+<h3 class="anchored" data-anchor-id="disjointification">Disjointification:</h3>
+<p>Given any non empty set <span class="math inline">\(\Omega\)</span> and from any seq=uence <span class="math inline">\(\{A_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)\)</span>, one can construct a pairwise disjoint sequence <span class="math inline">\(\{B_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)\)</span> defined by <span class="math inline">\(B_1=A_1\)</span> and for <span class="math inline">\(n \geq 2:\)</span> <span class="math display">\[
+B_n = A_n \cap (\bigcup_{i=1}^{n-1}A_i)^c
+\]</span> with the same union <span class="math display">\[
+\bigcup_{n \in \mathbb{N}}A_n = \dot{\bigcup}_{n\in \mathbb{N}}B_n
+\]</span> where <span class="math inline">\(\dot{\bigcup}\)</span> denotes a disjoint union. This lemma comes up frequently in probability/analysis especially in the context of showing countable sub-additivity or inclusion-exclusion.</p>
+</section>
+<section id="exponential-families" class="level3">
+<h3 class="anchored" data-anchor-id="exponential-families">Exponential Families:</h3>
+<p>Recall that if <span class="math inline">\((\Omega,\mathcal{F},\nu)\)</span> is a measure space and <span class="math inline">\(f\)</span> be a non-negative Borel measurable function. The set function: <span class="math display">\[
+\lambda(A)=\int_{A}fd\nu, \ A\in \mathcal{F}
+\]</span> is a measure on <span class="math inline">\((\Omega,\mathcal{F})\)</span>. Note that <span class="math inline">\(\nu(A)= 0 \text{ implies }\lambda(A)=0\)</span>. If <span class="math inline">\(\nu(A)= 0 \text{ implies }\lambda(A)=0\)</span> holds for <span class="math inline">\(\lambda\)</span> and <span class="math inline">\(\nu\)</span> defined on the same measurable space then we say <span class="math inline">\(\lambda\)</span> is <strong>absolutely continuous</strong> with respect to <span class="math inline">\(\nu\)</span> or that <span class="math inline">\(\nu\)</span> dominates <span class="math inline">\(\lambda\)</span>.</p>
+<p>A parametric family <span class="math inline">\(\{P_\theta:\theta\in\Theta\}\)</span> dominated by a <span class="math inline">\(\sigma\)</span>-finite measure <span class="math inline">\(\nu\)</span> on <span class="math inline">\((\Omega,\mathcal{F})\)</span> is called an <strong>exponential family</strong> if and only if: <span class="math display">\[
+\frac{d\mathbb{P}_\theta}{d\nu}(\omega)=\exp\{[\eta(\theta)]^TT(\omega)-\xi(\theta)\}h(\omega), \ \omega \in \Omega
+\]</span> where T is a random p-dimensional vector, <span class="math inline">\(\eta\)</span> is a function from <span class="math inline">\(\Theta\to\mathbb{R}^p\)</span>, h is a non-negative Borel measurable function on <span class="math inline">\((\Omega, \mathcal{F})\)</span>, and <span class="math display">\[
+\xi(\theta)=\log\{\int_\Omega\exp\{[\eta(\theta)]^TT(\omega)\}h(\omega)d\nu(\omega)\}
+\]</span> A less technical, but a potentially more useful characterization for checking if a family is a <strong>exponential family</strong> is as follows:</p>
+<p>A family of pdf or pmfs is an <strong>exponential family</strong> if it can be expressed as: <span class="math display">\[
+f(x|\theta)= h(x)c(\theta)\exp\{\sum_i^kw_i(\theta)t_i(x)\}
+\]</span> where <span class="math inline">\(h(x),c(\theta)\geq0\)</span>, <span class="math inline">\(t_i\)</span>’s are real valued functions of the observation x, and <span class="math inline">\(w_i\)</span>’s are real valued functions of the parameter <span class="math inline">\(\theta\)</span>. Many common families such as the normal, gamma, beta, binomial, poisson, and negative binomial are examples of <strong>exponential families</strong>. The first representation given turns out to not be unique. In fact, any transformation <span class="math inline">\(\tilde{\eta}(\theta)=D\eta(\theta)\)</span> with a <span class="math inline">\(p\times p\)</span> non-singular matrix D gives another representation (with T replaced by <span class="math inline">\(\tilde{T}=(D^T)^{-1}T\)</span>).</p>
+</section>
 <section id="t-step-transition-probabilities" class="level3">
 <h3 class="anchored" data-anchor-id="t-step-transition-probabilities"><span class="math inline">\(T\)</span>-step Transition Probabilities</h3>
 <p>Let <span class="math inline">\(\{X_0, X_1,\ldots, X_n\}\)</span> be a markov chain <span class="math inline">\(S\)</span> be a state space, and <span class="math inline">\((P)_{i,j}\)</span> be an entry of the transition matrix. If we are interested in the probability of making it from state <span class="math inline">\(i\)</span> to state <span class="math inline">\(j\)</span> over <span class="math inline">\(T\)</span> steps, then the <span class="math inline">\(T\)</span>-step probabilities are given by <span class="math display">\[
 \mathbb{P}(X_t=j|X_0=i) = \mathbb{P}(X_{t+n}=j|X_0=i)= (P^T)_{ij}
 \]</span> for all n.&nbsp;</p>
-</section>
-<section id="disjointification" class="level3">
-<h3 class="anchored" data-anchor-id="disjointification">Disjointification:</h3>
-<p>Given any non empty set <span class="math inline">\(\Omega\)</span> and from any sequence <span class="math inline">\(\{A_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)\)</span>, one can construct a pairwise disjoint sequence <span class="math inline">\(\{B_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)\)</span> defined by <span class="math inline">\(B_1=A_1\)</span> and for <span class="math inline">\(n \geq 2:\)</span> <span class="math display">\[
-B_n = A_n \cap (\bigcup_{i=1}^{n-1}A_i)^c
-\]</span> with the same union <span class="math display">\[
-\bigcup_{n \in \mathbb{N}}A_n = \dot{\bigcup}_{n\in \mathbb{N}}B_n
-\]</span> where <span class="math inline">\(\dot{\bigcup}\)</span> denotes a disjoint union. This lemma comes up frequently in probability/analysis especially in the context of showing countable sub-additivity or inclusion-exclusion.</p>
 
 
 </section>

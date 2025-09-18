@@ -53,7 +53,7 @@ L_{nc} = \sum_dE_{nd}V_{dc}=\sum_d \sum_k \sum_tS_{ntk}W_{kd}V_{dc}
 $$
 In Einstein notation, we write $L_{nc}=S_{ntk}W_{kd}V_{dc}$. Note that k and d are summed over because those indices appear twice on the right hand side, while we sum over t because that index does not occur on the left hand side.
 
-### Schur Complements
+### Schur Complements:
 Consider a general partitioned matrix 
 $$
 M = \begin{pmatrix}
@@ -86,8 +86,14 @@ We say that $M/H$ is the ***schur complement*** of $M$ with respect to $H$, whil
 
 The proof can be found in *Probabilistic Machine Learning: An Introduction* by Kevin Murphy.
 
+### Hutchinson Trace Estimator
+Sometimes it is difficult to evaluate the matrix $A$, but it may be easy to compute the matrix products $Av$. Suppose $v$ is a random vector such that $\mathbb{E}(vv^T)=I$. In this case, we can create a Monte Carlo approximation to tr($A$) using the following identity:
+$$
+\text{tr}(A)=\text{tr}(A\mathbb{E}[vv^T])=\mathbb{E}[\text{tr}(Avv^T)]=\mathbb{E}[\text{tr}(v^TAv)]=\mathbb{E}[v^TAv]
+$$
 
 ## Probability Theory:
+
 ### Invertible Transformations
 Suppose $g:\mathbb{R}^n \to \mathbb{R}^n$ is a bijection (equivalently strictly monotonic) and $X$ is a random variable. If we are interested in calcuating the probability density function $f_Y(y)$ of some deterministic transformation $Y=g(X)$, the ***change of variable*** formula tells us that 
 
@@ -95,6 +101,42 @@ $$
 f_Y(y) = f_X(g^{-1}(y))|\text{det}(J_{g^{-1}}(y))|
 $$
 where $J_{g^{-1}}(y)$ is the Jacobian matrix of $g^{-1}$.
+
+### Disjointification: 
+Given any non empty set $\Omega$ and from any seq=uence $\{A_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)$, one can construct a pairwise disjoint sequence $\{B_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)$ defined by $B_1=A_1$ and for $n \geq 2:$
+$$
+B_n = A_n \cap (\bigcup_{i=1}^{n-1}A_i)^c
+$$
+with the same union 
+$$
+\bigcup_{n \in \mathbb{N}}A_n = \dot{\bigcup}_{n\in \mathbb{N}}B_n
+$$
+where $\dot{\bigcup}$ denotes a disjoint union. This lemma comes up frequently in probability/analysis especially in the context of showing countable sub-additivity or inclusion-exclusion.
+
+### Exponential Families: 
+
+Recall that if $(\Omega,\mathcal{F},\nu)$ is a measure space and $f$ be a non-negative Borel measurable function. The set function:
+$$
+\lambda(A)=\int_{A}fd\nu, \ A\in \mathcal{F}
+$$
+is a measure on $(\Omega,\mathcal{F})$. Note that $\nu(A)= 0 \text{ implies }\lambda(A)=0$. If $\nu(A)= 0 \text{ implies }\lambda(A)=0$ holds for $\lambda$ and $\nu$ defined on the same measurable space then we say $\lambda$ is **absolutely continuous** with respect to $\nu$ or that $\nu$ dominates $\lambda$. 
+
+A parametric family $\{P_\theta:\theta\in\Theta\}$ dominated by a $\sigma$-finite measure $\nu$ on $(\Omega,\mathcal{F})$ is called an **exponential family** if and only if:
+$$
+\frac{d\mathbb{P}_\theta}{d\nu}(\omega)=\exp\{[\eta(\theta)]^TT(\omega)-\xi(\theta)\}h(\omega), \ \omega \in \Omega
+$$
+where T is a random p-dimensional vector, $\eta$ is a function from $\Theta\to\mathbb{R}^p$, h is a non-negative Borel measurable function on $(\Omega, \mathcal{F})$, and $$
+\xi(\theta)=\log\{\int_\Omega\exp\{[\eta(\theta)]^TT(\omega)\}h(\omega)d\nu(\omega)\}
+$$
+A less technical, but a potentially more useful characterization for checking if a family is a **exponential family** is as follows:
+
+A family of pdf or pmfs is an **exponential family** if it can be expressed as:
+$$
+f(x|\theta)= h(x)c(\theta)\exp\{\sum_i^kw_i(\theta)t_i(x)\}
+$$
+where $h(x),c(\theta)\geq0$, $t_i$'s are real valued functions of the observation x, and $w_i$'s are real valued functions of the parameter $\theta$. Many common families such as the normal, gamma, beta, binomial, poisson, and negative binomial are examples of **exponential families**. \newline \newline
+The first representation given turns out to not be unique. In fact, any transformation $\tilde{\eta}(\theta)=D\eta(\theta)$ with a  $p\times p$ non-singular matrix D gives another representation (with T replaced by $\tilde{T}=(D^T)^{-1}T$).
+
 
 ### $T$-step Transition Probabilities
 
@@ -104,13 +146,3 @@ $$
 $$
 for all n. 
 
-### Disjointification: 
-Given any non empty set $\Omega$ and from any sequence $\{A_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)$, one can construct a pairwise disjoint sequence $\{B_n\}_{n \in \mathbb{N}} \subset \mathcal{P}(\Omega)$ defined by $B_1=A_1$ and for $n \geq 2:$
-$$
-B_n = A_n \cap (\bigcup_{i=1}^{n-1}A_i)^c
-$$
-with the same union 
-$$
-\bigcup_{n \in \mathbb{N}}A_n = \dot{\bigcup}_{n\in \mathbb{N}}B_n
-$$
-where $\dot{\bigcup}$ denotes a disjoint union. This lemma comes up frequently in probability/analysis especially in the context of showing countable sub-additivity or inclusion-exclusion.
