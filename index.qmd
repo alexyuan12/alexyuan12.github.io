@@ -6,16 +6,15 @@ about:
   links:
     - text: Email
       icon: envelope
-      href: mailto:ayuan07@calpoly.edu.zz
+      href: mailto:ayuan07@calpoly.edu
     - text: Github
       icon: github
       href: https://github.com/alexyuan12
   id: ppc
 ---
 :::{#ppc}
-Howdy! I am currently finishing up a master’s degree in Statistics at *California Polytechnic State University, San Luis Obispo* (*Cal Poly SLO* for short). I'm originally from Austin, TX, but I have been enjoying my time out here in the central coast.
+Howdy! I am currently finishing up a master’s degree in Statistics at *California Polytechnic State University, San Luis Obispo* (*Cal Poly SLO* for short). I'm originally from Austin, TX, but I have been enjoying my time out here on the central coast.
 
 I am mostly interested in a couple different areas of probability, statistics, and machine learning. Particularly, Optimal Transport and Functional Data Analysis are some subjects that I am working towards.
 
 :::
-s

@@ -1,0 +1,18 @@
+---
+title: "Adjustment and Combination of Independent Discrete p-values"
+description: "A discussion of a new optimal transport framework for combining discrete p-values"
+author:
+  - name: "Alex Yuan"
+categories: [Optimal Transport, Statistics]
+draft: false
+---
+In the typical data analysis framework, one takes a set of p-values $\{P_i\}_{i=1}^n$ each one representing evidence one obtains from a single hypothesis test and combines them into a summary statistics. This new summary statistics is used to assess the overall evidence against the "global" null hypothesis or "intersection" null hypothesis which means that all individual hypothesis in a family are simultaneously true. The advantage for combining these p-values allows one to more effectively evaluate the collective significance across multiple tests. For example, single tests may have limited power, so combining evidence from modestly small p-values across several tests provides stronger evidence together than apart. 
+
+Consider a general family of statistics:
+
+$$
+T= \sum_{i=1}^nG^{-1}(P_i) \text{  or  }  T= \sum_{i=1}^nG^{-1}(1-P_i) 
+$$
+where G is a strictly increasing CDF. A classical example is Fisher's and Pearson's combinations which correspond to $G$ being the CDF of the $\mathbf{\chi^2_2}$ distribution. Other examples include George's, Stouffer's, and Edginton's combinations which correspond to $G$ being the CDF of the **logistic$(0,1)$**, **normal$(0,1)$**, and **uniform$(0,1)$** distributions respectively. 
+
+To test the "global" or "intersection" null hypothesis, one compares the observed value of $T$ to the quantiles of its null distribution at some significance level $\alpha$
