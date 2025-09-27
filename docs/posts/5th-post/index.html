@@ -195,7 +195,9 @@ T= \sum_{i=1}^nG^{-1}(P_i) \text{  or  }  T= \sum_{i=1}^nG^{-1}(1-P_i)
 <p>To state Kantorovich’s problem, we must first define a notion of a <em>coupling</em>. Let <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\nu\)</span> be two probability measures over <span class="math inline">\(\mathbb{R}^d\)</span>. Define <span class="math inline">\(\gamma\)</span> to be a coupling between these two distributions to be a joint distribution over <span class="math inline">\(\mathbb{R}^d \times \mathbb{R}^d\)</span> such that its first marginal is <span class="math inline">\(\mu\)</span> and its second marginal is <span class="math inline">\(\nu\)</span>. That is for any Borel set: <span class="math inline">\(A \subset \mathbb{R}^d\)</span> <span class="math display">\[\gamma(A \times \mathbb{R}^d) =\mu(A) \text{ and } \gamma(\mathbb{R}^d \times A) = \nu(A)\]</span> Note that the random variables <span class="math inline">\(X \sim \mu\)</span> and <span class="math inline">\(Y \sim \nu\)</span> need not be defined on the same probability space, hence the term coupling comes from the fact that it forces to them to live on the same probability space by describing their probabilistic dependence.</p>
 <p>Denote <span class="math inline">\(\Gamma_{\mu,\nu}\)</span> to be the collection of <em>couplings</em> of <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\nu\)</span> and let <span class="math inline">\(c: \mathbb{R}^d \times \mathbb{R}^d \to [0,\infty)\)</span> be a measurable cost function. The general Kantorovich formulation of the optimal transport problem is as follows: <span class="math display">\[
 \inf_{\gamma \in \Gamma_{\mu, \nu}}\int c(x,y) \gamma(dx, dy)
-\]</span></p>
+\]</span> <strong><em>References</em></strong></p>
+<p>Chewi, S., Niles-Weed, J., &amp; Rigollet, P. (2025). Statistical Optimal Transport. Lecture Notes in Mathematics. Springer.</p>
+<p>Contador, G., &amp; Wu, Z. (2025). Optimal Adjustment and Combination of Independent Discrete p-Values. arXiv preprint arXiv:2508.02647.</p>
 
 
 

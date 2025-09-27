@@ -30,4 +30,9 @@ Denote $\Gamma_{\mu,\nu}$ to be the collection of *couplings* of $\mu$ and $\nu$
 $$
 \inf_{\gamma \in \Gamma_{\mu, \nu}}\int c(x,y) \gamma(dx, dy)
 $$
+***References***
+
+Chewi, S., Niles-Weed, J., & Rigollet, P. (2025). Statistical Optimal Transport. Lecture Notes in Mathematics. Springer.
+
+Contador, G., & Wu, Z. (2025). Optimal Adjustment and Combination of Independent Discrete p-Values. arXiv preprint arXiv:2508.02647.
 

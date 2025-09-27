@@ -6,7 +6,6 @@ author:
 categories: [Analysis, Probability, Information Theory]
 draft: false
 ---
-While one learns all about $\sigma$-algebras and other types of closure structures in measure theory, often it is just for the sake of defining the domain of a measure. We can however develop some decent intution regarding these structures through a information-theoretic lense.
 
 Consider the statements:\
 1) "In retrospect it was a bad idea to buy tech stocks."\
@@ -23,7 +22,7 @@ The appropriate and natural mathematical model of a knowledge-state is a sigma-a
 
 Let $\mathcal{F}$ be a sigma algebra over some set $\Omega$ and suppose $w\in\Omega$ is the unknown state of a system $\mathcal{S}$. The knowledge represented by $\mathcal{F}$ is the information about $\mathcal{S}$ that one obtains from observing for every $U \in \mathcal{F}$ whether or not $w \in U$. Thus, it should be natural that if another sigma algebra $\mathcal{D} \supset \mathcal{F}$ then we say $\mathcal{D}$ contains "more" information than $\mathcal{F}$.\
 
-If one remembers back to the first examples of $\sigma$-algebras, it becomes obvious that $\mathcal{P}(\Omega)$ represents a state of total omniscience, while $\{\emptyset,\Omega\}$ represents a state of total ignorance.
+If one remembers back to the first examples of $\sigma$-algebras, the power set $\mathcal{P}(\Omega)$ represents a state of total omniscience, while $\{\emptyset,\Omega}$ represents a state of total ignorance.
 
 Let $(X, \mathcal{X})$ and $(Y, \mathcal{Y})$ be measurable spaces. If $\mathcal{X}$ contains strictly more information (in the sense that we could recover every bit of information about $\mathcal{Y}$ by observing $\mathcal{X}$) than $\mathcal{Y}$ then we say $\mathcal{X}$ refines $\mathcal{Y}$. One can think of this as saying once we have observed the information contained in $\mathcal{X}$, the information in $\mathcal{Y}$ would be redundant.
 

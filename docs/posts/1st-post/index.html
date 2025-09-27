@@ -128,11 +128,6 @@ window.Quarto = {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">readings.qmd</span>
-    </span>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../Notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
@@ -195,7 +190,6 @@ window.Quarto = {
 
 
 
-<p>While one learns all about <span class="math inline">\(\sigma\)</span>-algebras and other types of closure structures in measure theory, often it is just for the sake of defining the domain of a measure. We can however develop some decent intution regarding these structures through a information-theoretic lense.</p>
 <p>Consider the statements:<br>
 1) “In retrospect it was a bad idea to buy tech stocks.”<br>
 2) “Tom knows more about nutrition than Jerry does.”<br>
@@ -206,7 +200,7 @@ window.Quarto = {
 <p>The appropriate and natural mathematical model of a knowledge-state is a sigma-algebra.</p>
 <p>Let <span class="math inline">\(\mathcal{F}\)</span> be a sigma algebra over some set <span class="math inline">\(\Omega\)</span> and suppose <span class="math inline">\(w\in\Omega\)</span> is the unknown state of a system <span class="math inline">\(\mathcal{S}\)</span>. The knowledge represented by <span class="math inline">\(\mathcal{F}\)</span> is the information about <span class="math inline">\(\mathcal{S}\)</span> that one obtains from observing for every <span class="math inline">\(U \in \mathcal{F}\)</span> whether or not <span class="math inline">\(w \in U\)</span>. Thus, it should be natural that if another sigma algebra <span class="math inline">\(\mathcal{D} \supset \mathcal{F}\)</span> then we say <span class="math inline">\(\mathcal{D}\)</span> contains “more” information than <span class="math inline">\(\mathcal{F}\)</span>.<br>
 </p>
-<p>If one remembers back to the first examples of <span class="math inline">\(\sigma\)</span>-algebras, it becomes obvious that <span class="math inline">\(\mathcal{P}(\Omega)\)</span> represents a state of total omniscience, while <span class="math inline">\(\{\emptyset,\Omega\}\)</span> represents a state of total ignorance.</p>
+<p>If one remembers back to the first examples of <span class="math inline">\(\sigma\)</span>-algebras, the power set <span class="math inline">\(\mathcal{P}(\Omega)\)</span> represents a state of total omniscience, while <span class="math inline">\(\{\emptyset,\Omega}\)</span> represents a state of total ignorance.</p>
 <p>Let <span class="math inline">\((X, \mathcal{X})\)</span> and <span class="math inline">\((Y, \mathcal{Y})\)</span> be measurable spaces. If <span class="math inline">\(\mathcal{X}\)</span> contains strictly more information (in the sense that we could recover every bit of information about <span class="math inline">\(\mathcal{Y}\)</span> by observing <span class="math inline">\(\mathcal{X}\)</span>) than <span class="math inline">\(\mathcal{Y}\)</span> then we say <span class="math inline">\(\mathcal{X}\)</span> refines <span class="math inline">\(\mathcal{Y}\)</span>. One can think of this as saying once we have observed the information contained in <span class="math inline">\(\mathcal{X}\)</span>, the information in <span class="math inline">\(\mathcal{Y}\)</span> would be redundant.</p>
 <p>We say that <span class="math inline">\(\mathcal{X}\)</span> <strong><em>refines</em></strong> <span class="math inline">\(\mathcal{Y}\)</span> if <span class="math inline">\(\mathcal{Y}\)</span> is a subset of <span class="math inline">\(\mathcal{X}\)</span>. This is almost analogous to the discussion of coarse and fine topologies.</p>
 <p>Let <span class="math inline">\((X,\mathcal{X})\)</span> be a measurable space, and let <span class="math inline">\(\mathbb{T}\)</span> be a linearly ordered set. A <span class="math inline">\(\mathbb{T}\)</span>-indexed <strong><em>filtration</em></strong> is a collection <span class="math inline">\((\mathcal{F}_t)_{t\in\mathbb{T}}\)</span> of <span class="math inline">\(\sigma\)</span>-subalgebras of <span class="math inline">\(\mathcal{X}\)</span> such that, for any <span class="math inline">\(s,t\in\mathbb{T}\)</span>, <span class="math display">\[
