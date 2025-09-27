@@ -1,5 +1,5 @@
 ---
-title: "Information"
+title: "Another work-in progress"
 description: "Need to fix"
 author:
   - name: "Alex Yuan"
